@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "footprints": 269,
+  "electrical_pads_checked": 963,
+  "board_islands": 8,
+  "actuator_cutouts": 8,
+  "thickness_mm": 0.8,
+  "tracks": 0,
+  "schematic_parity_issues": 0,
+  "placement_DRC_errors": 0,
+  "silkscreen_warnings": 5,
+  "unconnected_items": 499,
+  "scope": "Native net/pad correspondence, explicit land dimensions, valid outlines and placement DRC. Routing, physical fit and manufacture remain open."
+}

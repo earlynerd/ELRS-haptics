@@ -1,0 +1,24 @@
+.kicad-runtime/
+.history/
+__pycache__/
+*.pyc
+*.obj
+*.kicad_prl
+*.lck
+~*.lck
+*.bak
+*-backups/
+fp-info-cache
+tools/vendor/
+
+# Firmware build output and local SDK configuration
+.pio/
+firmware/**/build/
+firmware/controller/sdkconfig
+firmware/controller/sdkconfig.old
+firmware/controller/sdkconfig.esp32-c6
+firmware/controller/dependencies.lock
+firmware/controller/managed_components/
+firmware/tests/*.exe
+firmware/tests/*.obj
+compile_commands.json

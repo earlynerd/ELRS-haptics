@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "pads": [
+    {
+      "number": "1",
+      "x_mm": -0.9,
+      "y_mm": 0,
+      "size_mm": [
+        1,
+        2.2
+      ]
+    },
+    {
+      "number": "2",
+      "x_mm": 0.9,
+      "y_mm": 0,
+      "size_mm": [
+        1,
+        2.2
+      ]
+    }
+  ],
+  "pitch_mm": 1.8,
+  "scope": "KiCad load, pad dimensions and copper/mask/no-paste layers. Mechanical fit and soldering not tested."
+}

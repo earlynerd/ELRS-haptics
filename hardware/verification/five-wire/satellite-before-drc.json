@@ -1,0 +1,203 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-13T15:24:22",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.1",
+    "schematic_parity": [],
+    "source": "satellite.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 103.0,
+                        "y": 130.0
+                    },
+                    "uuid": "cc6caec9-4833-47da-9580-eeef636ee608"
+                },
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 103.0,
+                        "y": 102.55
+                    },
+                    "uuid": "dd0b9262-ccd1-4139-a592-5b80e3931bc1"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 103.0,
+                        "y": 130.0
+                    },
+                    "uuid": "cc6caec9-4833-47da-9580-eeef636ee608"
+                },
+                {
+                    "description": "Segment on F.Silkscreen",
+                    "pos": {
+                        "x": 103.0,
+                        "y": 106.75
+                    },
+                    "uuid": "5f433a80-56bc-4886-ab37-404f9bcc2ab2"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "The footprint library 'HapticBracelet' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint J5",
+                    "pos": {
+                        "x": 104.05,
+                        "y": 104.6
+                    },
+                    "uuid": "2e8cba9d-f057-4d40-8295-e6be3b0b0dfa"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'HapticBracelet' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint J4",
+                    "pos": {
+                        "x": 104.05,
+                        "y": 100.55
+                    },
+                    "uuid": "6cb70848-6ba4-42a0-95c5-3828392ca909"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'HapticBracelet' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint J3",
+                    "pos": {
+                        "x": 111.83,
+                        "y": 96.75
+                    },
+                    "uuid": "89278023-a049-4822-90ba-4de265e674c7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'HapticBracelet' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint F1",
+                    "pos": {
+                        "x": 104.8,
+                        "y": 97.35
+                    },
+                    "uuid": "986136e9-5c03-48f1-90ba-850a1bc0903f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'HapticBracelet' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint J1",
+                    "pos": {
+                        "x": 104.1,
+                        "y": 113.0
+                    },
+                    "uuid": "9d2e0cec-a736-479a-b21d-5d3b0c827093"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'HapticBracelet' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint J2",
+                    "pos": {
+                        "x": 118.9,
+                        "y": 113.0
+                    },
+                    "uuid": "bd36e68d-263e-42b0-b564-41ef1f6dff51"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'HapticBracelet' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint U2",
+                    "pos": {
+                        "x": 116.1,
+                        "y": 118.7
+                    },
+                    "uuid": "d35b23f5-9a8d-49ae-bb7a-0d6466c79c96"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The footprint library 'HapticBracelet' is not enabled in the current configuration",
+            "items": [
+                {
+                    "description": "Footprint M1",
+                    "pos": {
+                        "x": 118.35,
+                        "y": 120.95
+                    },
+                    "uuid": "ee101b12-d2b9-4ee9-9d48-c6068814663f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        }
+    ]
+}

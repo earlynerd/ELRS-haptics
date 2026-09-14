@@ -1,0 +1,12 @@
+{
+  "revision": "0.7",
+  "components": 261,
+  "layers": 4,
+  "nominal_thickness_mm": 0.8,
+  "reset_links": 8,
+  "via_mm": [
+    0.45,
+    0.2
+  ],
+  "dielectric_stack": "Provisional symmetric stack; confirm exact JLCPCB stack before impedance/fabrication release."
+}

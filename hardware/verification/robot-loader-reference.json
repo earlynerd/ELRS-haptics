@@ -1,0 +1,13 @@
+{
+  "inspected": "2026-09-12",
+  "source_root": "C:\\Users\\mmsyl\\Documents\\bl4818-servo-M23_2",
+  "mode": "read-only; no firmware copied or changed",
+  "files": {
+    "ldrom/platform.c": "76e5bf16a44cbea72885cc2d069442c9bacd7899f609c8109e43d3094b5f72db",
+    "ldrom/uart.c": "3b2228a156d7bc16aa4fe9cae86aac09eff56f8adf60ab16adf24142e30a2540",
+    "ldrom/bl_internal.h": "be33d95e14ab869c1a8357b194095dcbfc5cdd9a2a417e4ba4224bc9c05266ae",
+    "ldrom/main.c": "f1d3c96f8954017e43fa2c38cfce62e6e73814d241996a2392063820a288c49d",
+    "include/firmware_image.h": "bab305671ce89d61bdd91b35bab73f48477afac190702aa0e569f1382804ee2a",
+    "scripts/ring_bootload.py": "a65ae7cdec292aec77a0592139966e5b7704fe59781476dd5c5b7916b50aabe7"
+  }
+}

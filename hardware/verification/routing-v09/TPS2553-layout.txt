@@ -1,0 +1,24 @@
+PAGE 25
+/FAULT
+EN 3
+6 OUT
+5 ILIM
+1IN
+2
+4
+25
+TPS2552, TPS2553, TPS2552-1, TPS2553-1
+www.ti.com SLVS841F – NOVEMBER 2008 – REVISED AUGUST 2016
+Product Folder Links: TPS2552 TPS2553 TPS2552-1 TPS2553-1
+Submit Documentation FeedbackCopyright © 2008–2016, Texas Instruments Incorporated
+12 Layout
+12.1 Layout Guidelines
+• TI recommends placing the 100-nF bypass capacitor near the IN and GND pins, and make the connections
+using a low-inductance trace.
+• TI recommends placing a high-value electrolytic capacitor and a 100-nF bypass capacitor on the output pin
+when large transient currents are expected on the output.
+• The traces routing the RILIM resistor to the device must be as short as possible to reduce parasitic effects on
+the current limit accuracy.
+• The PowerPAD must be directly connected to PCB ground plane using wide and short copper trace.
+12.2 Layout Example
+Figure 30. Layout Recommendation

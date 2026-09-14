@@ -1,0 +1,20 @@
+{
+  "controller-support.kicad_sch": "ddc14e6474c123b06ada2ef954698a36d0e77fe67097592e3edac986f215ef9c",
+  "fp-lib-table": "97b931c7b139267ba85dd5519657aae7aa08d5347bcdbeed7b0b211945b8d839",
+  "haptic-bracelet.kicad_pcb": "790a8e79cc9c14502aab1834cfb9b5c09daa44787b10e898e106da618f0ff213",
+  "haptic-bracelet.kicad_pro": "b899d7124425b067d3341604193bb9d84eb3f1c5166fb2c740a7848734ef5b5a",
+  "haptic-bracelet.kicad_sch": "b41c1fba4ed8070e6a0d5c8b3a549838b9d06feefe9f3a4d230bd5b419220562",
+  "HapticBracelet.kicad_sym": "f12a4e5ef4761928de4e5b53dc5ca412a558a2d2b6c223b4a8608ed510b48ab8",
+  "haptics.kicad_sch": "eba94c890dcb57c4937236fe35ae3de1c16ee988147248c642693f7e00dda774",
+  "pod_0.kicad_sch": "8881a9d37a2328b355fd3e12c7fe70ed9e476ca45f02b2bfdd99a4220d919932",
+  "pod_1.kicad_sch": "4e056017d3dc2210836434f467037f02f7ae99e0a10ce4865a78047257da0271",
+  "pod_2.kicad_sch": "8578ae0eecc8079f9d3940990a2398fa255d156243de44736d0b63608d6cbf57",
+  "pod_3.kicad_sch": "f53d6b790b206736a6c85a919a3bdca8fe12b2f193518075df9ab45ce0e8c7c7",
+  "pod_4.kicad_sch": "d3198312c9c7d9c89b0af09a58ba6aa4b0dfba0f5eb3ada93970e52e5a04cfc9",
+  "pod_5.kicad_sch": "464d287ffe5f4d875aa94db059282c0516db0e44c0e0608d96c4255afe750c3f",
+  "pod_6.kicad_sch": "e5b0b3846d444afeb8d4e222795e17bc135d1b3a30e468cbc41aee2e674b8bab",
+  "pod_7.kicad_sch": "7a99de6344ae4a1e51e17ee3f13eec2f9ef4b4c2f0653d729c8136e23e83f178",
+  "power.kicad_sch": "91ae7d827de9c1755c0acfa9ec3198b34c0f8e203e9af4214a978e453c646843",
+  "sym-lib-table": "db7d20b824c88dd8a8355adff82c849d6f57ad5dcc2441a962ea49aaff16fd2a",
+  "usb.kicad_sch": "cbf6de36a99030bb41089828c989532a3440d268defbcf9d17b3f5e620283b64"
+}

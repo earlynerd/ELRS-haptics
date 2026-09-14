@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "components": 261,
+  "pods": 8,
+  "interpod_conductors": 6,
+  "physical_wired_gaps": 7,
+  "serial_return": {
+    "net": "RING_RETURN",
+    "end_bridge": "R53",
+    "pad": 6,
+    "intermediate_mcu_connections": 0,
+    "clasp_wiring": false
+  },
+  "fused_protected_battery_branches": 8,
+  "pack_protection": "Factory PCM on each battery; no central protection stage",
+  "additional_bulk_uF_per_pod": 22,
+  "uart_segments": [
+    "RING_D0",
+    "RING_D1",
+    "RING_D2",
+    "RING_D3",
+    "RING_D4",
+    "RING_D5",
+    "RING_D6",
+    "RING_D7",
+    "RING_D8"
+  ],
+  "independent_local_control_nets": 16,
+  "pinmaps_checked": [
+    "M2003FC1AE",
+    "TPS22918DBV"
+  ],
+  "power_control": "GPIO3 ON; GPIO18 reset assert; GPIO19 TX low and GPIO2 RX no pull-up before power off",
+  "scope": "Native connectivity, symbol and footprint pin counts. Firmware sequencing, loader port and hardware remain untested."
+}

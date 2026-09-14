@@ -1,0 +1,166 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "file": "print\\satellite-shell.stl",
+      "sha256": "f1118e608798cfeda92ffa498b6c3234f893ffbcf87d76ce54018d7f346e6f09",
+      "watertight": true,
+      "one_connected_mesh": true,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          20.0,
+          38.0,
+          9.5
+        ]
+      ],
+      "volume_mm3": 1813.600344133373,
+      "faces": 340
+    },
+    {
+      "file": "print\\satellite-lid.stl",
+      "sha256": "dbf9cd680a973cafd7591c4fc92a94ae40aec4c5b52c5a48dc874e1ac7f7d72c",
+      "watertight": true,
+      "one_connected_mesh": true,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          20.0,
+          38.0,
+          1.0
+        ]
+      ],
+      "volume_mm3": 760.0,
+      "faces": 12
+    },
+    {
+      "file": "reference-only\\satellite-pcb-gauge.stl",
+      "sha256": "33f7c69143ddb3cda3c16bcf1ba91fdf596550e21a9d23e1bbfa434026b7627c",
+      "watertight": true,
+      "one_connected_mesh": true,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          17.0,
+          35.0,
+          0.800000011920929
+        ]
+      ],
+      "volume_mm3": 392.0000058412552,
+      "faces": 64
+    },
+    {
+      "file": "print\\main-shell.stl",
+      "sha256": "fe5d077b99552ece0ab2a739c8464e998d273383c698b7f69256ce47c4d7d8e3",
+      "watertight": true,
+      "one_connected_mesh": true,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          24.0,
+          64.0,
+          9.5
+        ]
+      ],
+      "volume_mm3": 3145.152526603704,
+      "faces": 1028
+    },
+    {
+      "file": "print\\main-lid.stl",
+      "sha256": "18c036b088051915d5e37c71461543980a21020efb4fe9816201874f682adff1",
+      "watertight": true,
+      "one_connected_mesh": true,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          24.0,
+          64.0,
+          1.0
+        ]
+      ],
+      "volume_mm3": 1530.2399972534186,
+      "faces": 64
+    },
+    {
+      "file": "reference-only\\main-pcb-gauge.stl",
+      "sha256": "2e06a76ec17277bd83ca0bd23d813654ba38a2ae85634643cd21ff4d2a4369b3",
+      "watertight": true,
+      "one_connected_mesh": true,
+      "bounds_mm": [
+        [
+          0.0,
+          5.099999904632568,
+          0.0
+        ],
+        [
+          21.0,
+          61.0,
+          0.800000011920929
+        ]
+      ],
+      "volume_mm3": 855.1200143444539,
+      "faces": 64
+    },
+    {
+      "file": "reference-only\\protected-cell-body-12x32x3.stl",
+      "sha256": "3500d778d550b52d34464b684038230255a04552b23716dbf992aedeff776450",
+      "watertight": true,
+      "one_connected_mesh": true,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          12.0,
+          32.0,
+          3.0
+        ]
+      ],
+      "volume_mm3": 1152.0,
+      "faces": 12
+    },
+    {
+      "file": "reference-only\\LRA-body-4x12x3p5.stl",
+      "sha256": "c5482c566090d70a00d7dd4ff04b90528c34073d78ecd663f77ad06db4a937a0",
+      "watertight": true,
+      "one_connected_mesh": true,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          4.0,
+          12.0,
+          3.5
+        ]
+      ],
+      "volume_mm3": 168.0,
+      "faces": 12
+    }
+  ],
+  "scope": "Reopened STL topology, winding, connectedness, finite geometry, dimensions. No print, wrist fit, assembly or electronics qualification."
+}

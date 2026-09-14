@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "project": "main",
+  "components": 77,
+  "preserved_components": 74,
+  "preserved_component_values_and_footprints": true,
+  "circuit_matches_baseline_except_return_selector_and_reset_removal": true,
+  "reset_is_local_to_ice": true,
+  "harness_wires": 5,
+  "placement_preserved": true,
+  "electrical_pads_checked": 299,
+  "copper_layers": 4,
+  "thickness_mm": 0.8,
+  "board_outlines": 1,
+  "actuator_cutouts": 1,
+  "erc_violations": 0,
+  "schematic_parity": 0,
+  "drc_violations": 5,
+  "open_connections": 214,
+  "segments": 1,
+  "vias": 0,
+  "pcb_sha256": "18494d97d77c03ebb834d15f59e2889d193ce479adae91b032f064bf31b901f2",
+  "harness_pads": 5,
+  "preservation_exceptions": [
+    "Five-pad harness footprint and centre shifted 1 mm; pins 1-3 stay fixed, VBAT/return move 2 mm",
+    "Main J100 and shared reset circuit removed; return selector added",
+    "USB CC controller and external input limiter removed; two 5.1k pull-downs added; VBUS directly feeds charger IN",
+    "Main J3 and R48/R50/R52 removed; R62 terminates TS/MR, retaining SW3 and MCU thermistor input"
+  ],
+  "passive_cc_checked": true,
+  "pod_temperature_interface_checked": true
+}

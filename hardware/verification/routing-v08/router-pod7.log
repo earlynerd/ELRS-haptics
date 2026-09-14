@@ -1,0 +1,63 @@
+2026-09-13 11:50:03.295 INFO   Freerouting v2.4.1 (build-date: 2026-09-03)
+2026-09-13 11:50:04.968 INFO   [E41A9A\4A1EA1] Loading board file 'pod-7.dsn'...
+2026-09-13 11:50:05.080 INFO   Layer 'In1.Cu' has been automatically configured as a dedicated power plane because it contains a large conduction area covering >50% of the board.
+2026-09-13 11:50:05.080 INFO   Layer 'In2.Cu' has been automatically configured as a dedicated power plane because it contains a large conduction area covering >50% of the board.
+2026-09-13 11:50:05.080 WARN   DSN file 'pod-7.dsn' was loaded with 6 warning(s).
+2026-09-13 11:50:05.127 INFO   [E41A9A\4A1EA1] Job 'E41A9A\4A1EA1' started at 2026-09-13T18:50:05.127048700Z.
+2026-09-13 11:50:05.618 INFO   [E41A9A\4A1EA1] Fanout stage started on board '6b29662240ff1dd4d35a86e8114c9e1c' with 58 of 84 SMD pins needing fanout (26 already connected, 0 netless).
+2026-09-13 11:50:07.190 INFO   [E41A9A\4A1EA1] Fanout pass #1 on board '81bd96a711d5ed56de9154185b730786' completed in 1.32 seconds with 18 SMD pins fanouted, 0 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+2026-09-13 11:50:08.373 INFO   [E41A9A\4A1EA1] Fanout pass #2 on board '1ede48a63a4d2bfd1d78e6da4cff3567' completed in 1.17 seconds with 15 SMD pins fanouted, 0 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=200).
+2026-09-13 11:50:09.584 INFO   [E41A9A\4A1EA1] Fanout pass #3 on board 'c0eb31d2ce03bbefbc4c36a90995fe75' completed in 1.20 seconds with 15 SMD pins fanouted, 0 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=300).
+2026-09-13 11:50:10.752 INFO   [E41A9A\4A1EA1] Fanout pass #4 on board '1ede48a63a4d2bfd1d78e6da4cff3567' completed in 1.16 seconds with 15 SMD pins fanouted, 0 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=400).
+2026-09-13 11:50:11.898 INFO   [E41A9A\4A1EA1] Fanout pass #5 on board '74ec67a4fa3f9391818ff0d52ed61f90' completed in 1.13 seconds with 15 SMD pins fanouted, 0 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=500).
+2026-09-13 11:50:11.899 INFO   Fanout stopped after 5 passes: no progress for 3 consecutive passes.
+2026-09-13 11:50:12.183 INFO   [E41A9A\4A1EA1] Fanout stage completed: started with 84 total SMD pins, completed in 6.33 seconds, escaped pins: 57/84 (67.9%), using 6.00 total CPU seconds, 23.94 GB total allocated, and 1486.7 MB peak heap usage.
+2026-09-13 11:50:12.225 INFO   [E41A9A\4A1EA1] Auto-routing stage started on board '74ec67a4fa3f9391818ff0d52ed61f90' for 16 unrouted items.
+2026-09-13 11:50:16.624 INFO   [E41A9A\4A1EA1] Auto-routing pass #1 on board '74ec67a4fa3f9391818ff0d52ed61f90' was completed in 3.51 seconds with score 548.27 (13 unrouted and 66 violations), using 9.66 CPU seconds and the job allocated 36.88 GB of memory so far.
+2026-09-13 11:50:20.233 INFO   [E41A9A\4A1EA1] Auto-routing pass #2 on board 'd9fe93b2b06c1e1704e62a74a860481b' was completed in 2.70 seconds with score 548.27 (13 unrouted and 66 violations), using 12.36 CPU seconds and the job allocated 46.69 GB of memory so far.
+2026-09-13 11:50:23.441 INFO   [E41A9A\4A1EA1] Auto-routing pass #3 on board 'd9fe93b2b06c1e1704e62a74a860481b' was completed in 2.74 seconds with score 548.27 (13 unrouted and 66 violations), using 16.05 CPU seconds and the job allocated 59.48 GB of memory so far.
+2026-09-13 11:50:26.651 INFO   [E41A9A\4A1EA1] Auto-routing pass #4 on board 'd9fe93b2b06c1e1704e62a74a860481b' was completed in 2.73 seconds with score 548.27 (13 unrouted and 66 violations), using 18.78 CPU seconds and the job allocated 69.34 GB of memory so far.
+2026-09-13 11:50:29.823 INFO   [E41A9A\4A1EA1] Auto-routing pass #5 on board 'd9fe93b2b06c1e1704e62a74a860481b' was completed in 2.70 seconds with score 548.27 (13 unrouted and 66 violations), using 21.41 CPU seconds and the job allocated 79.32 GB of memory so far.
+2026-09-13 11:50:33.001 INFO   [E41A9A\4A1EA1] Auto-routing pass #6 on board 'd9fe93b2b06c1e1704e62a74a860481b' was completed in 2.70 seconds with score 548.27 (13 unrouted and 66 violations), using 24.14 CPU seconds and the job allocated 89.11 GB of memory so far.
+2026-09-13 11:50:36.167 INFO   [E41A9A\4A1EA1] Auto-routing pass #7 on board 'd9fe93b2b06c1e1704e62a74a860481b' was completed in 2.70 seconds with score 548.27 (13 unrouted and 66 violations), using 26.75 CPU seconds and the job allocated 99.02 GB of memory so far.
+2026-09-13 11:50:39.325 INFO   [E41A9A\4A1EA1] Auto-routing pass #8 on board 'd9fe93b2b06c1e1704e62a74a860481b' was completed in 2.69 seconds with score 548.27 (13 unrouted and 66 violations), using 29.44 CPU seconds and the job allocated 109.04 GB of memory so far.
+2026-09-13 11:50:42.455 INFO   [E41A9A\4A1EA1] Auto-routing pass #9 on board 'd9fe93b2b06c1e1704e62a74a860481b' was completed in 2.66 seconds with score 548.27 (13 unrouted and 66 violations), using 33.09 CPU seconds and the job allocated 122.12 GB of memory so far.
+2026-09-13 11:50:45.600 INFO   [E41A9A\4A1EA1] Auto-routing pass #10 on board 'd9fe93b2b06c1e1704e62a74a860481b' was completed in 2.68 seconds with score 548.27 (13 unrouted and 66 violations), using 35.81 CPU seconds and the job allocated 132.03 GB of memory so far.
+2026-09-13 11:50:48.745 INFO   [E41A9A\4A1EA1] Auto-routing pass #11 on board 'd9fe93b2b06c1e1704e62a74a860481b' was completed in 2.68 seconds with score 548.27 (13 unrouted and 66 violations), using 38.44 CPU seconds and the job allocated 141.93 GB of memory so far.
+2026-09-13 11:50:52.332 INFO   [E41A9A\4A1EA1] Auto-routing pass #12 on board 'd9fe93b2b06c1e1704e62a74a860481b' was completed in 2.70 seconds with score 548.27 (13 unrouted and 66 violations), using 41.11 CPU seconds and the job allocated 152.02 GB of memory so far.
+2026-09-13 11:50:55.493 INFO   [E41A9A\4A1EA1] Auto-routing pass #13 on board 'd9fe93b2b06c1e1704e62a74a860481b' was completed in 2.70 seconds with score 548.27 (13 unrouted and 66 violations), using 43.83 CPU seconds and the job allocated 162.01 GB of memory so far.
+2026-09-13 11:50:58.642 INFO   [E41A9A\4A1EA1] Auto-routing pass #14 on board 'd9fe93b2b06c1e1704e62a74a860481b' was completed in 2.68 seconds with score 548.27 (13 unrouted and 66 violations), using 47.34 CPU seconds and the job allocated 174.96 GB of memory so far.
+2026-09-13 11:51:01.811 INFO   [E41A9A\4A1EA1] Auto-routing pass #15 on board 'd9fe93b2b06c1e1704e62a74a860481b' was completed in 2.70 seconds with score 548.27 (13 unrouted and 66 violations), using 50.03 CPU seconds and the job allocated 184.79 GB of memory so far.
+2026-09-13 11:51:04.953 INFO   [E41A9A\4A1EA1] Auto-routing pass #16 on board 'd9fe93b2b06c1e1704e62a74a860481b' was completed in 2.68 seconds with score 548.27 (13 unrouted and 66 violations), using 52.70 CPU seconds and the job allocated 194.87 GB of memory so far.
+2026-09-13 11:51:08.081 INFO   [E41A9A\4A1EA1] Auto-routing pass #17 on board 'd9fe93b2b06c1e1704e62a74a860481b' was completed in 2.66 seconds with score 548.27 (13 unrouted and 66 violations), using 55.39 CPU seconds and the job allocated 205.06 GB of memory so far.
+2026-09-13 11:51:11.217 INFO   [E41A9A\4A1EA1] Auto-routing pass #18 on board 'd9fe93b2b06c1e1704e62a74a860481b' was completed in 2.67 seconds with score 548.27 (13 unrouted and 66 violations), using 58.19 CPU seconds and the job allocated 215.02 GB of memory so far.
+2026-09-13 11:51:11.298 INFO   [E41A9A\4A1EA1] The router's best score (548.27) has not improved by more than 0.5 points since pass #8. Stopping the auto-router after 18 passes (13 items still unconnected).
+The following connections could not be routed -- please review your design (e.g. check pad clearances, trace width rules, and available routing space):
+  Net 'GND' (4 unrouted connections):
+    - conductionarea  ->  C173-2
+    - via  ->  C27-2
+    - conductionarea  ->  C170-2
+    - via  ->  U25-7
+  Net 'POD_3V3' (3 unrouted connections):
+    - conductionarea  ->  R22-1
+    - conductionarea  ->  C170-1
+    - conductionarea  ->  U25-9
+  Net '/Eight ring pods/Pod 7 {slash} U25/CELL_TEMP' (1 unrouted connection):
+    - via  ->  U25-2
+  Net '/Eight ring pods/Pod 7 {slash} U25/LOCAL_SDA' (1 unrouted connection):
+    - U25-5  ->  R22-2
+  Net '/Eight ring pods/Pod 7 {slash} U25/LOCAL_SCL' (2 unrouted connections):
+    - U25-6  ->  via
+    - R23-2  ->  U25-6
+  Net '/Eight ring pods/Pod 7 {slash} U25/UART_RX_LOCAL' (1 unrouted connection):
+    - R172-2  ->  U25-18
+  Net 'RING_D8' (1 unrouted connection):
+    - R53-1  ->  J129-3
+2026-09-13 11:51:12.153 INFO   [E41A9A\4A1EA1] Auto-routing stage completed: started with 19 unrouted nets, completed in 66.55 seconds, final score: 548.27 (13 unrouted and 66 violations), using 59.09 total CPU seconds, 218.08 GB total allocated, and 1695.4 MB peak heap usage.
+2026-09-13 11:51:12.584 INFO   [E41A9A\4A1EA1] Optimization stage started on board 'd9fe93b2b06c1e1704e62a74a860481b' with score 548.27 (13 unrouted and 66 violations).
+2026-09-13 11:51:17.809 INFO   [E41A9A\4A1EA1] Optimizer pass #1 on board '2ed3df1ce760403f6a67fec4cd9ae24f' was completed in 3.95 seconds with the score of 548.27 (13 unrouted and 66 violations).
+2026-09-13 11:51:18.244 INFO   [E41A9A\4A1EA1] Stopping optimizer because the improvement in this pass (0.0000%) is below the threshold (1.00%).
+2026-09-13 11:51:18.681 INFO   [E41A9A\4A1EA1] Optimization stage completed: started with score 548.27 (13 unrouted and 66 violations), completed in 5.66 seconds, final score: 548.27 (13 unrouted and 66 violations), using 5.16 total CPU seconds, 19.71 GB total allocated, and 1647.5 MB peak heap usage.
+2026-09-13 11:51:18.689 INFO   [E41A9A\4A1EA1] Job 'E41A9A\4A1EA1' finished with state: COMPLETED (elapsed: 1 minute 13.56 seconds, finished at UTC: 2026-09-13T18:51:18.688046800Z).
+2026-09-13 11:51:18.919 INFO   Saving output file 'C:\Users\mmsyl\Documents\haptic-bracelet\hardware\verification\routing-v08\pod-7.ses' (SES)...
+2026-09-13 11:51:18.921 INFO   Successfully saved output file 'C:\Users\mmsyl\Documents\haptic-bracelet\hardware\verification\routing-v08\pod-7.ses' (31792 bytes).

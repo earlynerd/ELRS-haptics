@@ -1,0 +1,43 @@
+PAGE 48
+9 Layout
+9.1 Layout Guidelines
+• To obtain optimal performance, the decoupling capacitor from IN to GND, the capacitor from SYS to GND, 
+and the BAT to GND capacitor should be placed as close as possible to the device.
+• A solid ground plane should be used that is tied to the GND pin and thermal pad
+• The pushbutton GND should be connected as close to the device as possible
+• The high current charge paths into IN, SYS, and BAT must be sized appropriately for the maximum charge 
+current in order to avoid voltage drops in these traces
+9.2 Layout Example
+SCLSCL
+THERMAL
+PAD
+5
+10
+6
+1
+GND
+INSYS
+TS/MR
+SDA
+/INT
+/CE
+BAT
+/PG/GPO
+0402
+SYS
+0402
+IN
+0402
+BAT
+Bo
+
+om
+Layer
+Top
+Layer
+Figure 9-1. Board Layout Example
+BQ25186
+SLUSF69A – MAY 2024 – REVISED JANUARY 2025
+ www.ti.com
+48 Submit Document Feedback Copyright © 2026 Texas Instruments Incorporated
+Product Folder Links: BQ25186

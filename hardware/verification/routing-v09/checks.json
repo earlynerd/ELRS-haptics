@@ -1,0 +1,123 @@
+{
+  "status": "PASS",
+  "revision": "0.9",
+  "electrical_pads_checked": 947,
+  "components": 261,
+  "copper_layers": 4,
+  "zones": 21,
+  "islands": 8,
+  "actuator_cutouts": 8,
+  "schematic_parity_issues": 0,
+  "main_items_unchanged": true,
+  "main_unconnected_items": 277,
+  "external_unconnected_items": 42,
+  "main_violations": [
+    {
+      "type": "track_width",
+      "severity": "error"
+    },
+    {
+      "type": "silk_edge_clearance",
+      "severity": "warning"
+    },
+    {
+      "type": "silk_edge_clearance",
+      "severity": "warning"
+    },
+    {
+      "type": "lib_footprint_mismatch",
+      "severity": "warning"
+    },
+    {
+      "type": "silk_overlap",
+      "severity": "warning"
+    },
+    {
+      "type": "silk_over_copper",
+      "severity": "warning"
+    },
+    {
+      "type": "silk_over_copper",
+      "severity": "warning"
+    }
+  ],
+  "satellites": [
+    {
+      "minimum_track_mm": 0.1524,
+      "via_in_pad": 0,
+      "non_45_segments": 0,
+      "pod": 1,
+      "segments": 206,
+      "vias": 41,
+      "violations": 0,
+      "opens": 0,
+      "inner_signal_tracks": 0
+    },
+    {
+      "minimum_track_mm": 0.1524,
+      "via_in_pad": 0,
+      "non_45_segments": 0,
+      "pod": 2,
+      "segments": 206,
+      "vias": 41,
+      "violations": 0,
+      "opens": 0,
+      "inner_signal_tracks": 0
+    },
+    {
+      "minimum_track_mm": 0.1524,
+      "via_in_pad": 0,
+      "non_45_segments": 0,
+      "pod": 3,
+      "segments": 206,
+      "vias": 41,
+      "violations": 0,
+      "opens": 0,
+      "inner_signal_tracks": 0
+    },
+    {
+      "minimum_track_mm": 0.1524,
+      "via_in_pad": 0,
+      "non_45_segments": 0,
+      "pod": 4,
+      "segments": 206,
+      "vias": 41,
+      "violations": 0,
+      "opens": 0,
+      "inner_signal_tracks": 0
+    },
+    {
+      "minimum_track_mm": 0.1524,
+      "via_in_pad": 0,
+      "non_45_segments": 0,
+      "pod": 5,
+      "segments": 206,
+      "vias": 41,
+      "violations": 0,
+      "opens": 0,
+      "inner_signal_tracks": 0
+    },
+    {
+      "minimum_track_mm": 0.1524,
+      "via_in_pad": 0,
+      "non_45_segments": 0,
+      "pod": 6,
+      "segments": 206,
+      "vias": 41,
+      "violations": 0,
+      "opens": 0,
+      "inner_signal_tracks": 0
+    },
+    {
+      "minimum_track_mm": 0.1524,
+      "via_in_pad": 0,
+      "non_45_segments": 0,
+      "pod": 7,
+      "segments": 219,
+      "vias": 44,
+      "violations": 0,
+      "opens": 0,
+      "inner_signal_tracks": 0
+    }
+  ]
+}

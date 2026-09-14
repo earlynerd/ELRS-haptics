@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "project": "satellite",
+  "components": 24,
+  "preserved_components": 23,
+  "preserved_component_values_and_footprints": true,
+  "circuit_matches_baseline_except_return_selector_and_reset_removal": true,
+  "reset_is_local_to_ice": true,
+  "harness_wires": 5,
+  "placement_preserved": true,
+  "electrical_pads_checked": 85,
+  "copper_layers": 4,
+  "thickness_mm": 0.8,
+  "board_outlines": 1,
+  "actuator_cutouts": 1,
+  "erc_violations": 0,
+  "schematic_parity": 0,
+  "drc_violations": 0,
+  "open_connections": 0,
+  "segments": 200,
+  "vias": 42,
+  "pcb_sha256": "196e38e7d8149d73a2581134a9509d7903225841b2070ba306c3e28925cadccb",
+  "selector_modes_checked": [
+    "1-2 NORMAL",
+    "2-3 END"
+  ],
+  "minimum_track_mm": 0.1524,
+  "via_in_pad": 0,
+  "inner_signal_tracks": 0,
+  "non_45_segments": 0
+}

@@ -1,0 +1,16 @@
+{
+  "revision": "0.7",
+  "locally_routed_pods": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "main_pod_routing": "Pending except direct driver reset link",
+  "copper_layers": 4,
+  "tracks_and_vias": 2136,
+  "zones": 14
+}

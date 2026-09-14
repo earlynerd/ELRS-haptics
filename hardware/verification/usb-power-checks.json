@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "pinmaps_checked": [
+    "BQ25186DLH",
+    "TPS63802DLA",
+    "TUSB320LAIRWB",
+    "TPS2553DBV",
+    "TS5A3159DBV"
+  ],
+  "regulator_nominal_V": 3.3076923076923075,
+  "usb_programmed_limits_mA": {
+    "normal_min": 377.1002134455086,
+    "normal_max": 479.2970470403906,
+    "high_min": 934.0737237807389,
+    "high_max": 1109.3340569359345
+  },
+  "limit_model": "TPS2553 datasheet section 9.5.1; resistor tolerance 1%; switch R/leakage and dynamics excluded",
+  "scope": "Netlist and nominal/worst-resistor calculations; not SPICE, USB compliance, pack or bench validation."
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "channels": {
+    "red": "GPIO4",
+    "green": "GPIO5",
+    "blue": "GPIO15"
+  },
+  "topology": "common anode 3V3, active-low GPIO sink, 2.2k series and 100k pullup per channel",
+  "button": "SW3 to charger TS/MR",
+  "limits": "MPN, footprint, brightness and firmware pending"
+}

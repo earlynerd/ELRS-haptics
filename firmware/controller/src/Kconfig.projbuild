@@ -1,0 +1,15 @@
+menu "Haptic bracelet"
+
+config HB_BACKPACK_SOURCE_MAC
+    string "ExpressLRS Backpack source MAC"
+    default "000000000000"
+    help
+        Twelve hexadecimal digits (separators optional). Frames from any other
+        ESP-NOW sender are discarded. All zeroes disable Backpack reception.
+
+config HB_BACKPACK_WIFI_CHANNEL
+    int "ExpressLRS Backpack ESP-NOW channel"
+    range 1 14
+    default 1
+
+endmenu

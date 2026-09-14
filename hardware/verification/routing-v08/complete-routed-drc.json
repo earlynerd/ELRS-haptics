@@ -1,0 +1,160 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-13T11:43:05",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.1",
+    "schematic_parity": [],
+    "source": "complete-input-routed.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [/Eight ring pods/Pod 6 / U24/UART_RX_LOCAL] of J126 on F.Cu",
+                    "pos": {
+                        "x": 113.12,
+                        "y": 96.85
+                    },
+                    "uuid": "393cfaba-3d5a-45f6-ab16-4440c873550c"
+                },
+                {
+                    "description": "Track [/Eight ring pods/Pod 6 / U24/UART_RX_LOCAL] on F.Cu, length 0.0005 mm",
+                    "pos": {
+                        "x": 114.712,
+                        "y": 99.875
+                    },
+                    "uuid": "53a8704e-51fc-4a21-bc66-240e5755285c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [RING_nRESET] on F.Cu, length 1.4000 mm",
+                    "pos": {
+                        "x": 104.1,
+                        "y": 114.0
+                    },
+                    "uuid": "9f49bcc5-e006-4cd9-87cc-cad77ee9418e"
+                },
+                {
+                    "description": "Pad 4 [RING_nRESET] of J125 on F.Cu",
+                    "pos": {
+                        "x": 118.9,
+                        "y": 114.0
+                    },
+                    "uuid": "4e1f9fca-90ec-4739-bda1-01a1b2660843"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [RING_nRESET] on F.Cu, length 1.3875 mm",
+                    "pos": {
+                        "x": 108.9875,
+                        "y": 100.525
+                    },
+                    "uuid": "61ee6d91-8211-4d71-8025-ecdc1c5d2715"
+                },
+                {
+                    "description": "Track [RING_nRESET] on F.Cu, length 1.4000 mm",
+                    "pos": {
+                        "x": 104.1,
+                        "y": 114.0
+                    },
+                    "uuid": "9f49bcc5-e006-4cd9-87cc-cad77ee9418e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/Eight ring pods/Pod 6 / U24/LOCAL_SDA] on F.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 115.1,
+                        "y": 118.7
+                    },
+                    "uuid": "ebb3ccc3-3ff5-4b10-ae5e-0c2ad88c6159"
+                },
+                {
+                    "description": "Track [/Eight ring pods/Pod 6 / U24/LOCAL_SDA] on F.Cu, length 0.0005 mm",
+                    "pos": {
+                        "x": 108.9875,
+                        "y": 101.175
+                    },
+                    "uuid": "8c87cea4-405c-4692-acf9-7a345eaea4ac"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [RING_nRESET] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 105.5,
+                        "y": 114.0
+                    },
+                    "uuid": "14a70f83-a4d9-45ed-a548-ba8e5bfb5e9f"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/Eight ring pods/Pod 6 / U24/LOCAL_SDA] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 115.0,
+                        "y": 118.6
+                    },
+                    "uuid": "1a17288b-3a5a-458a-83cb-adad2e0dd90e"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}

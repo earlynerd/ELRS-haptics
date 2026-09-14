@@ -1,0 +1,105 @@
+{
+  "units": "mm",
+  "revision": "D - eight protected lid-mounted batteries",
+  "regular_shell": {
+    "circumferential": 20,
+    "axial": 38,
+    "thickness": 10.5
+  },
+  "main_shell": {
+    "circumferential": 24,
+    "axial": 64,
+    "thickness": 10.5
+  },
+  "regular_pcb_envelope": [
+    17,
+    35,
+    0.8
+  ],
+  "main_pcb_envelope_before_antenna_relief": [
+    21,
+    61,
+    0.8
+  ],
+  "central_pcb_opening": [
+    7,
+    15
+  ],
+  "lra_body": [
+    4,
+    12,
+    3.5
+  ],
+  "regular_cell_envelope_excluding_lid_adhesive": [
+    14,
+    34,
+    3.5
+  ],
+  "main_cell_envelope_excluding_lid_adhesive": [
+    14,
+    34,
+    3.5
+  ],
+  "battery": {
+    "example_model": "YDL301230 protected",
+    "count": 8,
+    "body_W_L_T": [
+      12,
+      32,
+      3
+    ],
+    "capacity_mAh_each": 90,
+    "regular_allocation_xy": [
+      3,
+      2
+    ],
+    "main_allocation_xy": [
+      5,
+      22
+    ],
+    "connector": "factory plug removed; leads soldered to pads, PCM retained"
+  },
+  "user_wrist_circumference": 195,
+  "nominal_gap_flat_length_estimate": 3.875,
+  "radial_stack": {
+    "inner_wall": [
+      0,
+      1
+    ],
+    "adhesive": [
+      1,
+      1.5
+    ],
+    "lra": [
+      1.5,
+      5
+    ],
+    "pcb": [
+      2,
+      2.8
+    ],
+    "component_height_ceiling": 4.8,
+    "foam_allowance": [
+      5,
+      5.35
+    ],
+    "cell_envelope": [
+      5.8,
+      9.3
+    ],
+    "lid_adhesive": [
+      9.3,
+      9.5
+    ],
+    "outer_cover": [
+      9.5,
+      10.5
+    ]
+  },
+  "limits": [
+    "14 x 34 x 3.5 allocation around the 12 x 32 x 3 body; final lead bends, tolerances and expansion need sample fit.",
+    "Main cell allocation starts 22 mm from antenna end; RF performance is not validated.",
+    "Routing, RF, curvature, clips and link strain are not validated.",
+    "Shell widths and circumference sum are a flat length estimate, not a curved wrist fit."
+  ]
+}

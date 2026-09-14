@@ -1,0 +1,135 @@
+{
+  "retrieved": "2026-09-11",
+  "parts": {
+    "BQ25186": {
+      "file": "BQ25186.pdf",
+      "datasheet_url": "https://www.ti.com/lit/ds/symlink/bq25186.pdf",
+      "manufacturer": "Texas Instruments",
+      "status": "ok",
+      "sha256": "96834a4566939677cf084cef87d88f1534b9369ae80171ee004a7ac6572791c9",
+      "size_bytes": 2093032
+    },
+    "TPS63802": {
+      "file": "TPS63802.pdf",
+      "datasheet_url": "https://www.ti.com/lit/ds/symlink/tps63802.pdf",
+      "manufacturer": "Texas Instruments",
+      "status": "ok",
+      "sha256": "be07deca1231c5493957bc64c2dc1cad5543bff330e49ae41caf3286fd80dca6",
+      "size_bytes": 2466159
+    },
+    "TPS2553": {
+      "file": "TPS2553.pdf",
+      "datasheet_url": "https://www.ti.com/lit/ds/symlink/tps2553.pdf",
+      "manufacturer": "Texas Instruments",
+      "status": "ok",
+      "sha256": "88e453700cea2b263cdb5b44fce1e883e0f6d3b975457f879ac1423eeea42071",
+      "size_bytes": 2091666
+    },
+    "TS5A3159": {
+      "file": "TS5A3159.pdf",
+      "datasheet_url": "https://www.ti.com/lit/ds/symlink/ts5a3159.pdf",
+      "manufacturer": "Texas Instruments",
+      "status": "ok",
+      "sha256": "384d4decc591a99e1fc75146e9bea26029a31a77e8bc0abbf4e5e51c8e871597",
+      "size_bytes": 834457
+    },
+    "TUSB320LAI": {
+      "file": "TUSB320LAI.pdf",
+      "datasheet_url": "https://www.ti.com/lit/ds/symlink/tusb320lai.pdf",
+      "manufacturer": "Texas Instruments",
+      "status": "ok",
+      "sha256": "62f7b3f65338e25ebd6fd46ef04474ba806b06b1cc04bc0b3d7b8191b01ca87d",
+      "size_bytes": 1313743
+    },
+    "TPD2EUSB30": {
+      "file": "TPD2EUSB30.pdf",
+      "datasheet_url": "https://www.ti.com/lit/ds/symlink/tpd2eusb30.pdf",
+      "manufacturer": "Texas Instruments",
+      "status": "ok",
+      "sha256": "a2c0dd845043a5bbfe610f673879c29e38649544385dea51dbe0a4c49df39136",
+      "size_bytes": 2257950
+    },
+    "S-821AA": {
+      "file": "S821AA.pdf",
+      "datasheet_url": "https://www.ablic.com/en/doc/datasheet/battery_protection/S821AA_E.pdf",
+      "manufacturer": "ABLIC",
+      "status": "ok",
+      "retrieved": "2026-09-12",
+      "revision": "1.3_00",
+      "sha256": "17baa338690382cb11987b3e3f8f0214f7456ff536a668a2a0e7b52d95320d81",
+      "size_bytes": 1494112,
+      "notes": "Candidate family only. Positive-side shunt/FET topology checked on p34. Orderable suffix and cell compatibility unselected."
+    },
+    "VLV041235L": {
+      "file": "VLV041235L.pdf",
+      "datasheet_url": "https://www.vybronics.com/wp-content/uploads/datasheet-files/Vybronics-VLV041235L-datasheet.pdf",
+      "manufacturer": "Vybronics",
+      "status": "ok",
+      "retrieved": "2026-09-12",
+      "revision": "A/2",
+      "sha256": "9e064db03824182b917186071e6510bf7c5b61f44133469f198b6f4627145209",
+      "size_bytes": 1119579,
+      "notes": "Candidate. Page 10 contact geometry; PCB lands are a draft engineering allowance, not a vendor footprint."
+    },
+    "BQ298217RUGR": {
+      "file": "BQ2980.pdf",
+      "manufacturer": "Texas Instruments",
+      "datasheet_url": "https://www.ti.com/lit/ds/symlink/bq2980.pdf",
+      "status": "ok",
+      "sha256": "8ce5c0626783444fd7aecb338c15a169ca78c7b06bc5ec4777793f0f916d5cd9",
+      "size_bytes": 1670079,
+      "retrieved": "2026-09-12",
+      "notes": "Candidate only; low-side shunt requires separate battery-negative bus. Not assigned in schematic."
+    },
+    "S-82N1AAA-I6T1U7": {
+      "file": "S82N1A.pdf",
+      "manufacturer": "ABLIC",
+      "datasheet_url": "https://www.ablic.com/en/doc/datasheet/battery_protection/S82N1A_E.pdf",
+      "status": "ok",
+      "sha256": "7fec042126e74ae6ffbcb656b1daf39f3be934784ad77e0b6ebe0dbbd7cae2c0",
+      "size_bytes": 1116166,
+      "retrieved": "2026-09-12",
+      "notes": "Alternative only; low-side protector, not assigned to schematic."
+    },
+    "S-821AAAC-H8T7S": {
+      "file": "S821AA.pdf",
+      "datasheet_url": "https://www.ablic.com/en/doc/datasheet/battery_protection/S821AA_E.pdf",
+      "manufacturer": "ABLIC Inc.",
+      "status": "ok",
+      "retrieved": "2026-09-12",
+      "sha256": "17baa338690382cb11987b3e3f8f0214f7456ff536a668a2a0e7b52d95320d81",
+      "size_bytes": 1494112,
+      "selection": "Historical revision 0.4; removed from populated circuit in revision 0.5."
+    },
+    "CSD17318Q2": {
+      "file": "CSD17318Q2.pdf",
+      "datasheet_url": "https://www.ti.com/lit/ds/symlink/csd17318q2.pdf",
+      "manufacturer": "Texas Instruments",
+      "status": "ok",
+      "retrieved": "2026-09-12",
+      "sha256": "463e47ea8aeac640b50d75c00d6fff96abb3994ef726e9531a9355f03ff72117",
+      "size_bytes": 986986,
+      "selection": "Historical revision 0.4; removed from populated circuit in revision 0.5."
+    },
+    "D1MPC0805DR003FF-T5": {
+      "file": "D1MPC.pdf",
+      "datasheet_url": "https://media.digikey.com/pdf/Data%20Sheets/Thin%20Film%20Tech%20PDFs/D1MPC%20Series.pdf",
+      "manufacturer": "Thin Film Technology Corp.",
+      "status": "ok",
+      "retrieved": "2026-09-12",
+      "sha256": "74508fd9d372d9d941293d1d4a66a9c976862fc3646e389dc113edecb5a5b026",
+      "size_bytes": 888272,
+      "selection": "Historical revision 0.4; removed from populated circuit in revision 0.5."
+    },
+    "YDL301230": {
+      "file": "YDL301230.pdf",
+      "datasheet_url": "https://ydlbattery.com/cdn/shop/files/YDL-301230-90mAh-specification.pdf?v=17344537468879431347",
+      "manufacturer": "YDL Battery",
+      "status": "ok",
+      "retrieved": "2026-09-12",
+      "sha256": "3056e06ed111cc72c61922c4dac37fbeda2a3e9175aff3e303f18091a235b414",
+      "size_bytes": 324957,
+      "selection": "Protected off-board assembly example: eight 90 mAh batteries, PCM retained, 3 x 12 x 32 mm body."
+    }
+  }
+}

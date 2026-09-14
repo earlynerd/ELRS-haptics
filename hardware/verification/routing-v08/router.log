@@ -1,0 +1,60 @@
+2026-09-13 11:34:11.271 INFO   Freerouting v2.4.1 (build-date: 2026-09-03)
+2026-09-13 11:34:12.837 INFO   [2BA1AD\1B1928] Loading board file 'prepared.dsn'...
+2026-09-13 11:34:12.880 INFO   Layer 'In1.Cu' has been automatically configured as a dedicated power plane because it contains a large conduction area covering >50% of the board.
+2026-09-13 11:34:12.880 INFO   Layer 'In2.Cu' has been automatically configured as a dedicated power plane because it contains a large conduction area covering >50% of the board.
+2026-09-13 11:34:12.906 INFO   [2BA1AD\1B1928] Job '2BA1AD\1B1928' started at 2026-09-13T18:34:12.906323700Z.
+2026-09-13 11:34:13.123 INFO   [2BA1AD\1B1928] Fanout stage started on board '41cdd64b5b29299c0b67af0250a2377a' with 58 of 82 SMD pins needing fanout (24 already connected, 0 netless).
+2026-09-13 11:34:13.859 INFO   [2BA1AD\1B1928] Fanout pass #1 on board '55b6e742ccd415bc85fc1e253c4f37ed' completed in 0.66 seconds with 19 SMD pins fanouted, 20 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+2026-09-13 11:34:14.440 INFO   [2BA1AD\1B1928] Fanout pass #2 on board '55b6e742ccd415bc85fc1e253c4f37ed' completed in 0.57 seconds with 15 SMD pins fanouted, 21 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=200).
+2026-09-13 11:34:14.510 INFO   [2BA1AD\1B1928] Fanout stage completed: started with 82 total SMD pins, completed in 1.31 seconds, escaped pins: 39/82 (47.6%), using 1.45 total CPU seconds, 5.08 GB total allocated, and 1277.8 MB peak heap usage.
+2026-09-13 11:34:14.525 INFO   [2BA1AD\1B1928] Auto-routing stage started on board '55b6e742ccd415bc85fc1e253c4f37ed' for 27 unrouted items.
+2026-09-13 11:34:16.555 INFO   [2BA1AD\1B1928] Auto-routing pass #1 on board '55b6e742ccd415bc85fc1e253c4f37ed' was completed in 1.77 seconds with score 499.99 (19 unrouted and 45 violations), using 2.92 CPU seconds and the job allocated 10.96 GB of memory so far.
+2026-09-13 11:34:17.890 INFO   [2BA1AD\1B1928] Auto-routing pass #2 on board '2b1b125f54f90e23af7e558072579d19' was completed in 1.16 seconds with score 535.71 (17 unrouted and 45 violations), using 3.86 CPU seconds and the job allocated 17.05 GB of memory so far.
+2026-09-13 11:34:19.027 INFO   [2BA1AD\1B1928] Auto-routing pass #3 on board '80466c7dfebe4a1e45035fcd3e8f5010' was completed in 0.96 seconds with score 571.42 (15 unrouted and 45 violations), using 5.84 CPU seconds and the job allocated 29.45 GB of memory so far.
+2026-09-13 11:34:20.146 INFO   [2BA1AD\1B1928] Auto-routing pass #4 on board '1e9a4907f0c046697f2e1e714cea7867' was completed in 0.93 seconds with score 571.42 (15 unrouted and 45 violations), using 6.84 CPU seconds and the job allocated 35.72 GB of memory so far.
+2026-09-13 11:34:21.271 INFO   [2BA1AD\1B1928] Auto-routing pass #5 on board '27b4b0c1d09ffb7e95f696d22dce1fff' was completed in 0.94 seconds with score 571.42 (15 unrouted and 45 violations), using 7.84 CPU seconds and the job allocated 41.91 GB of memory so far.
+2026-09-13 11:34:22.395 INFO   [2BA1AD\1B1928] Auto-routing pass #6 on board 'b02f308c1de73c560412518d1e670099' was completed in 0.94 seconds with score 571.42 (15 unrouted and 45 violations), using 8.80 CPU seconds and the job allocated 48.11 GB of memory so far.
+2026-09-13 11:34:23.631 INFO   [2BA1AD\1B1928] Auto-routing pass #7 on board 'b5749cf61a821de3518c72d2f83d76c7' was completed in 1.05 seconds with score 571.42 (15 unrouted and 45 violations), using 9.73 CPU seconds and the job allocated 54.46 GB of memory so far.
+2026-09-13 11:34:24.788 INFO   [2BA1AD\1B1928] Auto-routing pass #8 on board '3a9460f0b91bc12c13b820549d9948ba' was completed in 0.97 seconds with score 589.28 (14 unrouted and 45 violations), using 10.72 CPU seconds and the job allocated 60.80 GB of memory so far.
+2026-09-13 11:34:25.796 INFO   [2BA1AD\1B1928] Auto-routing pass #9 on board 'ac8263d4d5cad0839dd850396fd1ac86' was completed in 0.82 seconds with score 571.42 (15 unrouted and 45 violations), using 11.70 CPU seconds and the job allocated 67.01 GB of memory so far.
+2026-09-13 11:34:27.072 INFO   [2BA1AD\1B1928] Auto-routing pass #10 on board '324067aa36f098fee338616a0bb92091' was completed in 1.09 seconds with score 589.28 (14 unrouted and 45 violations), using 13.59 CPU seconds and the job allocated 80.05 GB of memory so far.
+2026-09-13 11:34:28.247 INFO   [2BA1AD\1B1928] Auto-routing pass #11 on board '9c5aba6a0c9f6ed39d6d34862a84e8d4' was completed in 0.98 seconds with score 589.28 (14 unrouted and 45 violations), using 14.59 CPU seconds and the job allocated 86.48 GB of memory so far.
+2026-09-13 11:34:29.735 INFO   [2BA1AD\1B1928] Auto-routing pass #12 on board 'b5fa4822e7579d717ddaffddcadcb379' was completed in 1.21 seconds with score 589.28 (14 unrouted and 45 violations), using 15.58 CPU seconds and the job allocated 92.57 GB of memory so far.
+2026-09-13 11:34:30.945 INFO   [2BA1AD\1B1928] Auto-routing pass #13 on board 'b5fa4822e7579d717ddaffddcadcb379' was completed in 1.11 seconds with score 571.42 (15 unrouted and 45 violations), using 17.50 CPU seconds and the job allocated 105.44 GB of memory so far.
+2026-09-13 11:34:32.322 INFO   [2BA1AD\1B1928] Auto-routing pass #14 on board '22df3b7c90767f41ff706ff2eaa9df3c' was completed in 1.20 seconds with score 571.42 (15 unrouted and 45 violations), using 18.48 CPU seconds and the job allocated 111.91 GB of memory so far.
+2026-09-13 11:34:33.669 INFO   [2BA1AD\1B1928] Auto-routing pass #15 on board 'e63624614de00308381cd9b21b75934b' was completed in 1.17 seconds with score 571.42 (15 unrouted and 45 violations), using 19.48 CPU seconds and the job allocated 118.11 GB of memory so far.
+2026-09-13 11:34:35.100 INFO   [2BA1AD\1B1928] Auto-routing pass #16 on board 'b5fa4822e7579d717ddaffddcadcb379' was completed in 0.00 seconds with score 589.28 (14 unrouted and 45 violations), using 21.42 CPU seconds and the job allocated 131.45 GB of memory so far.
+2026-09-13 11:34:36.302 INFO   [2BA1AD\1B1928] Auto-routing pass #17 on board 'b5fa4822e7579d717ddaffddcadcb379' was completed in 1.10 seconds with score 571.42 (15 unrouted and 45 violations), using 22.42 CPU seconds and the job allocated 137.68 GB of memory so far.
+2026-09-13 11:34:37.675 INFO   [2BA1AD\1B1928] Auto-routing pass #18 on board 'fc7712cb5bce6305116df0c706e5eb96' was completed in 1.20 seconds with score 571.42 (15 unrouted and 45 violations), using 23.41 CPU seconds and the job allocated 143.91 GB of memory so far.
+2026-09-13 11:34:37.694 INFO   [2BA1AD\1B1928] The router's best score (589.28) has not improved by more than 0.5 points since pass #8. Stopping the auto-router after 18 passes (14 items still unconnected).
+The following connections could not be routed -- please review your design (e.g. check pad clearances, trace width rules, and available routing space):
+  Net 'GND' (5 unrouted connections):
+    - conductionarea  ->  C163-2
+    - C24-2  ->  via
+    - C160-2  ->  conductionarea
+    - conductionarea  ->  J206-2
+    - U24-7  ->  via
+  Net 'POD_3V3' (5 unrouted connections):
+    - C160-1  ->  conductionarea
+    - R20-1  ->  via
+    - conductionarea  ->  U24-9
+    - via  ->  R165-1
+    - J126-1  ->  conductionarea
+  Net '/Eight ring pods/Pod 6 {slash} U24/UART_RX_LOCAL' (1 unrouted connection):
+    - R162-2  ->  U24-18
+  Net '/Eight ring pods/Pod 6 {slash} U24/LOCAL_SCL' (1 unrouted connection):
+    - R21-2  ->  U24-6
+  Net 'RING_nRESET' (1 unrouted connection):
+    - J124-4  ->  via
+  Net 'RING_RETURN' (1 unrouted connection):
+    - J125-6  ->  J124-6
+  Net '/Eight ring pods/Pod 6 {slash} U24/LRA_P' (1 unrouted connection):
+    - M7-1  ->  U9-A3
+2026-09-13 11:34:38.049 INFO   [2BA1AD\1B1928] Auto-routing stage completed: started with 31 unrouted nets, completed in 25.02 seconds, final score: 589.28 (14 unrouted and 45 violations), using 24.38 total CPU seconds, 150.41 GB total allocated, and 1278.8 MB peak heap usage.
+2026-09-13 11:34:38.134 INFO   [2BA1AD\1B1928] Optimization stage started on board '88dba22594baa418fc8a1d04b17b9fd8' with score 571.42 (15 unrouted and 45 violations).
+2026-09-13 11:34:41.417 INFO   [2BA1AD\1B1928] Optimizer pass #1 on board 'ff2463533ccfe828a4ebd080f32ae2d1' was completed in 3.03 seconds with the score of 571.42 (15 unrouted and 45 violations).
+2026-09-13 11:34:41.500 INFO   [2BA1AD\1B1928] Stopping optimizer because the improvement in this pass (0.0000%) is below the threshold (1.00%).
+2026-09-13 11:34:41.584 INFO   [2BA1AD\1B1928] Optimization stage completed: started with score 571.42 (15 unrouted and 45 violations), completed in 3.37 seconds, final score: 571.42 (15 unrouted and 45 violations), using 3.31 total CPU seconds, 24.53 GB total allocated, and 1075.7 MB peak heap usage.
+2026-09-13 11:34:41.585 INFO   [2BA1AD\1B1928] Job '2BA1AD\1B1928' finished with state: COMPLETED (elapsed: 28.68 seconds, finished at UTC: 2026-09-13T18:34:41.585756400Z).
+2026-09-13 11:34:41.641 INFO   Saving output file 'C:\Users\mmsyl\Documents\haptic-bracelet\hardware\verification\routing-v08\prepared.ses' (SES)...
+2026-09-13 11:34:41.643 INFO   Successfully saved output file 'C:\Users\mmsyl\Documents\haptic-bracelet\hardware\verification\routing-v08\prepared.ses' (8926 bytes).

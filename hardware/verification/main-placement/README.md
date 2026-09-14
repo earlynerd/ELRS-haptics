@@ -1,0 +1,1 @@
+Exploratory placement only; never applied to the active board. User took ownership of placement. This candidate predates five-wire reset removal and J100 deletion; do not copy it over hardware/main/main.kicad_pcb.

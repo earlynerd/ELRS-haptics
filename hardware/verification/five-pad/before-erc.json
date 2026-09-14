@@ -1,0 +1,143 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-13T13:10:07",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.1",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/281e434a-bf9f-4327-92ec-86d5315beda6",
+            "violations": [
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 3 [3V3, Power input, Line]",
+                            "pos": {
+                                "x": 0.7366,
+                                "y": 0.5842
+                            },
+                            "uuid": "9f3f5aa3-c76f-4c5f-867e-ecac8180bd5d"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Unconnected wire endpoint",
+                    "items": [
+                        {
+                            "description": "Horizontal Wire, length 0.0762 mm",
+                            "pos": {
+                                "x": 1.0795,
+                                "y": 2.0828
+                            },
+                            "uuid": "4bb0e1d6-262f-4888-a349-75f16c3aea6c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                }
+            ]
+        },
+        {
+            "path": "/Eight ring pods/",
+            "uuid_path": "/281e434a-bf9f-4327-92ec-86d5315beda6/cc6a0e97-9c58-4182-898e-46e3e3bcce7f",
+            "violations": []
+        },
+        {
+            "path": "/Eight ring pods/Pod 0 / U18/",
+            "uuid_path": "/281e434a-bf9f-4327-92ec-86d5315beda6/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/4d6e4dab-563d-4ead-a838-c723bec990f2",
+            "violations": [
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin B2 [NRST, Input, Line]",
+                            "pos": {
+                                "x": 2.6416,
+                                "y": 0.7874
+                            },
+                            "uuid": "13877d43-384d-42a1-86cf-33d4e2ca937e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                }
+            ]
+        },
+        {
+            "path": "/Eight ring pods/Pod 1 / U19/",
+            "uuid_path": "/281e434a-bf9f-4327-92ec-86d5315beda6/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/f7c45dfc-6aba-48aa-90f6-35e5ba6f571c",
+            "violations": []
+        },
+        {
+            "path": "/Eight ring pods/Pod 2 / U20/",
+            "uuid_path": "/281e434a-bf9f-4327-92ec-86d5315beda6/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/43780041-8534-4f57-acb3-38ba096a5740",
+            "violations": []
+        },
+        {
+            "path": "/Eight ring pods/Pod 3 / U21/",
+            "uuid_path": "/281e434a-bf9f-4327-92ec-86d5315beda6/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/700a436b-9c45-4073-8daf-e140143e7e9f",
+            "violations": []
+        },
+        {
+            "path": "/Eight ring pods/Pod 4 / U22/",
+            "uuid_path": "/281e434a-bf9f-4327-92ec-86d5315beda6/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/fb2f3d98-1b34-493b-b75d-8a003e34ee4e",
+            "violations": []
+        },
+        {
+            "path": "/Eight ring pods/Pod 5 / U23/",
+            "uuid_path": "/281e434a-bf9f-4327-92ec-86d5315beda6/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/b6350cc8-aeef-41c0-ae3d-84bdaf8915f4",
+            "violations": []
+        },
+        {
+            "path": "/Eight ring pods/Pod 6 / U24/",
+            "uuid_path": "/281e434a-bf9f-4327-92ec-86d5315beda6/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/015514c6-12d5-4bbf-9d5c-abec361ddcd9",
+            "violations": []
+        },
+        {
+            "path": "/Eight ring pods/Pod 7 / U25/",
+            "uuid_path": "/281e434a-bf9f-4327-92ec-86d5315beda6/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/0d27352e-9d23-4ae6-adb6-2fe5ae2a456c",
+            "violations": []
+        },
+        {
+            "path": "/Charger and regulated supply/",
+            "uuid_path": "/281e434a-bf9f-4327-92ec-86d5315beda6/2aea65ce-3f94-40c4-86ee-85ece296249c",
+            "violations": []
+        },
+        {
+            "path": "/USB-C data and power/",
+            "uuid_path": "/281e434a-bf9f-4327-92ec-86d5315beda6/a7ce5bb5-4a02-4722-9aa5-d07eef99daff",
+            "violations": []
+        },
+        {
+            "path": "/ESP reset, boot and decoupling/",
+            "uuid_path": "/281e434a-bf9f-4327-92ec-86d5315beda6/7f06a5e6-3924-4502-95d4-c23d8ec0544e",
+            "violations": []
+        }
+    ],
+    "source": "haptic-bracelet.kicad_sch"
+}

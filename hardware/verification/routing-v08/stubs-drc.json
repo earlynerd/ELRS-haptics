@@ -1,0 +1,489 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-13T11:37:43",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.1",
+    "schematic_parity": [],
+    "source": "prepared-routed.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 107.6,
+                        "y": 102.6
+                    },
+                    "uuid": "0484b305-728d-45c4-a3ba-25f223dcaa02"
+                },
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 105.35,
+                        "y": 101.55
+                    },
+                    "uuid": "0621d10d-852c-463c-9019-ef0ac56bcf7c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [RING_nRESET] on B.Cu, length 0.6377 mm",
+                    "pos": {
+                        "x": 116.8081,
+                        "y": 113.3491
+                    },
+                    "uuid": "ae012b1e-bd21-472f-94af-2a90567c4849"
+                },
+                {
+                    "description": "Via [RING_nRESET] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 105.5,
+                        "y": 114.0
+                    },
+                    "uuid": "0b7f47b9-9555-4b33-9073-60790fddea2e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [RING_RETURN] on F.Cu, length 1.2500 mm",
+                    "pos": {
+                        "x": 118.9,
+                        "y": 118.0
+                    },
+                    "uuid": "9f92cbdc-22f9-4e2c-963c-021fcbee695b"
+                },
+                {
+                    "description": "Track [RING_RETURN] on F.Cu, length 1.6000 mm",
+                    "pos": {
+                        "x": 104.1,
+                        "y": 118.0
+                    },
+                    "uuid": "fd617986-abe1-4301-a0e1-2d4ad7a2c73a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [/Eight ring pods/Pod 6 / U24/LRA_P] on F.Cu, length 0.5657 mm",
+                    "pos": {
+                        "x": 116.5,
+                        "y": 118.3
+                    },
+                    "uuid": "73a0dd9b-fef3-444c-a3da-db855ef3c207"
+                },
+                {
+                    "description": "Track [/Eight ring pods/Pod 6 / U24/LRA_P] on F.Cu, length 1.0500 mm",
+                    "pos": {
+                        "x": 118.35,
+                        "y": 121.85
+                    },
+                    "uuid": "8ebf0638-4dcb-4bed-9d69-0f40c15bd912"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Items shorting two nets (nets /Eight ring pods/Pod 6 {slash} U24/CELL_TEMP and POD_3V3)",
+            "items": [
+                {
+                    "description": "Track [/Eight ring pods/Pod 6 / U24/CELL_TEMP] on B.Cu, length 2.8420 mm",
+                    "pos": {
+                        "x": 107.7304,
+                        "y": 99.1694
+                    },
+                    "uuid": "bf1059c8-295b-4bba-98c6-a55dfd5d232c"
+                },
+                {
+                    "description": "Via [POD_3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 109.31,
+                        "y": 97.8
+                    },
+                    "uuid": "ca2a03a5-2997-4826-b510-70a352005f93"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets GND and /Eight ring pods/Pod 6 {slash} U24/CELL_TEMP)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 105.35,
+                        "y": 101.55
+                    },
+                    "uuid": "0621d10d-852c-463c-9019-ef0ac56bcf7c"
+                },
+                {
+                    "description": "Track [/Eight ring pods/Pod 6 / U24/CELL_TEMP] on B.Cu, length 3.4715 mm",
+                    "pos": {
+                        "x": 107.7304,
+                        "y": 99.1694
+                    },
+                    "uuid": "e0ac309d-dc0e-41b1-bab1-624985260020"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets GND and /Eight ring pods/Pod 6 {slash} U24/CELL_TEMP)",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 1.3000 mm",
+                    "pos": {
+                        "x": 104.05,
+                        "y": 101.55
+                    },
+                    "uuid": "14ba1c79-9c66-4785-8405-c51e60953f08"
+                },
+                {
+                    "description": "Track [/Eight ring pods/Pod 6 / U24/CELL_TEMP] on F.Cu, length 0.7502 mm",
+                    "pos": {
+                        "x": 105.2757,
+                        "y": 102.3743
+                    },
+                    "uuid": "8c71a968-2a0f-40a9-866c-d4a8f2a75d61"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets /Eight ring pods/Pod 6 {slash} U24/LRA_P and /Eight ring pods/Pod 6 {slash} U24/LOCAL_SCL)",
+            "items": [
+                {
+                    "description": "Via [/Eight ring pods/Pod 6 / U24/LRA_P] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 116.9,
+                        "y": 117.6
+                    },
+                    "uuid": "4b0a60c8-154f-4a75-9dd8-aa09f65bf6b6"
+                },
+                {
+                    "description": "Track [/Eight ring pods/Pod 6 / U24/LOCAL_SCL] on B.Cu, length 3.0316 mm",
+                    "pos": {
+                        "x": 117.326,
+                        "y": 117.2063
+                    },
+                    "uuid": "da2d6661-2acb-4782-bc5f-dd7747f2ed4e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.0960 mm)",
+            "items": [
+                {
+                    "description": "Track [POD_3V3] on F.Cu, length 0.9500 mm",
+                    "pos": {
+                        "x": 109.31,
+                        "y": 96.85
+                    },
+                    "uuid": "79b55d39-bf35-4fc5-a22d-adfd564bb980"
+                },
+                {
+                    "description": "Track [GND] on F.Cu, length 1.3790 mm",
+                    "pos": {
+                        "x": 110.58,
+                        "y": 96.85
+                    },
+                    "uuid": "8a7dc804-08f4-406a-b98f-9c9f26cecb0a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets GND and /Eight ring pods/Pod 6 {slash} U24/CELL_TEMP)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 105.35,
+                        "y": 101.55
+                    },
+                    "uuid": "0621d10d-852c-463c-9019-ef0ac56bcf7c"
+                },
+                {
+                    "description": "Track [/Eight ring pods/Pod 6 / U24/CELL_TEMP] on F.Cu, length 0.7502 mm",
+                    "pos": {
+                        "x": 105.2757,
+                        "y": 102.3743
+                    },
+                    "uuid": "8c71a968-2a0f-40a9-866c-d4a8f2a75d61"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1616 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 117.35,
+                        "y": 118.7
+                    },
+                    "uuid": "4c01c378-b19c-4f60-8d04-583508237a13"
+                },
+                {
+                    "description": "Via [RING_RETURN] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 117.65,
+                        "y": 118.0
+                    },
+                    "uuid": "d3aa3aaf-5f82-48d2-ba26-8631772d2200"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets GND and POD_3V3)",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 1.3790 mm",
+                    "pos": {
+                        "x": 110.58,
+                        "y": 96.85
+                    },
+                    "uuid": "8a7dc804-08f4-406a-b98f-9c9f26cecb0a"
+                },
+                {
+                    "description": "Via [POD_3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 109.31,
+                        "y": 97.8
+                    },
+                    "uuid": "ca2a03a5-2997-4826-b510-70a352005f93"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets POD_3V3 and GND)",
+            "items": [
+                {
+                    "description": "Via [POD_3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 109.31,
+                        "y": 97.8
+                    },
+                    "uuid": "ca2a03a5-2997-4826-b510-70a352005f93"
+                },
+                {
+                    "description": "Track [GND] on F.Cu, length 1.8300 mm",
+                    "pos": {
+                        "x": 109.6049,
+                        "y": 97.8251
+                    },
+                    "uuid": "ea4e83f1-32c2-4767-bc5d-34ad01ccd908"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets GND and /Eight ring pods/Pod 6 {slash} U24/CELL_TEMP)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 105.35,
+                        "y": 101.55
+                    },
+                    "uuid": "0621d10d-852c-463c-9019-ef0ac56bcf7c"
+                },
+                {
+                    "description": "Via [/Eight ring pods/Pod 6 / U24/CELL_TEMP] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 105.2757,
+                        "y": 101.6241
+                    },
+                    "uuid": "dc851e33-7a18-49e3-bf7e-78816119b688"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets POD_3V3 and GND)",
+            "items": [
+                {
+                    "description": "Track [POD_3V3] on F.Cu, length 0.9500 mm",
+                    "pos": {
+                        "x": 109.31,
+                        "y": 96.85
+                    },
+                    "uuid": "79b55d39-bf35-4fc5-a22d-adfd564bb980"
+                },
+                {
+                    "description": "Track [GND] on F.Cu, length 1.8300 mm",
+                    "pos": {
+                        "x": 109.6049,
+                        "y": 97.8251
+                    },
+                    "uuid": "ea4e83f1-32c2-4767-bc5d-34ad01ccd908"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets GND and /Eight ring pods/Pod 6 {slash} U24/CELL_TEMP)",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 1.3000 mm",
+                    "pos": {
+                        "x": 104.05,
+                        "y": 101.55
+                    },
+                    "uuid": "14ba1c79-9c66-4785-8405-c51e60953f08"
+                },
+                {
+                    "description": "Via [/Eight ring pods/Pod 6 / U24/CELL_TEMP] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 105.2757,
+                        "y": 101.6241
+                    },
+                    "uuid": "dc851e33-7a18-49e3-bf7e-78816119b688"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [RING_nRESET] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 105.5,
+                        "y": 114.0
+                    },
+                    "uuid": "0b7f47b9-9555-4b33-9073-60790fddea2e"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [RING_RETURN] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 104.1,
+                        "y": 119.6
+                    },
+                    "uuid": "53aeb33c-2e95-4f1f-a970-2c8b8b93695e"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [RING_RETURN] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 117.65,
+                        "y": 118.0
+                    },
+                    "uuid": "d3aa3aaf-5f82-48d2-ba26-8631772d2200"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/Eight ring pods/Pod 6 / U24/LRA_P] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 118.35,
+                        "y": 122.9
+                    },
+                    "uuid": "d02d90e7-27e7-4ad2-9c7c-28e9988a2dd0"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Drilled hole too close to other hole (board setup constraints min 0.1995 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Via [GND] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 105.35,
+                        "y": 101.55
+                    },
+                    "uuid": "0621d10d-852c-463c-9019-ef0ac56bcf7c"
+                },
+                {
+                    "description": "Via [/Eight ring pods/Pod 6 / U24/CELL_TEMP] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 105.2757,
+                        "y": 101.6241
+                    },
+                    "uuid": "dc851e33-7a18-49e3-bf7e-78816119b688"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        }
+    ]
+}

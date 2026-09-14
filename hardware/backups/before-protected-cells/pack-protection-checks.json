@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "components": 268,
+  "pinmaps": {
+    "S-821AAAC-H8T7S": {
+      "A1": "VSS",
+      "A2": "VDD",
+      "B1": "TH",
+      "B2": "CO",
+      "C1": "PS",
+      "C2": "DO",
+      "D1": "VINI",
+      "D2": "VM"
+    },
+    "CSD17318Q2": {
+      "1": "D",
+      "2": "D",
+      "3": "G",
+      "4": "S",
+      "5": "D",
+      "6": "D",
+      "7": "S",
+      "8": "D"
+    }
+  },
+  "trips": {
+    "discharge": {
+      "nominal_A": 1.9333333333333331,
+      "min_25C_A": 1.584158415841584,
+      "max_25C_A": 2.2895622895622894,
+      "min_minus40_to85C_A": 1.412324998973601,
+      "max_minus40_to85C_A": 2.470075709512329,
+      "nominal_delay_ms": 128
+    },
+    "short": {
+      "nominal_A": 6.833333333333333,
+      "min_25C_A": 5.115511551155115,
+      "max_25C_A": 8.585858585858587,
+      "min_minus40_to85C_A": 5.090938949788562,
+      "max_minus40_to85C_A": 8.62834665651567,
+      "nominal_delay_ms": 0.28
+    },
+    "charge": {
+      "nominal_A": 6.666666666666667,
+      "min_25C_A": 6.270627062706271,
+      "max_25C_A": 7.070707070707071,
+      "min_minus40_to85C_A": 6.0762819723282835,
+      "max_minus40_to85C_A": 7.274880514317134,
+      "nominal_delay_ms": 32
+    }
+  },
+  "shunt_loss_at_2A_W": 0.012,
+  "fet_pair_loss_at_2A_25C_using_2p5V_max_Rds_W": 0.24,
+  "protector_Iq_typ_uA": 6,
+  "protector_Iq_max_25C_uA": 10,
+  "protector_Iq_max_minus40_to85C_uA": 14,
+  "scope": "KiCad-exported topology, symbol/footprint pin maps and static calculations. No transient simulation, PCB routing, load/cell qualification or physical fault testing."
+}

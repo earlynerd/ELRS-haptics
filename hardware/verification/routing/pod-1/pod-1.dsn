@@ -1,0 +1,471 @@
+(pcb "C:\Users\mmsyl\Documents\haptic-bracelet\hardware\verification\routing\pod-1\pod-1.dsn"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "10.0.1")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer In1.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (layer In2.Cu
+      (type signal)
+      (property
+        (index 2)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 3)
+      )
+    )
+    (boundary
+      (path pcb 0 91880.0 -48820.0 91880.0 -82180.0 91180.0 -82880.0 75820.0 -82880.0 75120.0 -82180.0 75120.0 -48820.0 75820.0 -48120.0 91180.0 -48120.0 91880.0 -48820.0)
+    )
+    (plane GND (polygon In1.Cu 0  75000 -48000  92000 -48000  92000 -83000  75000 -83000
+            75000 -48000) (window (polygon In1.Cu 0 78710.0 -58210.0 78710.0 -72790.0 79210.0 -73290.0 85790.0 -73290.0 86290.0 -72790.0 86290.0 -58210.0 85790.0 -57710.0 79210.0 -57710.0 78710.0 -58210.0)))
+    (plane POD_3V3 (polygon In2.Cu 0  75000 -48000  92000 -48000  92000 -83000  75000 -83000
+            75000 -48000) (window (polygon In2.Cu 0 78710.0 -58210.0 78710.0 -72790.0 79210.0 -73290.0 85790.0 -73290.0 86290.0 -72790.0 86290.0 -58210.0 85790.0 -57710.0 79210.0 -57710.0 78710.0 -58210.0)))
+    (keepout "" (polygon signal 0 78880.0 -58380.0 78880.0 -72620.0 79380.0 -73120.0 85620.0 -73120.0 86120.0 -72620.0 86120.0 -58380.0 85620.0 -57880.0 79380.0 -57880.0 78880.0 -58380.0))
+    (via "Via[0-3]_450:200_um")
+    (rule
+      (width 150)
+      (clearance 150)
+      (clearance 37.5 (type smd_smd))
+    )
+  )
+  (placement
+    (component Resistor_SMD:R_0402_1005Metric
+      (place R11 86600 -56200 front 0 (PN 4.7k))
+      (place R112 82300 -73800 front 0 (PN 100k))
+      (place R10 84200 -56200 front 0 (PN 4.7k))
+      (place R110 80300 -73800 front 0 (PN 0))
+    )
+    (component Resistor_SMD:R_0402_1005Metric::1
+      (place R111 86750 -62000 front 90 (PN 33))
+      (place R113 87750 -63250 front 90 (PN 100k))
+      (place R115 87750 -65250 front 90 (PN "10k 1%"))
+    )
+    (component Capacitor_SMD:C_0805_2012Metric
+      (place C113 89300 -80300 front 0 (PN "22u 10V X5R"))
+      (place C111 89300 -77100 front 0 (PN 10u))
+    )
+    (component HapticBracelet:WirePads_6_P2mm
+      (place J104 76450 -64500 front 0 (PN "CHAIN IN"))
+      (place J105 90550 -62000 front 0 (PN "CHAIN OUT"))
+    )
+    (component Capacitor_SMD:C_0402_1005Metric
+      (place C9 83400 -52500 front 0 (PN 100n))
+      (place C110 87600 -75300 front 0 (PN 100n))
+      (place C10 85400 -54000 front 0 (PN 1u))
+      (place C8 81400 -54000 front 0 (PN 100n))
+    )
+    (component HapticBracelet:DRV2625_YFF_9_0.4mm
+      (place U4 83400 -54000 front 0 (PN DRV2625))
+    )
+    (component HapticBracelet:Vybronics_VLV041235L_FPC_Contact_Draft
+      (place M2 90280 -71500 front 90 (PN VLV041235L))
+    )
+    (component HapticBracelet:WirePads_2_P2mm
+      (place J107 89500 -52500 front 0 (PN "NTC (optional)"))
+      (place J201 77000 -52500 front 0 (PN "PROTECTED CELL 90mAh"))
+    )
+    (component Capacitor_SMD:C_0402_1005Metric::1
+      (place C112 88750 -65250 front 90 (PN 10n))
+    )
+    (component "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+      (place U19 82500 -78000 front 0 (PN M2003FC1AE))
+    )
+    (component HapticBracelet:WirePads_5_P1.27mm
+      (place J106 83500 -49700 front 90 (PN "ICE / INITIAL FLASH"))
+    )
+    (component HapticBracelet:Fuse_Littelfuse_467_0603
+      (place F101 78000 -56000 front 0 (PN "250mA FAST"))
+    )
+  )
+  (library
+    (image Resistor_SMD:R_0402_1005Metric
+      (outline (polygon signal 0 1045.0 -585.0 -1045.0 -585.0 -1045.0 585.0 1045.0 585.0))
+      (outline (path signal 120  -153.641 380  153.641 380))
+      (outline (path signal 120  -153.641 -380  153.641 -380))
+      (outline (path signal 100  -525 270  525 270  525 -270  -525 -270  -525 270))
+      (pin RoundRect[T]Pad_540.000000x640.000000_135.514000_um_0.000000_0 1 -510 0)
+      (pin RoundRect[T]Pad_540.000000x640.000000_135.514000_um_0.000000_0 2 510 0)
+    )
+    (image Resistor_SMD:R_0402_1005Metric::1
+      (outline (polygon signal 0 -1045.0 -585.0 -1045.0 585.0 1045.0 585.0 1045.0 -585.0))
+      (outline (path signal 120  -153.641 380  153.641 380))
+      (outline (path signal 120  -153.641 -380  153.641 -380))
+      (outline (path signal 100  -525 270  -525 -270  525 -270  525 270  -525 270))
+      (pin RoundRect[T]Pad_540.000000x640.000000_135.514000_um_0.000000_0 1 -510 0)
+      (pin RoundRect[T]Pad_540.000000x640.000000_135.514000_um_0.000000_0 2 510 0)
+    )
+    (image Capacitor_SMD:C_0805_2012Metric
+      (outline (polygon signal 0 1815.0 -1095.0 -1815.0 -1095.0 -1815.0 1095.0 1815.0 1095.0))
+      (outline (path signal 120  -261.252 735  261.252 735))
+      (outline (path signal 120  -261.252 -735  261.252 -735))
+      (outline (path signal 100  -1000 625  1000 625  1000 -625  -1000 -625  -1000 625))
+      (pin RoundRect[T]Pad_1000.000000x1450.000000_250.951000_um_0.000000_0 1 -950 0)
+      (pin RoundRect[T]Pad_1000.000000x1450.000000_250.951000_um_0.000000_0 2 950 0)
+    )
+    (image HapticBracelet:WirePads_6_P2mm
+      (outline (polygon signal 0 1015.0 -6115.0 -1015.0 -6115.0 -1015.0 6115.0 1015.0 6115.0))
+      (outline (path signal 100  -700 5800  700 5800  700 -5800  -700 -5800  -700 5800))
+      (pin RoundRect[T]Pad_1400.000000x1600.000000_210.799000_um_0.000000_0 1 0 5000)
+      (pin RoundRect[T]Pad_1400.000000x1600.000000_210.799000_um_0.000000_0 2 0 3000)
+      (pin RoundRect[T]Pad_1400.000000x1600.000000_210.799000_um_0.000000_0 3 0 1000)
+      (pin RoundRect[T]Pad_1400.000000x1600.000000_210.799000_um_0.000000_0 4 0 -1000)
+      (pin RoundRect[T]Pad_1400.000000x1600.000000_210.799000_um_0.000000_0 5 0 -3000)
+      (pin RoundRect[T]Pad_1400.000000x1600.000000_210.799000_um_0.000000_0 6 0 -5000)
+    )
+    (image Capacitor_SMD:C_0402_1005Metric
+      (outline (polygon signal 0 1025.0 -575.0 -1025.0 -575.0 -1025.0 575.0 1025.0 575.0))
+      (outline (path signal 120  -107.836 360  107.836 360))
+      (outline (path signal 120  -107.836 -360  107.836 -360))
+      (outline (path signal 100  -500 250  500 250  500 -250  -500 -250  -500 250))
+      (pin RoundRect[T]Pad_560.000000x620.000000_140.533000_um_0.000000_0 1 -480 0)
+      (pin RoundRect[T]Pad_560.000000x620.000000_140.533000_um_0.000000_0 2 480 0)
+    )
+    (image HapticBracelet:DRV2625_YFF_9_0.4mm
+      (outline (polygon signal 0 1064.0 -995.5 -1064.0 -995.5 -1064.0 995.5 1064.0 995.5))
+      (outline (path signal 100  -749 680.5  749 680.5  749 -680.5  -749 -680.5  -749 680.5))
+      (pin Round[T]Pad_225.000000_um A1 -400 400)
+      (pin Round[T]Pad_225.000000_um A2 0 400)
+      (pin Round[T]Pad_225.000000_um A3 400 400)
+      (pin Round[T]Pad_225.000000_um B1 -400 0)
+      (pin Round[T]Pad_225.000000_um B2 0 0)
+      (pin Round[T]Pad_225.000000_um B3 400 0)
+      (pin Round[T]Pad_225.000000_um C1 -400 -400)
+      (pin Round[T]Pad_225.000000_um C2 0 -400)
+      (pin Round[T]Pad_225.000000_um C3 400 -400)
+    )
+    (image HapticBracelet:Vybronics_VLV041235L_FPC_Contact_Draft
+      (outline (path signal 100  500 900  500 -900  1300 -900  1300 900  500 900))
+      (outline (path signal 100  -1300 900  -1300 -900  -500 -900  -500 900  -1300 900))
+      (pin RoundRect[T]Pad_1000.000000x2200.000000_100.381000_um_0.000000_0 1 -900 0)
+      (pin RoundRect[T]Pad_1000.000000x2200.000000_100.381000_um_0.000000_0 2 900 0)
+    )
+    (image HapticBracelet:WirePads_2_P2mm
+      (outline (polygon signal 0 1015.0 -2115.0 -1015.0 -2115.0 -1015.0 2115.0 1015.0 2115.0))
+      (outline (path signal 100  -700 1800  700 1800  700 -1800  -700 -1800  -700 1800))
+      (pin RoundRect[T]Pad_1400.000000x1600.000000_210.799000_um_0.000000_0 1 0 1000)
+      (pin RoundRect[T]Pad_1400.000000x1600.000000_210.799000_um_0.000000_0 2 0 -1000)
+    )
+    (image Capacitor_SMD:C_0402_1005Metric::1
+      (outline (polygon signal 0 -1025.0 -575.0 -1025.0 575.0 1025.0 575.0 1025.0 -575.0))
+      (outline (path signal 120  -107.836 360  107.836 360))
+      (outline (path signal 120  -107.836 -360  107.836 -360))
+      (outline (path signal 100  -500 250  -500 -250  500 -250  500 250  -500 250))
+      (pin RoundRect[T]Pad_560.000000x620.000000_140.533000_um_0.000000_0 1 -480 0)
+      (pin RoundRect[T]Pad_560.000000x620.000000_140.533000_um_0.000000_0 2 480 0)
+    )
+    (image "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+      (outline (polygon signal 0 2565.0 3495.0 3965.0 3495.0 3965.0 -3495.0 2565.0 -3495.0 2565.0 -3615.0 -2565.0 -3615.0 -2565.0 -3495.0 -3965.0 -3495.0 -3965.0 3495.0 -2565.0 3495.0 -2565.0 3615.0 2565.0 3615.0))
+      (outline (path signal 120  -2310 3385  2310 3385))
+      (outline (path signal 120  2310 -3385  -2310 -3385))
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 1 -2862.5 2925)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 2 -2862.5 2275)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 3 -2862.5 1625)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 4 -2862.5 975)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 5 -2862.5 325)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 6 -2862.5 -325)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 7 -2862.5 -975)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 8 -2862.5 -1625)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 9 -2862.5 -2275)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 10 -2862.5 -2925)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 11 2862.5 -2925)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 12 2862.5 -2275)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 13 2862.5 -1625)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 14 2862.5 -975)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 15 2862.5 -325)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 16 2862.5 325)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 17 2862.5 975)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 18 2862.5 1625)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 19 2862.5 2275)
+      (pin RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0 20 2862.5 2925)
+    )
+    (image HapticBracelet:WirePads_5_P1.27mm
+      (outline (polygon signal 0 -740.0 -3305.0 -740.0 3305.0 740.0 3305.0 740.0 -3305.0))
+      (outline (path signal 100  -425 2990  -425 -2990  425 -2990  425 2990  -425 2990))
+      (pin RoundRect[T]Pad_850.000000x900.000000_127.985000_um_0.000000_0 1 0 2540)
+      (pin RoundRect[T]Pad_850.000000x900.000000_127.985000_um_0.000000_0 2 0 1270)
+      (pin RoundRect[T]Pad_850.000000x900.000000_127.985000_um_0.000000_0 3 0 0)
+      (pin RoundRect[T]Pad_850.000000x900.000000_127.985000_um_0.000000_0 4 0 -1270)
+      (pin RoundRect[T]Pad_850.000000x900.000000_127.985000_um_0.000000_0 5 0 -2540)
+    )
+    (image HapticBracelet:Fuse_Littelfuse_467_0603
+      (outline (polygon signal 0 1615.0 -915.0 -1615.0 -915.0 -1615.0 915.0 1615.0 915.0))
+      (outline (path signal 100  -800 406.5  800 406.5  800 -406.5  -800 -406.5  -800 406.5))
+      (pin Rect[T]Pad_762.000000x1090.000000_um 1 -891 0)
+      (pin Rect[T]Pad_762.000000x1090.000000_um 2 891 0)
+    )
+    (padstack Round[T]Pad_225.000000_um
+      (shape (circle F.Cu 225))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_540.000000x640.000000_135.514000_um_0.000000_0
+      (shape (polygon F.Cu 0  -270.514 185  -260.199 236.859  -230.823 280.823  -186.859 310.199
+            -135 320.514  135 320.514  186.859 310.199  230.823 280.823
+            260.199 236.859  270.514 185  270.514 -185  260.199 -236.859
+            230.823 -280.823  186.859 -310.199  135 -320.514  -135 -320.514
+            -186.859 -310.199  -230.823 -280.823  -260.199 -236.859  -270.514 -185
+            -270.514 185))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_560.000000x620.000000_140.533000_um_0.000000_0
+      (shape (polygon F.Cu 0  -280.533 170  -269.836 223.78  -239.372 269.372  -193.78 299.836
+            -139.999 310.532  140 310.533  193.78 299.836  239.372 269.372
+            269.836 223.78  280.532 169.999  280.533 -170  269.836 -223.78
+            239.372 -269.372  193.78 -299.836  139.999 -310.532  -140 -310.533
+            -193.78 -299.836  -239.372 -269.372  -269.836 -223.78  -280.532 -169.999
+            -280.533 170))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_850.000000x900.000000_127.985000_um_0.000000_0
+      (shape (polygon F.Cu 0  -425.485 322.5  -415.743 371.478  -387.999 412.999  -346.478 440.743
+            -297.499 450.484  297.5 450.485  346.478 440.743  387.999 412.999
+            415.743 371.478  425.484 322.499  425.485 -322.5  415.743 -371.478
+            387.999 -412.999  346.478 -440.743  297.499 -450.484  -297.5 -450.485
+            -346.478 -440.743  -387.999 -412.999  -415.743 -371.478  -425.484 -322.499
+            -425.485 322.5))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_1000.000000x2200.000000_100.381000_um_0.000000_0
+      (shape (polygon F.Cu 0  -500.381 1000  -492.74 1038.41  -470.98 1070.98  -438.414 1092.74
+            -399.999 1100.38  400 1100.38  438.414 1092.74  470.98 1070.98
+            492.74 1038.41  500.38 999.999  500.381 -1000  492.74 -1038.41
+            470.98 -1070.98  438.414 -1092.74  399.999 -1100.38  -400 -1100.38
+            -438.414 -1092.74  -470.98 -1070.98  -492.74 -1038.41  -500.38 -999.999
+            -500.381 1000))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_1000.000000x1450.000000_250.951000_um_0.000000_0
+      (shape (polygon F.Cu 0  -500.951 475  -481.848 571.035  -427.449 652.449  -346.035 706.848
+            -249.999 725.95  250 725.951  346.035 706.848  427.449 652.449
+            481.848 571.035  500.95 474.999  500.951 -475  481.848 -571.035
+            427.449 -652.449  346.035 -706.848  249.999 -725.95  -250 -725.951
+            -346.035 -706.848  -427.449 -652.449  -481.848 -571.035  -500.95 -474.999
+            -500.951 475))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_1400.000000x1600.000000_210.799000_um_0.000000_0
+      (shape (polygon F.Cu 0  -700.799 590  -684.753 670.669  -639.057 739.057  -570.669 784.753
+            -489.999 800.798  490 800.799  570.669 784.753  639.057 739.057
+            684.753 670.669  700.798 589.999  700.799 -590  684.753 -670.669
+            639.057 -739.057  570.669 -784.753  489.999 -800.798  -490 -800.799
+            -570.669 -784.753  -639.057 -739.057  -684.753 -670.669  -700.798 -589.999
+            -700.799 590))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_1475.000000x400.000000_100.381000_um_0.000000_0
+      (shape (polygon F.Cu 0  -737.881 100  -730.24 138.414  -708.48 170.98  -675.914 192.74
+            -637.499 200.38  637.5 200.381  675.914 192.74  708.48 170.98
+            730.24 138.414  737.88 99.999  737.881 -100  730.24 -138.414
+            708.48 -170.98  675.914 -192.74  637.499 -200.38  -637.5 -200.381
+            -675.914 -192.74  -708.48 -170.98  -730.24 -138.414  -737.88 -99.999
+            -737.881 100))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_762.000000x1090.000000_um
+      (shape (rect F.Cu -381 -545 381 545))
+      (attach off)
+    )
+    (padstack "Via[0-3]_450:200_um"
+      (shape (circle F.Cu 450))
+      (shape (circle In1.Cu 450))
+      (shape (circle In2.Cu 450))
+      (shape (circle B.Cu 450))
+      (attach off)
+    )
+  )
+  (network
+    (net POD_3V3
+      (pins R11-1 C113-1 R112-1 J104-1 R10-1 U4-B2 U4-C2 R113-1 C111-1 J105-1 U19-9
+        R115-1 C110-1 C10-1 C8-1 J106-1)
+    )
+    (net "/Eight ring pods/Pod 1 {slash} U19/LOCAL_SCL"
+      (pins R11-2 U4-C1 U19-6)
+    )
+    (net "/Eight ring pods/Pod 1 {slash} U19/UART_TX_LOCAL"
+      (pins R111-1 R113-2 U19-8 J106-3)
+    )
+    (net RING_D2
+      (pins R111-2 J105-3)
+    )
+    (net GND
+      (pins C113-2 J104-2 C9-2 U4-B3 J107-2 J201-2 C111-2 C112-2 J105-2 U19-7 C110-2
+        C10-2 C8-2 J106-2)
+    )
+    (net "/Eight ring pods/Pod 1 {slash} U19/UART_RX_LOCAL"
+      (pins R112-2 R110-2 U19-18 J106-4)
+    )
+    (net RING_D1
+      (pins J104-3 R110-1)
+    )
+    (net RING_nRESET
+      (pins J104-4 J105-4 U19-4 J106-5)
+    )
+    (net VBAT
+      (pins J104-5 J105-5 F101-2)
+    )
+    (net RING_RETURN
+      (pins J104-6 J105-6)
+    )
+    (net "/Eight ring pods/Pod 1 {slash} U19/LOCAL_SDA"
+      (pins R10-2 U4-B1 U19-5)
+    )
+    (net "/Eight ring pods/Pod 1 {slash} U19/DRV_REG"
+      (pins C9-1 U4-A2)
+    )
+    (net "unconnected-(U4-TRIG{slash}INTZ-PadA1)"
+      (pins U4-A1)
+    )
+    (net "/Eight ring pods/Pod 1 {slash} U19/LRA_P"
+      (pins U4-A3 M2-1)
+    )
+    (net "/Eight ring pods/Pod 1 {slash} U19/LRA_N"
+      (pins U4-C3 M2-2)
+    )
+    (net "/Eight ring pods/Pod 1 {slash} U19/CELL_TEMP"
+      (pins J107-1 C112-1 U19-2 R115-2)
+    )
+    (net "/Eight ring pods/Pod 1 {slash} U19/CELL_POS"
+      (pins J201-1 F101-1)
+    )
+    (net "unconnected-(U19-PB1-Pad1)"
+      (pins U19-1)
+    )
+    (net "unconnected-(U19-PB3-Pad3)"
+      (pins U19-3)
+    )
+    (net "unconnected-(U19-PC14-Pad10)"
+      (pins U19-10)
+    )
+    (net "unconnected-(U19-PB15-Pad11)"
+      (pins U19-11)
+    )
+    (net "unconnected-(U19-PB14-Pad12)"
+      (pins U19-12)
+    )
+    (net "unconnected-(U19-PB13-Pad13)"
+      (pins U19-13)
+    )
+    (net "unconnected-(U19-PB12-Pad14)"
+      (pins U19-14)
+    )
+    (net "unconnected-(U19-PB7-Pad15)"
+      (pins U19-15)
+    )
+    (net "unconnected-(U19-PB8-Pad16)"
+      (pins U19-16)
+    )
+    (net "unconnected-(U19-PB9-Pad17)"
+      (pins U19-17)
+    )
+    (net "unconnected-(U19-PB11-Pad19)"
+      (pins U19-19)
+    )
+    (net "unconnected-(U19-PB0-Pad20)"
+      (pins U19-20)
+    )
+    (class kicad_default  "/Eight ring pods/Pod 1 {slash} U19/CELL_TEMP"
+      "/Eight ring pods/Pod 1 {slash} U19/DRV_REG" "/Eight ring pods/Pod 1 {slash} U19/LOCAL_SCL"
+      "/Eight ring pods/Pod 1 {slash} U19/LOCAL_SDA" "/Eight ring pods/Pod 1 {slash} U19/LRA_N"
+      "/Eight ring pods/Pod 1 {slash} U19/LRA_P" "/Eight ring pods/Pod 1 {slash} U19/UART_RX_LOCAL"
+      "/Eight ring pods/Pod 1 {slash} U19/UART_TX_LOCAL"   RING_D1
+      RING_D2 RING_RETURN RING_nRESET  "unconnected-(U19-PB0-Pad20)" "unconnected-(U19-PB1-Pad1)"
+      "unconnected-(U19-PB11-Pad19)" "unconnected-(U19-PB12-Pad14)" "unconnected-(U19-PB13-Pad13)"
+      "unconnected-(U19-PB14-Pad12)" "unconnected-(U19-PB15-Pad11)" "unconnected-(U19-PB3-Pad3)"
+      "unconnected-(U19-PB7-Pad15)" "unconnected-(U19-PB8-Pad16)" "unconnected-(U19-PB9-Pad17)"
+      "unconnected-(U19-PC14-Pad10)" "unconnected-(U4-TRIG{slash}INTZ-PadA1)"
+      (circuit
+        (use_via "Via[0-3]_450:200_um")
+      )
+      (rule
+        (width 150)
+        (clearance 150)
+      )
+    )
+    (class battery_bus VBAT "/Eight ring pods/Pod 1 {slash} U19/CELL_POS" (circuit (use_via "Via[0-3]_450:200_um")) (rule (width 400) (clearance 150)))
+    (class plane_rails GND POD_3V3 (circuit (use_via "Via[0-3]_450:200_um")) (rule (width 250) (clearance 150)))
+  )
+  (wiring
+    (wire (path F.Cu 300  77000 -53500  78050 -53500)(net GND)(type fix))
+    (wire (path F.Cu 300  89500 -53500  90550 -53500)(net GND)(type fix))
+    (wire (path F.Cu 300  90550 -59000  89500 -59000)(net GND)(type fix))
+    (wire (path F.Cu 300  90550 -57000  89500 -57000)(net POD_3V3)(type fix))
+    (wire (path F.Cu 300  76450 -61500  77500 -61500)(net GND)(type fix))
+    (wire (path F.Cu 300  76450 -59500  77500 -59500)(net POD_3V3)(type fix))
+    (wire (path F.Cu 150  90250 -80300  91100 -80300)(net GND)(type fix))
+    (wire (path F.Cu 150  88350 -80300  89200 -80300)(net POD_3V3)(type fix))
+    (wire (path F.Cu 150  90250 -77100  91100 -77100)(net GND)(type fix))
+    (wire (path F.Cu 150  88350 -77100  89200 -77100)(net POD_3V3)(type fix))
+    (wire (path F.Cu 300  82230 -49700  82230 -50450)(net GND)(type fix))
+    (wire (path F.Cu 300  80960 -49700  80960 -50450)(net POD_3V3)(type fix))
+    (wire (path F.Cu 150  79637.5 -80275  80687.5 -80275)(net POD_3V3)(type fix))
+    (wire (path F.Cu 150  79637.5 -78975  80687.5 -78975)(net GND)(type fix))
+    (wire (path F.Cu 150  83880 -52500  84480 -52500)(net GND)(type fix))
+    (wire (path F.Cu 150  81880 -54000  81880 -54650)(net GND)(type fix))
+    (wire (path F.Cu 150  80920 -54000  80320 -54000)(net POD_3V3)(type fix))
+    (wire (path F.Cu 150  88750 -64770  89400 -64770)(net GND)(type fix))
+    (wire (path F.Cu 150  88080 -75300  88680 -75300)(net GND)(type fix))
+    (wire (path F.Cu 150  87120 -75300  86520 -75300)(net POD_3V3)(type fix))
+    (wire (path F.Cu 150  85880 -54000  86480 -54000)(net GND)(type fix))
+    (wire (path F.Cu 150  84920 -54000  84920 -54650)(net POD_3V3)(type fix))
+    (wire (path F.Cu 150  81790 -73800  81790 -74450)(net POD_3V3)(type fix))
+    (wire (path F.Cu 150  86090 -56200  85490 -56200)(net POD_3V3)(type fix))
+    (wire (path F.Cu 150  87750 -65760  87750 -66360)(net POD_3V3)(type fix))
+    (wire (path F.Cu 150  83690 -56200  83090 -56200)(net POD_3V3)(type fix))
+    (wire (path F.Cu 150  87750 -63760  88400 -63760)(net POD_3V3)(type fix))
+    (wire (path F.Cu 100  83400 -54400  83400 -54850)(net POD_3V3)(type fix))
+    (wire (path F.Cu 100  83800 -54000  84250 -54000)(net GND)(type fix))
+    (wire (path F.Cu 100  82400 -53700  82400 -53100)(net "/Eight ring pods/Pod 1 {slash} U19/LOCAL_SDA")(type fix))
+    (wire (path F.Cu 100  82700 -54000  82400 -53700)(net "/Eight ring pods/Pod 1 {slash} U19/LOCAL_SDA")(type fix))
+    (wire (path F.Cu 100  83000 -54000  82700 -54000)(net "/Eight ring pods/Pod 1 {slash} U19/LOCAL_SDA")(type fix))
+    (wire (path F.Cu 100  83400 -54000  83400 -54400)(net POD_3V3)(type fix))
+    (via "Via[0-3]_450:200_um"  78050 -53500 (net GND)(type fix))
+    (via "Via[0-3]_450:200_um"  90550 -53500 (net GND)(type fix))
+    (via "Via[0-3]_450:200_um"  89500 -59000 (net GND)(type fix))
+    (via "Via[0-3]_450:200_um"  89500 -57000 (net POD_3V3)(type fix))
+    (via "Via[0-3]_450:200_um"  77500 -61500 (net GND)(type fix))
+    (via "Via[0-3]_450:200_um"  77500 -59500 (net POD_3V3)(type fix))
+    (via "Via[0-3]_450:200_um"  91100 -80300 (net GND)(type fix))
+    (via "Via[0-3]_450:200_um"  89200 -80300 (net POD_3V3)(type fix))
+    (via "Via[0-3]_450:200_um"  91100 -77100 (net GND)(type fix))
+    (via "Via[0-3]_450:200_um"  89200 -77100 (net POD_3V3)(type fix))
+    (via "Via[0-3]_450:200_um"  82230 -50450 (net GND)(type fix))
+    (via "Via[0-3]_450:200_um"  80960 -50450 (net POD_3V3)(type fix))
+    (via "Via[0-3]_450:200_um"  80687.5 -80275 (net POD_3V3)(type fix))
+    (via "Via[0-3]_450:200_um"  80687.5 -78975 (net GND)(type fix))
+    (via "Via[0-3]_450:200_um"  84480 -52500 (net GND)(type fix))
+    (via "Via[0-3]_450:200_um"  81880 -54650 (net GND)(type fix))
+    (via "Via[0-3]_450:200_um"  80320 -54000 (net POD_3V3)(type fix))
+    (via "Via[0-3]_450:200_um"  89400 -64770 (net GND)(type fix))
+    (via "Via[0-3]_450:200_um"  88680 -75300 (net GND)(type fix))
+    (via "Via[0-3]_450:200_um"  86520 -75300 (net POD_3V3)(type fix))
+    (via "Via[0-3]_450:200_um"  86480 -54000 (net GND)(type fix))
+    (via "Via[0-3]_450:200_um"  84920 -54650 (net POD_3V3)(type fix))
+    (via "Via[0-3]_450:200_um"  81790 -74450 (net POD_3V3)(type fix))
+    (via "Via[0-3]_450:200_um"  85490 -56200 (net POD_3V3)(type fix))
+    (via "Via[0-3]_450:200_um"  87750 -66360 (net POD_3V3)(type fix))
+    (via "Via[0-3]_450:200_um"  83090 -56200 (net POD_3V3)(type fix))
+    (via "Via[0-3]_450:200_um"  88400 -63760 (net POD_3V3)(type fix))
+    (via "Via[0-3]_450:200_um"  83400 -54850 (net POD_3V3)(type fix))
+    (via "Via[0-3]_450:200_um"  84250 -54000 (net GND)(type fix))
+    (via "Via[0-3]_450:200_um"  82400 -53100 (net "/Eight ring pods/Pod 1 {slash} U19/LOCAL_SDA")
+      (type fix))
+  )
+)

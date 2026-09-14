@@ -1,0 +1,97 @@
+{
+  "source_hashes": {
+    "haptic-bracelet.kicad_pcb": "cb0c3faa1b7990772016086b5cc52ef85ec9b961d00d1aa6d224d85d5f5ae3cd",
+    "haptic-bracelet.kicad_pro": "26f96b19dbf77dfcd2d8dc876f54513275adc9c64d2d6ca3037cb29e1f0f074c"
+  },
+  "removed_duplicate_uuid": "cf3b3cd7-cf14-4478-b20d-ec7eaeb1991e",
+  "covering_segment_uuid": "ca1401dd-3294-4273-a140-81ac7b8f5085",
+  "width_changes": [
+    {
+      "uuid": "06ee183e-f657-4d7b-b031-06644de8646d",
+      "net": "GND",
+      "old_width": 0.11,
+      "new_width": 0.1524
+    },
+    {
+      "uuid": "d61845ed-e2db-44dc-85fd-3aa3d9a58795",
+      "net": "GND",
+      "old_width": 0.11,
+      "new_width": 0.1524
+    },
+    {
+      "uuid": "01ddabd4-7802-4687-add8-febe60f97ec8",
+      "net": "POD_3V3",
+      "old_width": 0.15,
+      "new_width": 0.1524
+    },
+    {
+      "uuid": "4b4a4923-432c-4a05-aaa5-13a65d819536",
+      "net": "POD_3V3",
+      "old_width": 0.15,
+      "new_width": 0.1524
+    },
+    {
+      "uuid": "65addccf-7a25-43bd-8e5d-06d26d668163",
+      "net": "POD_3V3",
+      "old_width": 0.15,
+      "new_width": 0.1524
+    },
+    {
+      "uuid": "8e14ef8c-0263-47b8-82d5-1ace1ca8c86f",
+      "net": "POD_3V3",
+      "old_width": 0.15,
+      "new_width": 0.1524
+    },
+    {
+      "uuid": "90382c45-8ea0-45a6-a2e0-bc910f827ea5",
+      "net": "POD_3V3",
+      "old_width": 0.15,
+      "new_width": 0.1524
+    },
+    {
+      "uuid": "ab758f52-204a-4e92-8c1c-da2bff9aecdd",
+      "net": "/Eight ring pods/Pod 6 {slash} U24/UART_RX_LOCAL",
+      "old_width": 0.15,
+      "new_width": 0.1524
+    },
+    {
+      "uuid": "bc472b04-586c-4cfa-9fe8-8ea9b500bc5e",
+      "net": "/Eight ring pods/Pod 6 {slash} U24/UART_RX_LOCAL",
+      "old_width": 0.15,
+      "new_width": 0.1524
+    },
+    {
+      "uuid": "a234ecc7-0b72-4835-b501-87e237c62785",
+      "net": "/Eight ring pods/Pod 6 {slash} U24/LOCAL_SCL",
+      "old_width": 0.11,
+      "new_width": 0.1524
+    },
+    {
+      "uuid": "fb9715d7-c898-4a5d-ad91-0c40ae83e5e5",
+      "net": "/Eight ring pods/Pod 6 {slash} U24/LOCAL_SCL",
+      "old_width": 0.11,
+      "new_width": 0.1524
+    },
+    {
+      "uuid": "24c0228b-6d1f-42cd-949f-8aa10bb0cf2a",
+      "net": "/Eight ring pods/Pod 6 {slash} U24/LOCAL_SDA",
+      "old_width": 0.11,
+      "new_width": 0.1524
+    },
+    {
+      "uuid": "a06e8ec1-5b15-4bee-92a8-2019c50064ef",
+      "net": "/Eight ring pods/Pod 6 {slash} U24/LOCAL_SDA",
+      "old_width": 0.11,
+      "new_width": 0.1524
+    }
+  ],
+  "status": "PASS",
+  "final_sha256": "c161ef45f90e544b8f3b8bd0ca42e5d5ceec0709985d6d893ce81bd473121d60",
+  "pod6_segments": 206,
+  "pod6_vias": 41,
+  "minimum_track_mm": 0.1524,
+  "via_in_pad": 0,
+  "non_45_segments": 0,
+  "local_DRC_violations": 0,
+  "local_unconnected": 0
+}

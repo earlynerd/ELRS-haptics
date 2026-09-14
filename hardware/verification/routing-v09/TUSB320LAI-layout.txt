@@ -1,0 +1,16 @@
+PAGE 29
+SCL/OUT2
+29
+TUSB320LAI, TUSB320HAI
+www.ti.com SLLSEQ8D – OCTOBER 2015 – REVISED MAY 2017
+Product Folder Links: TUSB320LAI TUSB320HAI
+Submit Documentation FeedbackCopyright © 2015–2017, Texas Instruments Incorporated
+10 Layout
+10.1 Layout Guidelines
+1. An extra trace (or stub) is created when connecting between more than two points. A trace connecting pin A6
+to pin B6 will create a stub because the trace also has to go to the USB Host. Ensure that:
+– A stub created by short on pin A6 (DP) and pin B6 (DP) at Type-C receptacle does not exceed 3.5 mm.
+– A stub created by short on pin A7 (DM) and pin B7 (DM) at Type-C receptacle does not exceed 3.5 mm.
+2. A 100-nF capacitor should be placed as close as possible to the TUSB320 VDD pin.
+10.2 Layout Example
+Figure 22. TUSB320 Layout

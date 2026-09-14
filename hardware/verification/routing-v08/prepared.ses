@@ -1,0 +1,376 @@
+(session prepared
+  (base_design prepared)
+  (placement
+    (resolution um 10)
+    (component "Resistor_SMD:R_0402_1005Metric"
+      (place R162 1167000 -999000 front 180)
+      (place R160 1059500 -1116000 front 90)
+      (place R21 1072125 -1012250 front 90)
+      (place R20 1062125 -1012250 front 90)
+      (place R161 1165500 -1105000 front 270)
+      (place R163 1154000 -1105000 front 270)
+      (place R165 1177000 -1055500 front 270)
+    )
+    (component "HapticBracelet:WirePads_2_P2mm"
+      (place J127 1040500 -1046000 front 0)
+      (place J206 1040500 -1005500 front 0)
+    )
+    (component "Capacitor_SMD:C_0402_1005Metric"
+      (place C25 1156000 -1201500 front 180)
+      (place C23 1156000 -1211000 front 180)
+      (place C160 1070625 -1037750 front 180)
+      (place C162 1166500 -1055500 front 90)
+      (place C24 1161000 -1167500 front 90)
+    )
+    (component "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+      (place U24 1118500 -1015000 front 0)
+    )
+    (component "Capacitor_SMD:C_0805_2012Metric"
+      (place C161 1161500 -1127500 front 180)
+      (place C163 1161500 -1148500 front 180)
+    )
+    (component "HapticBracelet:WirePads_5_P1.27mm"
+      (place J126 1118500 -968500 front 90)
+    )
+    (component "HapticBracelet:Fuse_Littelfuse_467_0603"
+      (place F106 1053000 -973500 front 180)
+    )
+    (component "HapticBracelet:WirePads_6_P2mm"
+      (place J124 1041000 -1130000 front 0)
+      (place J125 1189000 -1130000 front 0)
+    )
+    (component "HapticBracelet:DRV2625_YFF_9_0.4mm"
+      (place U9 1161000 -1187000 front 0)
+    )
+    (component "HapticBracelet:Vybronics_VLV041235L_FPC_Contact_Draft"
+      (place M7 1183500 -1209500 front 90)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "10.0.1")
+    )
+    (library_out 
+      (padstack "Via[0-3]_600:300_um"
+        (shape
+          (circle F.Cu 6000 0 0)
+        )
+        (shape
+          (circle In1.Cu 6000 0 0)
+        )
+        (shape
+          (circle In2.Cu 6000 0 0)
+        )
+        (shape
+          (circle B.Cu 6000 0 0)
+        )
+        (attach off)
+      )
+      (padstack "Via[0-3]_500:200_um"
+        (shape
+          (circle F.Cu 5000 0 0)
+        )
+        (shape
+          (circle In1.Cu 5000 0 0)
+        )
+        (shape
+          (circle In2.Cu 5000 0 0)
+        )
+        (shape
+          (circle B.Cu 5000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net GND
+        (wire
+          (path F.Cu 2000
+            1105800 -968500
+            1096049 -978251
+            1077749 -978251
+            1040500 -1015500
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1176500 -1099500
+            1176500 -1088140
+            1160106 -1071746
+            1160106 -1057094
+            1166500 -1050700
+          )
+        )
+      )
+      (net "POD_3V3"
+        (wire
+          (path F.Cu 2000
+            1172100 -999000
+            1172100 -990746
+          )
+        )
+        (via "Via[0-3]_600:300_um" 1172100 -990746
+        )
+        (wire
+          (path F.Cu 2000
+            1177000 -1050400
+            1177000 -1003900
+            1172100 -999000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1072120 -1017350
+            1072125 -1017350
+          )
+        )
+      )
+      (net "/Eight ring pods/Pod 6 {slash} U24/UART_RX_LOCAL"
+        (wire
+          (path B.Cu 2000
+            1062724 -1055209
+            1059271 -1051756
+            1059271 -1039499
+            1068517 -1030253
+            1068517 -1020631
+            1111092 -978056
+            1122032 -978056
+          )
+        )
+        (wire
+          (path B.Cu 2000
+            1165539 -1007461
+            1151437 -1007461
+            1122032 -978056
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1131200 -968500
+            1122032 -977668
+            1122032 -978056
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1059500 -1110900
+            1062724 -1107676
+            1062724 -1055209
+          )
+        )
+        (via "Via[0-3]_600:300_um" 1062724 -1055209
+        )
+        (wire
+          (path F.Cu 2000
+            1165539 -1007461
+            1165539 -1002639
+            1161900 -999000
+          )
+        )
+        (via "Via[0-3]_600:300_um" 1165539 -1007461
+        )
+        (via "Via[0-3]_600:300_um" 1122032 -978056
+        )
+      )
+      (net "/Eight ring pods/Pod 6 {slash} U24/LOCAL_SCL"
+        (wire
+          (path B.Cu 2000
+            1113500 -1014026
+            1123523 -1004003
+            1127441 -1004003
+            1182956 -1059518
+            1182956 -1166205
+            1177098 -1172063
+            1173260 -1172063
+            1151823 -1193500
+            1150000 -1193500
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1089880 -1018250
+            1109276 -1018250
+            1113500 -1014026
+          )
+        )
+        (via "Via[0-3]_600:300_um" 1113500 -1014026
+        )
+        (wire
+          (path F.Cu 2000
+            1089875 -1018250
+            1089880 -1018250
+          )
+        )
+      )
+      (net "/Eight ring pods/Pod 6 {slash} U24/UART_TX_LOCAL"
+        (wire
+          (path F.Cu 2000
+            1108884 -1031250
+            1108884 -1029178
+          )
+        )
+        (wire
+          (path B.Cu 2000
+            1109829 -988254
+            1096347 -1001736
+            1096347 -1016641
+            1108884 -1029178
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1108884 -1031250
+            1113486 -1031250
+            1165500 -1083264
+            1165500 -1099900
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1109829 -988254
+            1109829 -977171
+            1118500 -968500
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1108884 -1031250
+            1089875 -1031250
+          )
+        )
+        (via "Via[0-3]_600:300_um" 1108884 -1029178
+        )
+        (via "Via[0-3]_600:300_um" 1109829 -988254
+        )
+      )
+      (net "/Eight ring pods/Pod 6 {slash} U24/CELL_TEMP"
+        (wire
+          (path B.Cu 2000
+            1077304 -991694
+            1097400 -971598
+            1132777 -971598
+            1161796 -1000617
+            1183764 -1000617
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1040500 -1036000
+            1052757 -1023743
+            1052757 -1016241
+          )
+        )
+        (wire
+          (path B.Cu 2000
+            1077304 -991694
+            1052757 -1016241
+          )
+        )
+        (via "Via[0-3]_600:300_um" 1052757 -1016241
+        )
+        (wire
+          (path F.Cu 2000
+            1177000 -1060600
+            1183764 -1053836
+            1183764 -1000617
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1089875 -992250
+            1089319 -991694
+            1077304 -991694
+          )
+        )
+        (via "Via[0-3]_600:300_um" 1077304 -991694
+        )
+        (via "Via[0-3]_600:300_um" 1183764 -1000617
+        )
+      )
+      (net "RING_nRESET"
+        (wire
+          (path B.Cu 2000
+            1125500 -1010573
+            1168081 -1053154
+            1168081 -1133491
+            1163572 -1138000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1125500 -1010573
+            1125500 -983500
+          )
+        )
+        (via "Via[0-3]_600:300_um" 1125500 -1010573
+        )
+        (wire
+          (path F.Cu 2000
+            1163572 -1138000
+            1187000 -1138000
+            1189000 -1140000
+          )
+        )
+        (via "Via[0-3]_600:300_um" 1163572 -1138000
+        )
+        (wire
+          (path F.Cu 2000
+            1089880 -1005250
+            1089875 -1005250
+          )
+        )
+      )
+      (net "/Eight ring pods/Pod 6 {slash} U24/LOCAL_SDA"
+        (wire
+          (path B.Cu 2000
+            1102365 -1011750
+            1144745 -1054130
+            1144745 -1141754
+            1160574 -1157583
+            1160574 -1175426
+            1150000 -1186000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1062125 -1007150
+            1062120 -1007150
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1089880 -1011750
+            1102365 -1011750
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1089880 -1011750
+            1089875 -1011750
+          )
+        )
+        (via "Via[0-3]_600:300_um" 1102365 -1011750
+        )
+      )
+      (net "/Eight ring pods/Pod 6 {slash} U24/LRA_N"
+        (wire
+          (path F.Cu 1500
+            1169393 -1195393
+            1165000 -1191000
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1183500 -1200500
+            1174500 -1200500
+            1169393 -1195393
+          )
+        )
+      )
+    )
+  )
+)

@@ -1,0 +1,1090 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "19987bf9-b7d7-4fc0-8def-b05461281d18")
+	(paper "A3")
+	(title_block
+		(title "Haptic bracelet - UART ring wiring")
+		(date "2026-09-12")
+		(rev "0.5")
+		(comment 1 "One wrist / ring pod schematic draft")
+	)
+	(lib_symbols)
+	(text "IN/OUT: 1 switched 3V3, 2 GND, 3 forward DATA, 4 MCU reset, 5 VBAT, 6 RETURN to ESP RX."
+		(exclude_from_sim no)
+		(at 20.32 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "13175acc-6f0b-4048-aee4-f634f9576135")
+	)
+	(text "ESP TX -> D0 -> pod 0 -> D1 -> ... -> pod 7 -> D8 -> R53 -> RETURN -> ESP RX\nRETURN passes through each intermediate board without an MCU connection. R53 fitted at end pod only.\nWire J101->J104, J105->J108, ... J125->J128 pin-for-pin. No cable between end pod and main pod across clasp.\nPower, GND, reset and VBAT follow the chain; each pod has a protected battery and local positive fuse."
+		(exclude_from_sim no)
+		(at 20.32 228.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "4f281aac-3bdf-4056-aa73-4be97600f9b6")
+	)
+	(text "Each pod: M2003FC1AE + DRV2625 + LRA. Pod 0 shares its housing with the ESP32/power electronics."
+		(exclude_from_sim no)
+		(at 20.32 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a3cb6076-a69f-407d-99f0-ed80eb90651c")
+	)
+	(text "EIGHT PODS / SIX-WIRE CHAIN / LOGICAL UART RING"
+		(exclude_from_sim no)
+		(at 20.32 15.24 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left top)
+		)
+		(uuid "d0469d42-f487-4f2a-a0a6-6ddc0aec57f8")
+	)
+	(wire
+		(pts
+			(xy 378.46 177.8) (xy 383.54 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0cf0e891-8bbd-49fc-a4b9-f9dc3324ad38")
+	)
+	(wire
+		(pts
+			(xy 223.52 83.82) (xy 218.44 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ea011d9-f422-4775-b00a-3b1d70d84f9a")
+	)
+	(wire
+		(pts
+			(xy 96.52 93.98) (xy 101.6 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24d1a4b5-2a95-4e3b-8185-ae9cf0eb17e7")
+	)
+	(wire
+		(pts
+			(xy 35.56 83.82) (xy 30.48 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2574001d-7cc6-40b5-80f2-91bf3f153dd5")
+	)
+	(wire
+		(pts
+			(xy 223.52 167.64) (xy 218.44 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a70d871-e3c0-4f4b-bef4-8e918442ee18")
+	)
+	(wire
+		(pts
+			(xy 190.5 93.98) (xy 195.58 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "445f8d60-7e0c-4600-bc67-2d7317d8e933")
+	)
+	(wire
+		(pts
+			(xy 96.52 177.8) (xy 101.6 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4897c579-a22d-400f-ba46-356cdad002c2")
+	)
+	(wire
+		(pts
+			(xy 317.5 167.64) (xy 312.42 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "582a09cb-c0d8-4816-ba07-8887ebfaae3a")
+	)
+	(wire
+		(pts
+			(xy 190.5 177.8) (xy 195.58 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64f005b0-a2bd-423e-bc93-16b87cffd0d0")
+	)
+	(wire
+		(pts
+			(xy 129.54 167.64) (xy 124.46 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "723ef924-39ed-4572-98c2-7a4e1a93ce8d")
+	)
+	(wire
+		(pts
+			(xy 317.5 83.82) (xy 312.42 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8968f04f-7767-46fd-b30b-d99db1bf7feb")
+	)
+	(wire
+		(pts
+			(xy 284.48 177.8) (xy 289.56 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a436fd4d-c349-4d4b-aa9b-7be624b9eed4")
+	)
+	(wire
+		(pts
+			(xy 284.48 93.98) (xy 289.56 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b594d8d2-3f71-468e-bdea-ce2a01de24fb")
+	)
+	(wire
+		(pts
+			(xy 35.56 167.64) (xy 30.48 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2deb5e1-5f39-4e25-b73c-06df64d12903")
+	)
+	(wire
+		(pts
+			(xy 129.54 83.82) (xy 124.46 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4f3328c-a4fb-46b9-a0d9-cab33deac74b")
+	)
+	(wire
+		(pts
+			(xy 378.46 93.98) (xy 383.54 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee1661d6-6137-4e93-8548-7775a097db95")
+	)
+	(global_label "RING_D1"
+		(shape bidirectional)
+		(at 101.6 93.98 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "07435b91-e228-4f68-bddf-cf66a21efbee")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 101.6 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "RING_D4"
+		(shape bidirectional)
+		(at 383.54 93.98 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "11a9fd37-b5c0-45bb-b271-bf7c83f4f485")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 383.54 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "RING_D1"
+		(shape bidirectional)
+		(at 124.46 83.82 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "20171827-1e9e-4ff8-906d-bb763e8f28c7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 124.46 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "RING_D0"
+		(shape bidirectional)
+		(at 30.48 83.82 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "27e767fd-7d69-4d0a-9b82-d0d43fed9885")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 30.48 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "RING_D6"
+		(shape bidirectional)
+		(at 195.58 177.8 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "4193ecce-b7ba-4b16-bf1b-2c94dfb97cfb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 195.58 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "RING_D7"
+		(shape bidirectional)
+		(at 312.42 167.64 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "45151e78-5399-4430-8537-426bf3c07549")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 312.42 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "RING_D2"
+		(shape bidirectional)
+		(at 218.44 83.82 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "7b57f1ca-ba05-4bf4-af07-dad35f06ea1d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 218.44 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "RING_D8"
+		(shape bidirectional)
+		(at 383.54 177.8 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "88a53ce4-d240-4d34-b28c-f21dd127bd17")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 383.54 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "RING_D6"
+		(shape bidirectional)
+		(at 218.44 167.64 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "935fa5f5-c93e-4c54-8515-51aa063b7d5d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 218.44 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "RING_D2"
+		(shape bidirectional)
+		(at 195.58 93.98 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "9e19f1e7-5697-4059-9d9d-0ab06f149ba4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 195.58 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "RING_D5"
+		(shape bidirectional)
+		(at 124.46 167.64 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "bac96484-2e21-430e-adb2-53c2aaac1310")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 124.46 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "RING_D5"
+		(shape bidirectional)
+		(at 101.6 177.8 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "bd5490a8-2201-476e-af7a-b8e61c4b98c4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 101.6 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "RING_D4"
+		(shape bidirectional)
+		(at 30.48 167.64 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "c1496784-9d3a-4bcb-a483-afe7060497b8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 30.48 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "RING_D7"
+		(shape bidirectional)
+		(at 289.56 177.8 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "def08623-46da-4095-9330-28471e8a63ec")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 289.56 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "RING_D3"
+		(shape bidirectional)
+		(at 312.42 83.82 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "e95615d6-6928-492f-9743-8efd2510e2db")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 312.42 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "RING_D3"
+		(shape bidirectional)
+		(at 289.56 93.98 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "eb5a11cd-135a-4e6f-902b-88253a5bacbb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 289.56 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 223.52 152.4)
+		(size 60.96 40.64)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "015514c6-12d5-4bbf-9d5c-abec361ddcd9")
+		(property "Sheetname" "Pod 6 / U24"
+			(at 223.52 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Sheetfile" "pod_6.kicad_sch"
+			(at 223.52 195.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "RING_RX" input
+			(at 223.52 167.64 180)
+			(uuid "47914fe6-5d0b-4212-a9e9-fd54f3cb58b5")
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "RING_TX" output
+			(at 284.48 177.8 0)
+			(uuid "b833f396-fcf9-4715-bd54-a4aaade71619")
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "haptic-bracelet"
+				(path "/281e434a-bf9f-4327-92ec-86d5315beda6/cc6a0e97-9c58-4182-898e-46e3e3bcce7f"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 317.5 152.4)
+		(size 60.96 40.64)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "0d27352e-9d23-4ae6-adb6-2fe5ae2a456c")
+		(property "Sheetname" "Pod 7 / U25"
+			(at 317.5 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Sheetfile" "pod_7.kicad_sch"
+			(at 317.5 195.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "RING_RX" input
+			(at 317.5 167.64 180)
+			(uuid "b0ab73ea-1237-48ec-9801-d86c85446f4d")
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "RING_TX" output
+			(at 378.46 177.8 0)
+			(uuid "31f09751-e0fc-489f-8e3a-b848a5b4139a")
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "haptic-bracelet"
+				(path "/281e434a-bf9f-4327-92ec-86d5315beda6/cc6a0e97-9c58-4182-898e-46e3e3bcce7f"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 223.52 68.58)
+		(size 60.96 40.64)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "43780041-8534-4f57-acb3-38ba096a5740")
+		(property "Sheetname" "Pod 2 / U20"
+			(at 223.52 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Sheetfile" "pod_2.kicad_sch"
+			(at 223.52 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "RING_RX" input
+			(at 223.52 83.82 180)
+			(uuid "95ab3697-02ed-43eb-b216-bc0d2de7f196")
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "RING_TX" output
+			(at 284.48 93.98 0)
+			(uuid "35e3e2ab-6e65-416b-a017-8b447a7d5af2")
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "haptic-bracelet"
+				(path "/281e434a-bf9f-4327-92ec-86d5315beda6/cc6a0e97-9c58-4182-898e-46e3e3bcce7f"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 35.56 68.58)
+		(size 60.96 40.64)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "4d6e4dab-563d-4ead-a838-c723bec990f2")
+		(property "Sheetname" "Pod 0 / U18"
+			(at 35.56 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Sheetfile" "pod_0.kicad_sch"
+			(at 35.56 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "RING_RX" input
+			(at 35.56 83.82 180)
+			(uuid "89b9a5d2-60a5-4dc8-8383-144f3c742ec7")
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "RING_TX" output
+			(at 96.52 93.98 0)
+			(uuid "b0644ed3-fab2-470c-975a-ce1cf9b636a4")
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "haptic-bracelet"
+				(path "/281e434a-bf9f-4327-92ec-86d5315beda6/cc6a0e97-9c58-4182-898e-46e3e3bcce7f"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 317.5 68.58)
+		(size 60.96 40.64)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "700a436b-9c45-4073-8daf-e140143e7e9f")
+		(property "Sheetname" "Pod 3 / U21"
+			(at 317.5 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Sheetfile" "pod_3.kicad_sch"
+			(at 317.5 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "RING_RX" input
+			(at 317.5 83.82 180)
+			(uuid "6df44492-e383-40f5-a6f0-4141f643b0d0")
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "RING_TX" output
+			(at 378.46 93.98 0)
+			(uuid "804d0905-62e1-41d3-9d8f-2ac33a1480ea")
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "haptic-bracelet"
+				(path "/281e434a-bf9f-4327-92ec-86d5315beda6/cc6a0e97-9c58-4182-898e-46e3e3bcce7f"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 129.54 152.4)
+		(size 60.96 40.64)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "b6350cc8-aeef-41c0-ae3d-84bdaf8915f4")
+		(property "Sheetname" "Pod 5 / U23"
+			(at 129.54 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Sheetfile" "pod_5.kicad_sch"
+			(at 129.54 195.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "RING_RX" input
+			(at 129.54 167.64 180)
+			(uuid "73e97477-da05-4a96-a72e-3f7c064b2bb1")
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "RING_TX" output
+			(at 190.5 177.8 0)
+			(uuid "5c5af817-6e28-4acd-96e5-b4836a28220b")
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "haptic-bracelet"
+				(path "/281e434a-bf9f-4327-92ec-86d5315beda6/cc6a0e97-9c58-4182-898e-46e3e3bcce7f"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 129.54 68.58)
+		(size 60.96 40.64)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f7c45dfc-6aba-48aa-90f6-35e5ba6f571c")
+		(property "Sheetname" "Pod 1 / U19"
+			(at 129.54 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Sheetfile" "pod_1.kicad_sch"
+			(at 129.54 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "RING_RX" input
+			(at 129.54 83.82 180)
+			(uuid "74e5f59f-25eb-4cd7-a684-d38fcd852663")
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "RING_TX" output
+			(at 190.5 93.98 0)
+			(uuid "5abc55b4-4619-4daa-8f46-191161512b8e")
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "haptic-bracelet"
+				(path "/281e434a-bf9f-4327-92ec-86d5315beda6/cc6a0e97-9c58-4182-898e-46e3e3bcce7f"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 35.56 152.4)
+		(size 60.96 40.64)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "fb2f3d98-1b34-493b-b75d-8a003e34ee4e")
+		(property "Sheetname" "Pod 4 / U22"
+			(at 35.56 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Sheetfile" "pod_4.kicad_sch"
+			(at 35.56 195.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "RING_RX" input
+			(at 35.56 167.64 180)
+			(uuid "6d227052-f776-48f5-9091-db03775b1765")
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "RING_TX" output
+			(at 96.52 177.8 0)
+			(uuid "a769ce1d-5010-4056-8bb7-c94df982c692")
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "haptic-bracelet"
+				(path "/281e434a-bf9f-4327-92ec-86d5315beda6/cc6a0e97-9c58-4182-898e-46e3e3bcce7f"
+					(page "7")
+				)
+			)
+		)
+	)
+)

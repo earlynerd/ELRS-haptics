@@ -1,0 +1,91 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-13T11:52:11",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.1",
+    "schematic_parity": [],
+    "source": "pod-7-routed.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [RING_D8] on F.Cu, length 0.8000 mm",
+                    "pos": {
+                        "x": 146.1,
+                        "y": 112.0
+                    },
+                    "uuid": "b7ea0e88-7ca3-4d3f-be87-8e866ac264ce"
+                },
+                {
+                    "description": "Track [RING_D8] on F.Cu, length 1.4000 mm",
+                    "pos": {
+                        "x": 143.49,
+                        "y": 122.8
+                    },
+                    "uuid": "d120c754-8fc0-47a8-907f-bea5370b264e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [RING_D8] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 146.2,
+                        "y": 112.0
+                    },
+                    "uuid": "717680b5-c57a-460b-bf25-c369a5e0bf7f"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [RING_D8] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 143.49,
+                        "y": 122.8
+                    },
+                    "uuid": "d3814bf1-2257-47e9-9517-cd882ffed6be"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+  "baseline": "routing-v09/netlist.xml",
+  "saved_redraw": "before.xml",
+  "components": 261,
+  "missing_components": [],
+  "added_components": [],
+  "value_or_footprint_changes": [],
+  "split_power_aliases_in_saved_redraw": [
+    {
+      "name": "+3V3",
+      "nodes": 3
+    },
+    {
+      "name": "+3V3_POD",
+      "nodes": 4
+    },
+    {
+      "name": "3V3",
+      "nodes": 21
+    },
+    {
+      "name": "POD_3V3",
+      "nodes": 128
+    }
+  ],
+  "corrected_rails": [
+    "+3V3",
+    "+3V3_POD"
+  ],
+  "archived_original_hashes_match": true
+}

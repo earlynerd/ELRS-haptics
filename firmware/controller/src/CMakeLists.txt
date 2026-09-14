@@ -1,0 +1,19 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "backpack_rx.c"
+        "ring_master.c"
+        "../../common/src/hb_crc.c"
+        "../../common/src/hb_ring.c"
+        "../../common/src/hb_telemetry.c"
+        "../../common/src/hb_attitude_map.c"
+    INCLUDE_DIRS
+        "."
+        "../../common/include"
+    REQUIRES
+        esp_event
+        esp_netif
+        esp_timer
+        esp_wifi
+        nvs_flash
+)

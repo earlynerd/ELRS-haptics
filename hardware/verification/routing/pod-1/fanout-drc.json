@@ -1,0 +1,628 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-12T22:19:30",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.1",
+    "schematic_parity": [],
+    "source": "pod-1.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 6 [/Eight ring pods/Pod 1 / U19/LOCAL_SCL] of U19 on F.Cu",
+                    "pos": {
+                        "x": 79.6375,
+                        "y": 78.325
+                    },
+                    "uuid": "904b1d45-5b36-4e2c-bbf6-e9d73e2cd9df"
+                },
+                {
+                    "description": "Pad 2 [/Eight ring pods/Pod 1 / U19/LOCAL_SCL] of R11 on F.Cu",
+                    "pos": {
+                        "x": 87.11,
+                        "y": 56.2
+                    },
+                    "uuid": "bd1edf3e-65db-4e6d-8b23-c7a802bc2a57"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/Eight ring pods/Pod 1 / U19/LOCAL_SCL] of R11 on F.Cu",
+                    "pos": {
+                        "x": 87.11,
+                        "y": 56.2
+                    },
+                    "uuid": "bd1edf3e-65db-4e6d-8b23-c7a802bc2a57"
+                },
+                {
+                    "description": "Pad C1 [/Eight ring pods/Pod 1 / U19/LOCAL_SCL] of U4 on F.Cu",
+                    "pos": {
+                        "x": 83.0,
+                        "y": 54.4
+                    },
+                    "uuid": "8c5a8b86-6dbe-41b7-934c-f5a2500db94b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [/Eight ring pods/Pod 1 / U19/UART_TX_LOCAL] of J106 on F.Cu",
+                    "pos": {
+                        "x": 83.5,
+                        "y": 49.7
+                    },
+                    "uuid": "2bc57f40-fdb3-4bcd-87e5-a30a38cda62b"
+                },
+                {
+                    "description": "Pad 1 [/Eight ring pods/Pod 1 / U19/UART_TX_LOCAL] of R111 on F.Cu",
+                    "pos": {
+                        "x": 86.75,
+                        "y": 62.51
+                    },
+                    "uuid": "0ddd8732-e1db-43b0-bc36-c5aec7fc575b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/Eight ring pods/Pod 1 / U19/UART_TX_LOCAL] of R111 on F.Cu",
+                    "pos": {
+                        "x": 86.75,
+                        "y": 62.51
+                    },
+                    "uuid": "0ddd8732-e1db-43b0-bc36-c5aec7fc575b"
+                },
+                {
+                    "description": "Pad 2 [/Eight ring pods/Pod 1 / U19/UART_TX_LOCAL] of R113 on F.Cu",
+                    "pos": {
+                        "x": 87.75,
+                        "y": 62.74
+                    },
+                    "uuid": "b4f959c2-37cb-478b-9838-e5f1461cf71b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/Eight ring pods/Pod 1 / U19/UART_TX_LOCAL] of R111 on F.Cu",
+                    "pos": {
+                        "x": 86.75,
+                        "y": 62.51
+                    },
+                    "uuid": "0ddd8732-e1db-43b0-bc36-c5aec7fc575b"
+                },
+                {
+                    "description": "Pad 8 [/Eight ring pods/Pod 1 / U19/UART_TX_LOCAL] of U19 on F.Cu",
+                    "pos": {
+                        "x": 79.6375,
+                        "y": 79.625
+                    },
+                    "uuid": "58c407c7-0092-4e32-9ce9-5a0617bf7fa4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [RING_D2] of R111 on F.Cu",
+                    "pos": {
+                        "x": 86.75,
+                        "y": 61.49
+                    },
+                    "uuid": "10b05525-80ba-48b7-befd-29b0de2f8c9b"
+                },
+                {
+                    "description": "Pad 3 [RING_D2] of J105 on F.Cu",
+                    "pos": {
+                        "x": 90.55,
+                        "y": 61.0
+                    },
+                    "uuid": "f5daef85-c333-4d4f-b925-879bca39b430"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/Eight ring pods/Pod 1 / U19/UART_RX_LOCAL] of R112 on F.Cu",
+                    "pos": {
+                        "x": 82.81,
+                        "y": 73.8
+                    },
+                    "uuid": "9b3d4e75-5ed0-4926-ac00-1df9350cf4b9"
+                },
+                {
+                    "description": "Pad 2 [/Eight ring pods/Pod 1 / U19/UART_RX_LOCAL] of R110 on F.Cu",
+                    "pos": {
+                        "x": 80.81,
+                        "y": 73.8
+                    },
+                    "uuid": "8bc203fb-821d-4a12-a0d8-d1509a0497f4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [/Eight ring pods/Pod 1 / U19/UART_RX_LOCAL] of J106 on F.Cu",
+                    "pos": {
+                        "x": 84.77,
+                        "y": 49.7
+                    },
+                    "uuid": "0c437658-6e4f-4d1b-adb1-bcaa3d5c90f7"
+                },
+                {
+                    "description": "Pad 2 [/Eight ring pods/Pod 1 / U19/UART_RX_LOCAL] of R112 on F.Cu",
+                    "pos": {
+                        "x": 82.81,
+                        "y": 73.8
+                    },
+                    "uuid": "9b3d4e75-5ed0-4926-ac00-1df9350cf4b9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 18 [/Eight ring pods/Pod 1 / U19/UART_RX_LOCAL] of U19 on F.Cu",
+                    "pos": {
+                        "x": 85.3625,
+                        "y": 76.375
+                    },
+                    "uuid": "c33ed240-dafd-436f-983f-f9e205e0f6a1"
+                },
+                {
+                    "description": "Pad 2 [/Eight ring pods/Pod 1 / U19/UART_RX_LOCAL] of R112 on F.Cu",
+                    "pos": {
+                        "x": 82.81,
+                        "y": 73.8
+                    },
+                    "uuid": "9b3d4e75-5ed0-4926-ac00-1df9350cf4b9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [RING_D1] of J104 on F.Cu",
+                    "pos": {
+                        "x": 76.45,
+                        "y": 63.5
+                    },
+                    "uuid": "50dd8b87-6303-4c77-85a7-495768d03952"
+                },
+                {
+                    "description": "Pad 1 [RING_D1] of R110 on F.Cu",
+                    "pos": {
+                        "x": 79.79,
+                        "y": 73.8
+                    },
+                    "uuid": "118341bd-b44d-4087-84e0-5e987dcb31dd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [RING_nRESET] of J104 on F.Cu",
+                    "pos": {
+                        "x": 76.45,
+                        "y": 65.5
+                    },
+                    "uuid": "cecc3a70-62e8-49b2-92e0-48d417c3538f"
+                },
+                {
+                    "description": "Pad 4 [RING_nRESET] of U19 on F.Cu",
+                    "pos": {
+                        "x": 79.6375,
+                        "y": 77.025
+                    },
+                    "uuid": "eec12ab1-5d53-49d2-82c7-63bb5d6cd765"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [RING_nRESET] of J104 on F.Cu",
+                    "pos": {
+                        "x": 76.45,
+                        "y": 65.5
+                    },
+                    "uuid": "cecc3a70-62e8-49b2-92e0-48d417c3538f"
+                },
+                {
+                    "description": "Pad 4 [RING_nRESET] of J105 on F.Cu",
+                    "pos": {
+                        "x": 90.55,
+                        "y": 63.0
+                    },
+                    "uuid": "8fee9a8e-c7f6-43eb-85a1-08b52e4da09f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [RING_nRESET] of J105 on F.Cu",
+                    "pos": {
+                        "x": 90.55,
+                        "y": 63.0
+                    },
+                    "uuid": "8fee9a8e-c7f6-43eb-85a1-08b52e4da09f"
+                },
+                {
+                    "description": "Pad 5 [RING_nRESET] of J106 on F.Cu",
+                    "pos": {
+                        "x": 86.04,
+                        "y": 49.7
+                    },
+                    "uuid": "165610de-17ec-4570-9bf2-e09241965a3d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 5 [VBAT] of J104 on F.Cu",
+                    "pos": {
+                        "x": 76.45,
+                        "y": 67.5
+                    },
+                    "uuid": "17f6c7f3-f35c-478c-b2a7-cc8c8f2ffd60"
+                },
+                {
+                    "description": "Pad 5 [VBAT] of J105 on F.Cu",
+                    "pos": {
+                        "x": 90.55,
+                        "y": 65.0
+                    },
+                    "uuid": "e2fa6ae9-c68c-4ab2-8567-decb55ee29a9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [VBAT] of F101 on F.Cu",
+                    "pos": {
+                        "x": 78.891,
+                        "y": 56.0
+                    },
+                    "uuid": "55ead1f0-f374-4638-a680-86474508f369"
+                },
+                {
+                    "description": "Pad 5 [VBAT] of J104 on F.Cu",
+                    "pos": {
+                        "x": 76.45,
+                        "y": 67.5
+                    },
+                    "uuid": "17f6c7f3-f35c-478c-b2a7-cc8c8f2ffd60"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 6 [RING_RETURN] of J104 on F.Cu",
+                    "pos": {
+                        "x": 76.45,
+                        "y": 69.5
+                    },
+                    "uuid": "8a05e328-24db-4503-8861-f488b9ba9c68"
+                },
+                {
+                    "description": "Pad 6 [RING_RETURN] of J105 on F.Cu",
+                    "pos": {
+                        "x": 90.55,
+                        "y": 67.0
+                    },
+                    "uuid": "1e890835-09b1-42b6-9486-787a9daffc84"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 5 [/Eight ring pods/Pod 1 / U19/LOCAL_SDA] of U19 on F.Cu",
+                    "pos": {
+                        "x": 79.6375,
+                        "y": 77.675
+                    },
+                    "uuid": "8e47c449-94f5-4fdb-ae5a-7a1c3620d05f"
+                },
+                {
+                    "description": "Pad 2 [/Eight ring pods/Pod 1 / U19/LOCAL_SDA] of R10 on F.Cu",
+                    "pos": {
+                        "x": 84.71,
+                        "y": 56.2
+                    },
+                    "uuid": "38b67e45-457d-4321-955c-83e6fda55275"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/Eight ring pods/Pod 1 / U19/LOCAL_SDA] of R10 on F.Cu",
+                    "pos": {
+                        "x": 84.71,
+                        "y": 56.2
+                    },
+                    "uuid": "38b67e45-457d-4321-955c-83e6fda55275"
+                },
+                {
+                    "description": "Pad B1 [/Eight ring pods/Pod 1 / U19/LOCAL_SDA] of U4 on F.Cu",
+                    "pos": {
+                        "x": 83.0,
+                        "y": 54.0
+                    },
+                    "uuid": "e46436f6-da01-49dd-958d-06ee32a3472a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/Eight ring pods/Pod 1 / U19/DRV_REG] of C9 on F.Cu",
+                    "pos": {
+                        "x": 82.92,
+                        "y": 52.5
+                    },
+                    "uuid": "9e5dabf7-f932-4ac3-a541-9021ec2c3e51"
+                },
+                {
+                    "description": "Pad A2 [/Eight ring pods/Pod 1 / U19/DRV_REG] of U4 on F.Cu",
+                    "pos": {
+                        "x": 83.4,
+                        "y": 53.6
+                    },
+                    "uuid": "8aac2403-1f61-40e9-9b8d-3f043e6e0e73"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad A3 [/Eight ring pods/Pod 1 / U19/LRA_P] of U4 on F.Cu",
+                    "pos": {
+                        "x": 83.8,
+                        "y": 53.6
+                    },
+                    "uuid": "8eac00ab-cd63-4e51-9eab-631fdecc9dd9"
+                },
+                {
+                    "description": "Pad 1 [/Eight ring pods/Pod 1 / U19/LRA_P] of M2 on F.Cu",
+                    "pos": {
+                        "x": 90.28,
+                        "y": 72.4
+                    },
+                    "uuid": "200481fe-bf16-4f3e-8d61-216445e2778e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad C3 [/Eight ring pods/Pod 1 / U19/LRA_N] of U4 on F.Cu",
+                    "pos": {
+                        "x": 83.8,
+                        "y": 54.4
+                    },
+                    "uuid": "f19baa35-3524-4064-b187-7fde0234594f"
+                },
+                {
+                    "description": "Pad 2 [/Eight ring pods/Pod 1 / U19/LRA_N] of M2 on F.Cu",
+                    "pos": {
+                        "x": 90.28,
+                        "y": 70.6
+                    },
+                    "uuid": "79f16f29-0e08-4e4e-a2ca-d45aa929aca9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/Eight ring pods/Pod 1 / U19/CELL_TEMP] of U19 on F.Cu",
+                    "pos": {
+                        "x": 79.6375,
+                        "y": 75.725
+                    },
+                    "uuid": "ee15a538-b678-4117-bd77-bf897160714f"
+                },
+                {
+                    "description": "Pad 1 [/Eight ring pods/Pod 1 / U19/CELL_TEMP] of C112 on F.Cu",
+                    "pos": {
+                        "x": 88.75,
+                        "y": 65.73
+                    },
+                    "uuid": "95885896-da92-473a-ba3c-6738aff910ab"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/Eight ring pods/Pod 1 / U19/CELL_TEMP] of C112 on F.Cu",
+                    "pos": {
+                        "x": 88.75,
+                        "y": 65.73
+                    },
+                    "uuid": "95885896-da92-473a-ba3c-6738aff910ab"
+                },
+                {
+                    "description": "Pad 2 [/Eight ring pods/Pod 1 / U19/CELL_TEMP] of R115 on F.Cu",
+                    "pos": {
+                        "x": 87.75,
+                        "y": 64.74
+                    },
+                    "uuid": "83c467ac-8f88-4b60-841f-67878f93bd8b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/Eight ring pods/Pod 1 / U19/CELL_TEMP] of J107 on F.Cu",
+                    "pos": {
+                        "x": 89.5,
+                        "y": 51.5
+                    },
+                    "uuid": "9bcc9443-1f51-4a74-8df8-b55f1be6381f"
+                },
+                {
+                    "description": "Pad 2 [/Eight ring pods/Pod 1 / U19/CELL_TEMP] of R115 on F.Cu",
+                    "pos": {
+                        "x": 87.75,
+                        "y": 64.74
+                    },
+                    "uuid": "83c467ac-8f88-4b60-841f-67878f93bd8b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [/Eight ring pods/Pod 1 / U19/CELL_POS] of J201 on F.Cu",
+                    "pos": {
+                        "x": 77.0,
+                        "y": 51.5
+                    },
+                    "uuid": "e13fdbd1-a2a7-406c-9bc0-d63ca7d86a17"
+                },
+                {
+                    "description": "Pad 1 [/Eight ring pods/Pod 1 / U19/CELL_POS] of F101 on F.Cu",
+                    "pos": {
+                        "x": 77.109,
+                        "y": 56.0
+                    },
+                    "uuid": "668d4b3c-4374-4f17-a747-f4b9015fbd48"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [/Eight ring pods/Pod 1 / U19/LOCAL_SDA] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 82.4,
+                        "y": 53.1
+                    },
+                    "uuid": "17079d8f-dd0d-4097-95bf-0106a1222a76"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}

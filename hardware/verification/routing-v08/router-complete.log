@@ -1,0 +1,56 @@
+2026-09-13 11:38:58.609 INFO   Freerouting v2.4.1 (build-date: 2026-09-03)
+2026-09-13 11:39:00.241 INFO   [B3D55E\14E7AD] Loading board file 'complete-input.dsn'...
+2026-09-13 11:39:00.319 INFO   Layer 'In1.Cu' has been automatically configured as a dedicated power plane because it contains a large conduction area covering >50% of the board.
+2026-09-13 11:39:00.319 INFO   Layer 'In2.Cu' has been automatically configured as a dedicated power plane because it contains a large conduction area covering >50% of the board.
+2026-09-13 11:39:00.377 INFO   [B3D55E\14E7AD] Job 'B3D55E\14E7AD' started at 2026-09-13T18:39:00.377364400Z.
+2026-09-13 11:39:00.715 INFO   [B3D55E\14E7AD] Fanout stage started on board '2f7af750f2264add153b5e19e73385f8' with 58 of 82 SMD pins needing fanout (24 already connected, 0 netless).
+2026-09-13 11:39:02.015 INFO   [B3D55E\14E7AD] Fanout pass #1 on board '8b79859254dfd87101a442abf34da382' completed in 1.15 seconds with 16 SMD pins fanouted, 12 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+2026-09-13 11:39:02.865 INFO   [B3D55E\14E7AD] Fanout pass #2 on board '8b79859254dfd87101a442abf34da382' completed in 0.84 seconds with 13 SMD pins fanouted, 13 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=200).
+2026-09-13 11:39:03.021 INFO   [B3D55E\14E7AD] Fanout stage completed: started with 82 total SMD pins, completed in 2.17 seconds, escaped pins: 49/82 (59.8%), using 2.23 total CPU seconds, 7.53 GB total allocated, and 1181.9 MB peak heap usage.
+2026-09-13 11:39:03.055 INFO   [B3D55E\14E7AD] Auto-routing stage started on board '8b79859254dfd87101a442abf34da382' for 22 unrouted items.
+2026-09-13 11:39:07.197 INFO   [B3D55E\14E7AD] Auto-routing pass #1 on board '8b79859254dfd87101a442abf34da382' was completed in 3.56 seconds with score 574.99 (14 unrouted and 49 violations), using 5.22 CPU seconds and the job allocated 17.24 GB of memory so far.
+2026-09-13 11:39:10.404 INFO   [B3D55E\14E7AD] Auto-routing pass #2 on board '3718c1ed6aaffe5a2aaa8ce898036b7c' was completed in 2.68 seconds with score 574.99 (14 unrouted and 49 violations), using 7.78 CPU seconds and the job allocated 26.46 GB of memory so far.
+2026-09-13 11:39:13.445 INFO   [B3D55E\14E7AD] Auto-routing pass #3 on board 'bda5ef7e9e5599becf98451549112af8' was completed in 2.51 seconds with score 574.99 (14 unrouted and 49 violations), using 10.30 CPU seconds and the job allocated 35.77 GB of memory so far.
+2026-09-13 11:39:16.466 INFO   [B3D55E\14E7AD] Auto-routing pass #4 on board '0711c6b08a2a032b37ef63c75f43dcaf' was completed in 2.50 seconds with score 592.85 (13 unrouted and 49 violations), using 13.67 CPU seconds and the job allocated 48.47 GB of memory so far.
+2026-09-13 11:39:19.545 INFO   [B3D55E\14E7AD] Auto-routing pass #5 on board '7843184724de65760433b3db4ce43cc2' was completed in 2.55 seconds with score 557.13 (15 unrouted and 49 violations), using 16.30 CPU seconds and the job allocated 57.62 GB of memory so far.
+2026-09-13 11:39:23.063 INFO   [B3D55E\14E7AD] Auto-routing pass #6 on board '335053264890ba73e63a9a147f423d23' was completed in 3.00 seconds with score 592.85 (13 unrouted and 49 violations), using 18.91 CPU seconds and the job allocated 67.00 GB of memory so far.
+2026-09-13 11:39:25.767 INFO   [B3D55E\14E7AD] Auto-routing pass #7 on board '9b09a988c26829a411996c06ac5bfea3' was completed in 2.18 seconds with score 592.85 (13 unrouted and 49 violations), using 21.58 CPU seconds and the job allocated 76.54 GB of memory so far.
+2026-09-13 11:39:29.006 INFO   [B3D55E\14E7AD] Auto-routing pass #8 on board '6abb757b7b2cc000752db2529f959dc8' was completed in 2.70 seconds with score 610.70 (12 unrouted and 49 violations), using 24.14 CPU seconds and the job allocated 85.67 GB of memory so far.
+2026-09-13 11:39:31.905 INFO   [B3D55E\14E7AD] Auto-routing pass #9 on board '307945a4508610d5578c29f12c03b1b3' was completed in 2.40 seconds with score 610.70 (12 unrouted and 49 violations), using 26.88 CPU seconds and the job allocated 95.26 GB of memory so far.
+2026-09-13 11:39:34.754 INFO   [B3D55E\14E7AD] Auto-routing pass #10 on board 'acd3a10cf692b7f64792bf41c986227d' was completed in 2.35 seconds with score 610.70 (12 unrouted and 49 violations), using 29.61 CPU seconds and the job allocated 105.11 GB of memory so far.
+2026-09-13 11:39:37.564 INFO   [B3D55E\14E7AD] Auto-routing pass #11 on board 'aea56de6c77e43fbf9a09de2d1c421f7' was completed in 2.32 seconds with score 610.70 (12 unrouted and 49 violations), using 31.41 CPU seconds and the job allocated 111.46 GB of memory so far.
+2026-09-13 11:39:40.596 INFO   [B3D55E\14E7AD] Auto-routing pass #12 on board 'f328817eca75f590ce74e77edb4f19fb' was completed in 2.32 seconds with score 610.70 (12 unrouted and 49 violations), using 34.19 CPU seconds and the job allocated 121.50 GB of memory so far.
+2026-09-13 11:39:43.417 INFO   [B3D55E\14E7AD] Auto-routing pass #13 on board '7795641d9cec846a6c1e8b1a5868aa40' was completed in 2.33 seconds with score 610.70 (12 unrouted and 49 violations), using 36.95 CPU seconds and the job allocated 131.54 GB of memory so far.
+2026-09-13 11:39:46.263 INFO   [B3D55E\14E7AD] Auto-routing pass #14 on board 'ec4bb590ddf1c4fa8642f1645759f6d9' was completed in 2.37 seconds with score 610.70 (12 unrouted and 49 violations), using 39.72 CPU seconds and the job allocated 141.56 GB of memory so far.
+2026-09-13 11:39:49.065 INFO   [B3D55E\14E7AD] Auto-routing pass #15 on board '0303182d496e029e76b81b9ce70bc185' was completed in 2.32 seconds with score 610.70 (12 unrouted and 49 violations), using 42.48 CPU seconds and the job allocated 151.51 GB of memory so far.
+2026-09-13 11:39:51.870 INFO   [B3D55E\14E7AD] Auto-routing pass #16 on board '63ff543e5fc771321a6361e2ed2ca245' was completed in 2.32 seconds with score 610.70 (12 unrouted and 49 violations), using 45.25 CPU seconds and the job allocated 161.51 GB of memory so far.
+2026-09-13 11:39:54.736 INFO   [B3D55E\14E7AD] Auto-routing pass #17 on board '483abf177eb742d2e9e1432026ad1b87' was completed in 2.38 seconds with score 610.70 (12 unrouted and 49 violations), using 47.09 CPU seconds and the job allocated 167.94 GB of memory so far.
+2026-09-13 11:39:57.626 INFO   [B3D55E\14E7AD] Auto-routing pass #18 on board '018dea542ba4a90fa19ce2ec6621483f' was completed in 2.39 seconds with score 610.70 (12 unrouted and 49 violations), using 49.80 CPU seconds and the job allocated 177.69 GB of memory so far.
+2026-09-13 11:39:57.676 INFO   [B3D55E\14E7AD] The router's best score (610.70) has not improved by more than 0.5 points since pass #8. Stopping the auto-router after 18 passes (12 items still unconnected).
+The following connections could not be routed -- please review your design (e.g. check pad clearances, trace width rules, and available routing space):
+  Net 'GND' (4 unrouted connections):
+    - C163-2  ->  conductionarea
+    - via  ->  C24-2
+    - C160-2  ->  conductionarea
+    - U24-7  ->  conductionarea
+  Net 'POD_3V3' (3 unrouted connections):
+    - R20-1  ->  conductionarea
+    - conductionarea  ->  C160-1
+    - U24-9  ->  conductionarea
+  Net '/Eight ring pods/Pod 6 {slash} U24/UART_RX_LOCAL' (1 unrouted connection):
+    - J126-4  ->  U24-18
+  Net '/Eight ring pods/Pod 6 {slash} U24/LOCAL_SCL' (1 unrouted connection):
+    - R21-2  ->  U24-6
+  Net 'RING_nRESET' (2 unrouted connections):
+    - U24-4  ->  J124-4
+    - J124-4  ->  J125-4
+  Net '/Eight ring pods/Pod 6 {slash} U24/LOCAL_SDA' (1 unrouted connection):
+    - U9-B1  ->  U24-5
+2026-09-13 11:39:58.145 INFO   [B3D55E\14E7AD] Auto-routing stage completed: started with 25 unrouted nets, completed in 57.48 seconds, final score: 610.70 (12 unrouted and 49 violations), using 50.66 total CPU seconds, 181.03 GB total allocated, and 1486.6 MB peak heap usage.
+2026-09-13 11:39:58.381 INFO   [B3D55E\14E7AD] Optimization stage started on board '0b9f2d776beeed6203d216ea638ce85c' with score 610.70 (12 unrouted and 49 violations).
+2026-09-13 11:40:06.517 INFO   [B3D55E\14E7AD] Optimizer pass #1 on board '091c52bfd69e30244be025b96d907d57' was completed in 7.42 seconds with the score of 610.70 (12 unrouted and 49 violations).
+2026-09-13 11:40:06.750 INFO   [B3D55E\14E7AD] Stopping optimizer because the improvement in this pass (0.0000%) is below the threshold (1.00%).
+2026-09-13 11:40:06.987 INFO   [B3D55E\14E7AD] Optimization stage completed: started with score 610.70 (12 unrouted and 49 violations), completed in 8.37 seconds, final score: 610.70 (12 unrouted and 49 violations), using 7.45 total CPU seconds, 31.98 GB total allocated, and 848.1 MB peak heap usage.
+2026-09-13 11:40:06.992 INFO   [B3D55E\14E7AD] Job 'B3D55E\14E7AD' finished with state: COMPLETED (elapsed: 1 minute 6.61 seconds, finished at UTC: 2026-09-13T18:40:06.991423300Z).
+2026-09-13 11:40:07.006 INFO   Saving output file 'C:\Users\mmsyl\Documents\haptic-bracelet\hardware\verification\routing-v08\complete-input.ses' (SES)...
+2026-09-13 11:40:07.008 INFO   Successfully saved output file 'C:\Users\mmsyl\Documents\haptic-bracelet\hardware\verification\routing-v08\complete-input.ses' (7495 bytes).

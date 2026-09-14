@@ -1,0 +1,3981 @@
+{
+  "revision": "0.6",
+  "board_thickness": 0.8,
+  "routed": false,
+  "pods": [
+    {
+      "pod": 0,
+      "origin": [
+        35,
+        35
+      ],
+      "width": 21,
+      "height": 61,
+      "top_edge": 5.1,
+      "cutout": [
+        6.0,
+        23.0,
+        13.0,
+        38.0
+      ],
+      "lra_center": [
+        9.5,
+        30.5
+      ],
+      "shell": [
+        24,
+        64,
+        10.5
+      ]
+    },
+    {
+      "pod": 1,
+      "origin": [
+        75,
+        48
+      ],
+      "width": 17,
+      "height": 35,
+      "top_edge": 0,
+      "cutout": [
+        4.0,
+        10.0,
+        11.0,
+        25.0
+      ],
+      "lra_center": [
+        7.5,
+        17.5
+      ],
+      "shell": [
+        20,
+        38,
+        10.5
+      ]
+    },
+    {
+      "pod": 2,
+      "origin": [
+        103,
+        48
+      ],
+      "width": 17,
+      "height": 35,
+      "top_edge": 0,
+      "cutout": [
+        4.0,
+        10.0,
+        11.0,
+        25.0
+      ],
+      "lra_center": [
+        7.5,
+        17.5
+      ],
+      "shell": [
+        20,
+        38,
+        10.5
+      ]
+    },
+    {
+      "pod": 3,
+      "origin": [
+        131,
+        48
+      ],
+      "width": 17,
+      "height": 35,
+      "top_edge": 0,
+      "cutout": [
+        4.0,
+        10.0,
+        11.0,
+        25.0
+      ],
+      "lra_center": [
+        7.5,
+        17.5
+      ],
+      "shell": [
+        20,
+        38,
+        10.5
+      ]
+    },
+    {
+      "pod": 4,
+      "origin": [
+        159,
+        48
+      ],
+      "width": 17,
+      "height": 35,
+      "top_edge": 0,
+      "cutout": [
+        4.0,
+        10.0,
+        11.0,
+        25.0
+      ],
+      "lra_center": [
+        7.5,
+        17.5
+      ],
+      "shell": [
+        20,
+        38,
+        10.5
+      ]
+    },
+    {
+      "pod": 5,
+      "origin": [
+        75,
+        96
+      ],
+      "width": 17,
+      "height": 35,
+      "top_edge": 0,
+      "cutout": [
+        4.0,
+        10.0,
+        11.0,
+        25.0
+      ],
+      "lra_center": [
+        7.5,
+        17.5
+      ],
+      "shell": [
+        20,
+        38,
+        10.5
+      ]
+    },
+    {
+      "pod": 6,
+      "origin": [
+        103,
+        96
+      ],
+      "width": 17,
+      "height": 35,
+      "top_edge": 0,
+      "cutout": [
+        4.0,
+        10.0,
+        11.0,
+        25.0
+      ],
+      "lra_center": [
+        7.5,
+        17.5
+      ],
+      "shell": [
+        20,
+        38,
+        10.5
+      ]
+    },
+    {
+      "pod": 7,
+      "origin": [
+        131,
+        96
+      ],
+      "width": 17,
+      "height": 35,
+      "top_edge": 0,
+      "cutout": [
+        4.0,
+        10.0,
+        11.0,
+        25.0
+      ],
+      "lra_center": [
+        7.5,
+        17.5
+      ],
+      "shell": [
+        20,
+        38,
+        10.5
+      ]
+    }
+  ],
+  "components": {
+    "M1": {
+      "pod": 0,
+      "x": 17.28,
+      "y": 36.5,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        16.18,
+        35.1,
+        18.380000000000003,
+        37.9
+      ],
+      "footprint": "HapticBracelet:Vybronics_VLV041235L_FPC_Contact_Draft"
+    },
+    "J100": {
+      "pod": 0,
+      "x": 1.45,
+      "y": 29.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        0.5249999999999999,
+        23.475,
+        2.375,
+        35.525
+      ],
+      "footprint": "HapticBracelet:WirePads_6_P2mm"
+    },
+    "J101": {
+      "pod": 0,
+      "x": 19.55,
+      "y": 27.0,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        18.625,
+        20.975,
+        20.475,
+        33.025
+      ],
+      "footprint": "HapticBracelet:WirePads_6_P2mm"
+    },
+    "U18": {
+      "pod": 0,
+      "x": 9.5,
+      "y": 43.0,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        5.625,
+        39.475,
+        13.375,
+        46.525
+      ],
+      "footprint": "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+    },
+    "U1": {
+      "pod": 0,
+      "x": 10.5,
+      "y": 10.7,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        3.6500000000000004,
+        5.1,
+        17.35,
+        16.549999999999997
+      ],
+      "footprint": "RF_Module:ESP32-C6-MINI-1"
+    },
+    "J2": {
+      "pod": 0,
+      "x": 10.5,
+      "y": 58.7,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        5.155,
+        53.915000000000006,
+        15.844999999999999,
+        62.905
+      ],
+      "footprint": "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
+    },
+    "SW3": {
+      "pod": 0,
+      "x": 18.5,
+      "y": 48.5,
+      "rotation": -90,
+      "side": "F",
+      "courtyard": [
+        16.225,
+        44.575,
+        21.775,
+        52.425
+      ],
+      "footprint": "Button_Switch_SMD:Panasonic_EVQPUJ_EVQPUA"
+    },
+    "D1": {
+      "pod": 0,
+      "x": 18.6,
+      "y": 58.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        17.525000000000002,
+        57.075,
+        19.675,
+        59.925
+      ],
+      "footprint": "LED_SMD:LED_LiteOn_LTST-C19HE1WT"
+    },
+    "U3": {
+      "pod": 0,
+      "x": 4.1,
+      "y": 23.3,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        3.1259999999999994,
+        22.3945,
+        5.074,
+        24.2055
+      ],
+      "footprint": "HapticBracelet:DRV2625_YFF_9_0.4mm"
+    },
+    "U12": {
+      "pod": 0,
+      "x": 4.0,
+      "y": 48.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        2.575,
+        46.775,
+        5.425,
+        50.225
+      ],
+      "footprint": "HapticBracelet:TPS63802_DLA0010A"
+    },
+    "L1": {
+      "pod": 0,
+      "x": 7.2,
+      "y": 48.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        5.675000000000001,
+        47.375,
+        8.725,
+        49.625
+      ],
+      "footprint": "HapticBracelet:L_DFE201612E_Placement"
+    },
+    "U11": {
+      "pod": 0,
+      "x": 10.6,
+      "y": 49.8,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        8.844999999999999,
+        48.525,
+        12.355,
+        51.074999999999996
+      ],
+      "footprint": "Package_DFN_QFN:Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm"
+    },
+    "M2": {
+      "pod": 1,
+      "x": 15.280000000000001,
+      "y": 23.5,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        14.180000000000001,
+        22.1,
+        16.380000000000003,
+        24.9
+      ],
+      "footprint": "HapticBracelet:Vybronics_VLV041235L_FPC_Contact_Draft"
+    },
+    "J104": {
+      "pod": 1,
+      "x": 1.45,
+      "y": 16.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        0.5249999999999999,
+        10.475,
+        2.375,
+        22.525
+      ],
+      "footprint": "HapticBracelet:WirePads_6_P2mm"
+    },
+    "J105": {
+      "pod": 1,
+      "x": 15.55,
+      "y": 14.0,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        14.625,
+        7.975,
+        16.475,
+        20.025
+      ],
+      "footprint": "HapticBracelet:WirePads_6_P2mm"
+    },
+    "U19": {
+      "pod": 1,
+      "x": 7.5,
+      "y": 30.0,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        3.625,
+        26.475,
+        11.375,
+        33.525
+      ],
+      "footprint": "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+    },
+    "U4": {
+      "pod": 1,
+      "x": 8.4,
+      "y": 6,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        7.426,
+        5.0945,
+        9.374,
+        6.9055
+      ],
+      "footprint": "HapticBracelet:DRV2625_YFF_9_0.4mm"
+    },
+    "C8": {
+      "pod": 1,
+      "x": 6.4,
+      "y": 6,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        5.465,
+        5.515,
+        7.335000000000001,
+        6.485
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C9": {
+      "pod": 1,
+      "x": 8.4,
+      "y": 4.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        7.465,
+        4.015,
+        9.335,
+        4.985
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C10": {
+      "pod": 1,
+      "x": 10.4,
+      "y": 6,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        9.465,
+        5.515,
+        11.335,
+        6.485
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C110": {
+      "pod": 1,
+      "x": 12.6,
+      "y": 27.3,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        11.665,
+        26.815,
+        13.535,
+        27.785
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C111": {
+      "pod": 1,
+      "x": 14.3,
+      "y": 29.1,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        12.575000000000001,
+        28.095000000000002,
+        16.025000000000002,
+        30.105
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    "C113": {
+      "pod": 1,
+      "x": 14.3,
+      "y": 32.3,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        12.575000000000001,
+        31.294999999999998,
+        16.025000000000002,
+        33.305
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    "J106": {
+      "pod": 1,
+      "x": 8.5,
+      "y": 1.7,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        5.285,
+        1.0499999999999998,
+        11.715,
+        2.35
+      ],
+      "footprint": "HapticBracelet:WirePads_5_P1.27mm"
+    },
+    "J201": {
+      "pod": 1,
+      "x": 2.0,
+      "y": 4.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        1.075,
+        2.475,
+        2.925,
+        6.525
+      ],
+      "footprint": "HapticBracelet:WirePads_2_P2mm"
+    },
+    "J107": {
+      "pod": 1,
+      "x": 14.5,
+      "y": 4.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        13.575,
+        2.475,
+        15.425,
+        6.525
+      ],
+      "footprint": "HapticBracelet:WirePads_2_P2mm"
+    },
+    "F101": {
+      "pod": 1,
+      "x": 3,
+      "y": 8,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        1.295,
+        7.025,
+        4.705,
+        8.975
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric"
+    },
+    "M3": {
+      "pod": 2,
+      "x": 15.280000000000001,
+      "y": 23.5,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        14.180000000000001,
+        22.1,
+        16.380000000000003,
+        24.9
+      ],
+      "footprint": "HapticBracelet:Vybronics_VLV041235L_FPC_Contact_Draft"
+    },
+    "J108": {
+      "pod": 2,
+      "x": 1.45,
+      "y": 16.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        0.5249999999999999,
+        10.475,
+        2.375,
+        22.525
+      ],
+      "footprint": "HapticBracelet:WirePads_6_P2mm"
+    },
+    "J109": {
+      "pod": 2,
+      "x": 15.55,
+      "y": 14.0,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        14.625,
+        7.975,
+        16.475,
+        20.025
+      ],
+      "footprint": "HapticBracelet:WirePads_6_P2mm"
+    },
+    "U20": {
+      "pod": 2,
+      "x": 7.5,
+      "y": 30.0,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        3.625,
+        26.475,
+        11.375,
+        33.525
+      ],
+      "footprint": "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+    },
+    "U5": {
+      "pod": 2,
+      "x": 8.4,
+      "y": 6,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        7.426,
+        5.0945,
+        9.374,
+        6.9055
+      ],
+      "footprint": "HapticBracelet:DRV2625_YFF_9_0.4mm"
+    },
+    "C11": {
+      "pod": 2,
+      "x": 6.4,
+      "y": 6,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        5.465,
+        5.515,
+        7.335000000000001,
+        6.485
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C12": {
+      "pod": 2,
+      "x": 8.4,
+      "y": 4.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        7.465,
+        4.015,
+        9.335,
+        4.985
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C13": {
+      "pod": 2,
+      "x": 10.4,
+      "y": 6,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        9.465,
+        5.515,
+        11.335,
+        6.485
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C120": {
+      "pod": 2,
+      "x": 12.6,
+      "y": 27.3,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        11.665,
+        26.815,
+        13.535,
+        27.785
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C121": {
+      "pod": 2,
+      "x": 14.3,
+      "y": 29.1,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        12.575000000000001,
+        28.095000000000002,
+        16.025000000000002,
+        30.105
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    "C123": {
+      "pod": 2,
+      "x": 14.3,
+      "y": 32.3,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        12.575000000000001,
+        31.294999999999998,
+        16.025000000000002,
+        33.305
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    "J110": {
+      "pod": 2,
+      "x": 8.5,
+      "y": 1.7,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        5.285,
+        1.0499999999999998,
+        11.715,
+        2.35
+      ],
+      "footprint": "HapticBracelet:WirePads_5_P1.27mm"
+    },
+    "J202": {
+      "pod": 2,
+      "x": 2.0,
+      "y": 4.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        1.075,
+        2.475,
+        2.925,
+        6.525
+      ],
+      "footprint": "HapticBracelet:WirePads_2_P2mm"
+    },
+    "J111": {
+      "pod": 2,
+      "x": 14.5,
+      "y": 4.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        13.575,
+        2.475,
+        15.425,
+        6.525
+      ],
+      "footprint": "HapticBracelet:WirePads_2_P2mm"
+    },
+    "F102": {
+      "pod": 2,
+      "x": 3,
+      "y": 8,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        1.295,
+        7.025,
+        4.705,
+        8.975
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric"
+    },
+    "M4": {
+      "pod": 3,
+      "x": 15.280000000000001,
+      "y": 23.5,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        14.180000000000001,
+        22.1,
+        16.380000000000003,
+        24.9
+      ],
+      "footprint": "HapticBracelet:Vybronics_VLV041235L_FPC_Contact_Draft"
+    },
+    "J112": {
+      "pod": 3,
+      "x": 1.45,
+      "y": 16.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        0.5249999999999999,
+        10.475,
+        2.375,
+        22.525
+      ],
+      "footprint": "HapticBracelet:WirePads_6_P2mm"
+    },
+    "J113": {
+      "pod": 3,
+      "x": 15.55,
+      "y": 14.0,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        14.625,
+        7.975,
+        16.475,
+        20.025
+      ],
+      "footprint": "HapticBracelet:WirePads_6_P2mm"
+    },
+    "U21": {
+      "pod": 3,
+      "x": 7.5,
+      "y": 30.0,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        3.625,
+        26.475,
+        11.375,
+        33.525
+      ],
+      "footprint": "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+    },
+    "U6": {
+      "pod": 3,
+      "x": 8.4,
+      "y": 6,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        7.426,
+        5.0945,
+        9.374,
+        6.9055
+      ],
+      "footprint": "HapticBracelet:DRV2625_YFF_9_0.4mm"
+    },
+    "C14": {
+      "pod": 3,
+      "x": 6.4,
+      "y": 6,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        5.465,
+        5.515,
+        7.335000000000001,
+        6.485
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C15": {
+      "pod": 3,
+      "x": 8.4,
+      "y": 4.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        7.465,
+        4.015,
+        9.335,
+        4.985
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C16": {
+      "pod": 3,
+      "x": 10.4,
+      "y": 6,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        9.465,
+        5.515,
+        11.335,
+        6.485
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C130": {
+      "pod": 3,
+      "x": 12.6,
+      "y": 27.3,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        11.665,
+        26.815,
+        13.535,
+        27.785
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C131": {
+      "pod": 3,
+      "x": 14.3,
+      "y": 29.1,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        12.575000000000001,
+        28.095000000000002,
+        16.025000000000002,
+        30.105
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    "C133": {
+      "pod": 3,
+      "x": 14.3,
+      "y": 32.3,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        12.575000000000001,
+        31.294999999999998,
+        16.025000000000002,
+        33.305
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    "J114": {
+      "pod": 3,
+      "x": 8.5,
+      "y": 1.7,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        5.285,
+        1.0499999999999998,
+        11.715,
+        2.35
+      ],
+      "footprint": "HapticBracelet:WirePads_5_P1.27mm"
+    },
+    "J203": {
+      "pod": 3,
+      "x": 2.0,
+      "y": 4.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        1.075,
+        2.475,
+        2.925,
+        6.525
+      ],
+      "footprint": "HapticBracelet:WirePads_2_P2mm"
+    },
+    "J115": {
+      "pod": 3,
+      "x": 14.5,
+      "y": 4.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        13.575,
+        2.475,
+        15.425,
+        6.525
+      ],
+      "footprint": "HapticBracelet:WirePads_2_P2mm"
+    },
+    "F103": {
+      "pod": 3,
+      "x": 3,
+      "y": 8,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        1.295,
+        7.025,
+        4.705,
+        8.975
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric"
+    },
+    "M5": {
+      "pod": 4,
+      "x": 15.280000000000001,
+      "y": 23.5,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        14.180000000000001,
+        22.1,
+        16.380000000000003,
+        24.9
+      ],
+      "footprint": "HapticBracelet:Vybronics_VLV041235L_FPC_Contact_Draft"
+    },
+    "J116": {
+      "pod": 4,
+      "x": 1.45,
+      "y": 16.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        0.5249999999999999,
+        10.475,
+        2.375,
+        22.525
+      ],
+      "footprint": "HapticBracelet:WirePads_6_P2mm"
+    },
+    "J117": {
+      "pod": 4,
+      "x": 15.55,
+      "y": 14.0,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        14.625,
+        7.975,
+        16.475,
+        20.025
+      ],
+      "footprint": "HapticBracelet:WirePads_6_P2mm"
+    },
+    "U22": {
+      "pod": 4,
+      "x": 7.5,
+      "y": 30.0,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        3.625,
+        26.475,
+        11.375,
+        33.525
+      ],
+      "footprint": "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+    },
+    "U7": {
+      "pod": 4,
+      "x": 8.4,
+      "y": 6,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        7.426,
+        5.0945,
+        9.374,
+        6.9055
+      ],
+      "footprint": "HapticBracelet:DRV2625_YFF_9_0.4mm"
+    },
+    "C17": {
+      "pod": 4,
+      "x": 6.4,
+      "y": 6,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        5.465,
+        5.515,
+        7.335000000000001,
+        6.485
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C18": {
+      "pod": 4,
+      "x": 8.4,
+      "y": 4.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        7.465,
+        4.015,
+        9.335,
+        4.985
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C19": {
+      "pod": 4,
+      "x": 10.4,
+      "y": 6,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        9.465,
+        5.515,
+        11.335,
+        6.485
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C140": {
+      "pod": 4,
+      "x": 12.6,
+      "y": 27.3,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        11.665,
+        26.815,
+        13.535,
+        27.785
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C141": {
+      "pod": 4,
+      "x": 14.3,
+      "y": 29.1,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        12.575000000000001,
+        28.095000000000002,
+        16.025000000000002,
+        30.105
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    "C143": {
+      "pod": 4,
+      "x": 14.3,
+      "y": 32.3,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        12.575000000000001,
+        31.294999999999998,
+        16.025000000000002,
+        33.305
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    "J118": {
+      "pod": 4,
+      "x": 8.5,
+      "y": 1.7,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        5.285,
+        1.0499999999999998,
+        11.715,
+        2.35
+      ],
+      "footprint": "HapticBracelet:WirePads_5_P1.27mm"
+    },
+    "J204": {
+      "pod": 4,
+      "x": 2.0,
+      "y": 4.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        1.075,
+        2.475,
+        2.925,
+        6.525
+      ],
+      "footprint": "HapticBracelet:WirePads_2_P2mm"
+    },
+    "J119": {
+      "pod": 4,
+      "x": 14.5,
+      "y": 4.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        13.575,
+        2.475,
+        15.425,
+        6.525
+      ],
+      "footprint": "HapticBracelet:WirePads_2_P2mm"
+    },
+    "F104": {
+      "pod": 4,
+      "x": 3,
+      "y": 8,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        1.295,
+        7.025,
+        4.705,
+        8.975
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric"
+    },
+    "M6": {
+      "pod": 5,
+      "x": 15.280000000000001,
+      "y": 23.5,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        14.180000000000001,
+        22.1,
+        16.380000000000003,
+        24.9
+      ],
+      "footprint": "HapticBracelet:Vybronics_VLV041235L_FPC_Contact_Draft"
+    },
+    "J120": {
+      "pod": 5,
+      "x": 1.45,
+      "y": 16.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        0.5249999999999999,
+        10.475,
+        2.375,
+        22.525
+      ],
+      "footprint": "HapticBracelet:WirePads_6_P2mm"
+    },
+    "J121": {
+      "pod": 5,
+      "x": 15.55,
+      "y": 14.0,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        14.625,
+        7.975,
+        16.475,
+        20.025
+      ],
+      "footprint": "HapticBracelet:WirePads_6_P2mm"
+    },
+    "U23": {
+      "pod": 5,
+      "x": 7.5,
+      "y": 30.0,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        3.625,
+        26.475,
+        11.375,
+        33.525
+      ],
+      "footprint": "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+    },
+    "U8": {
+      "pod": 5,
+      "x": 8.4,
+      "y": 6,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        7.426,
+        5.0945,
+        9.374,
+        6.9055
+      ],
+      "footprint": "HapticBracelet:DRV2625_YFF_9_0.4mm"
+    },
+    "C20": {
+      "pod": 5,
+      "x": 6.4,
+      "y": 6,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        5.465,
+        5.515,
+        7.335000000000001,
+        6.485
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C21": {
+      "pod": 5,
+      "x": 8.4,
+      "y": 4.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        7.465,
+        4.015,
+        9.335,
+        4.985
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C22": {
+      "pod": 5,
+      "x": 10.4,
+      "y": 6,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        9.465,
+        5.515,
+        11.335,
+        6.485
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C150": {
+      "pod": 5,
+      "x": 12.6,
+      "y": 27.3,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        11.665,
+        26.815,
+        13.535,
+        27.785
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C151": {
+      "pod": 5,
+      "x": 14.3,
+      "y": 29.1,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        12.575000000000001,
+        28.095000000000002,
+        16.025000000000002,
+        30.105
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    "C153": {
+      "pod": 5,
+      "x": 14.3,
+      "y": 32.3,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        12.575000000000001,
+        31.294999999999998,
+        16.025000000000002,
+        33.305
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    "J122": {
+      "pod": 5,
+      "x": 8.5,
+      "y": 1.7,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        5.285,
+        1.0499999999999998,
+        11.715,
+        2.35
+      ],
+      "footprint": "HapticBracelet:WirePads_5_P1.27mm"
+    },
+    "J205": {
+      "pod": 5,
+      "x": 2.0,
+      "y": 4.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        1.075,
+        2.475,
+        2.925,
+        6.525
+      ],
+      "footprint": "HapticBracelet:WirePads_2_P2mm"
+    },
+    "J123": {
+      "pod": 5,
+      "x": 14.5,
+      "y": 4.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        13.575,
+        2.475,
+        15.425,
+        6.525
+      ],
+      "footprint": "HapticBracelet:WirePads_2_P2mm"
+    },
+    "F105": {
+      "pod": 5,
+      "x": 3,
+      "y": 8,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        1.295,
+        7.025,
+        4.705,
+        8.975
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric"
+    },
+    "M7": {
+      "pod": 6,
+      "x": 15.280000000000001,
+      "y": 23.5,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        14.180000000000001,
+        22.1,
+        16.380000000000003,
+        24.9
+      ],
+      "footprint": "HapticBracelet:Vybronics_VLV041235L_FPC_Contact_Draft"
+    },
+    "J124": {
+      "pod": 6,
+      "x": 1.45,
+      "y": 16.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        0.5249999999999999,
+        10.475,
+        2.375,
+        22.525
+      ],
+      "footprint": "HapticBracelet:WirePads_6_P2mm"
+    },
+    "J125": {
+      "pod": 6,
+      "x": 15.55,
+      "y": 14.0,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        14.625,
+        7.975,
+        16.475,
+        20.025
+      ],
+      "footprint": "HapticBracelet:WirePads_6_P2mm"
+    },
+    "U24": {
+      "pod": 6,
+      "x": 7.5,
+      "y": 30.0,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        3.625,
+        26.475,
+        11.375,
+        33.525
+      ],
+      "footprint": "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+    },
+    "U9": {
+      "pod": 6,
+      "x": 8.4,
+      "y": 6,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        7.426,
+        5.0945,
+        9.374,
+        6.9055
+      ],
+      "footprint": "HapticBracelet:DRV2625_YFF_9_0.4mm"
+    },
+    "C23": {
+      "pod": 6,
+      "x": 6.4,
+      "y": 6,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        5.465,
+        5.515,
+        7.335000000000001,
+        6.485
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C24": {
+      "pod": 6,
+      "x": 8.4,
+      "y": 4.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        7.465,
+        4.015,
+        9.335,
+        4.985
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C25": {
+      "pod": 6,
+      "x": 10.4,
+      "y": 6,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        9.465,
+        5.515,
+        11.335,
+        6.485
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C160": {
+      "pod": 6,
+      "x": 12.6,
+      "y": 27.3,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        11.665,
+        26.815,
+        13.535,
+        27.785
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C161": {
+      "pod": 6,
+      "x": 14.3,
+      "y": 29.1,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        12.575000000000001,
+        28.095000000000002,
+        16.025000000000002,
+        30.105
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    "C163": {
+      "pod": 6,
+      "x": 14.3,
+      "y": 32.3,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        12.575000000000001,
+        31.294999999999998,
+        16.025000000000002,
+        33.305
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    "J126": {
+      "pod": 6,
+      "x": 8.5,
+      "y": 1.7,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        5.285,
+        1.0499999999999998,
+        11.715,
+        2.35
+      ],
+      "footprint": "HapticBracelet:WirePads_5_P1.27mm"
+    },
+    "J206": {
+      "pod": 6,
+      "x": 2.0,
+      "y": 4.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        1.075,
+        2.475,
+        2.925,
+        6.525
+      ],
+      "footprint": "HapticBracelet:WirePads_2_P2mm"
+    },
+    "J127": {
+      "pod": 6,
+      "x": 14.5,
+      "y": 4.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        13.575,
+        2.475,
+        15.425,
+        6.525
+      ],
+      "footprint": "HapticBracelet:WirePads_2_P2mm"
+    },
+    "F106": {
+      "pod": 6,
+      "x": 3,
+      "y": 8,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        1.295,
+        7.025,
+        4.705,
+        8.975
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric"
+    },
+    "M8": {
+      "pod": 7,
+      "x": 15.280000000000001,
+      "y": 23.5,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        14.180000000000001,
+        22.1,
+        16.380000000000003,
+        24.9
+      ],
+      "footprint": "HapticBracelet:Vybronics_VLV041235L_FPC_Contact_Draft"
+    },
+    "J128": {
+      "pod": 7,
+      "x": 1.45,
+      "y": 16.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        0.5249999999999999,
+        10.475,
+        2.375,
+        22.525
+      ],
+      "footprint": "HapticBracelet:WirePads_6_P2mm"
+    },
+    "J129": {
+      "pod": 7,
+      "x": 15.55,
+      "y": 14.0,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        14.625,
+        7.975,
+        16.475,
+        20.025
+      ],
+      "footprint": "HapticBracelet:WirePads_6_P2mm"
+    },
+    "U25": {
+      "pod": 7,
+      "x": 7.5,
+      "y": 30.0,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        3.625,
+        26.475,
+        11.375,
+        33.525
+      ],
+      "footprint": "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+    },
+    "U10": {
+      "pod": 7,
+      "x": 8.4,
+      "y": 6,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        7.426,
+        5.0945,
+        9.374,
+        6.9055
+      ],
+      "footprint": "HapticBracelet:DRV2625_YFF_9_0.4mm"
+    },
+    "C26": {
+      "pod": 7,
+      "x": 6.4,
+      "y": 6,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        5.465,
+        5.515,
+        7.335000000000001,
+        6.485
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C27": {
+      "pod": 7,
+      "x": 8.4,
+      "y": 4.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        7.465,
+        4.015,
+        9.335,
+        4.985
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C28": {
+      "pod": 7,
+      "x": 10.4,
+      "y": 6,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        9.465,
+        5.515,
+        11.335,
+        6.485
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C170": {
+      "pod": 7,
+      "x": 12.6,
+      "y": 27.3,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        11.665,
+        26.815,
+        13.535,
+        27.785
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C171": {
+      "pod": 7,
+      "x": 14.3,
+      "y": 29.1,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        12.575000000000001,
+        28.095000000000002,
+        16.025000000000002,
+        30.105
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    "C173": {
+      "pod": 7,
+      "x": 14.3,
+      "y": 32.3,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        12.575000000000001,
+        31.294999999999998,
+        16.025000000000002,
+        33.305
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    "J130": {
+      "pod": 7,
+      "x": 8.5,
+      "y": 1.7,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        5.285,
+        1.0499999999999998,
+        11.715,
+        2.35
+      ],
+      "footprint": "HapticBracelet:WirePads_5_P1.27mm"
+    },
+    "J207": {
+      "pod": 7,
+      "x": 2.0,
+      "y": 4.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        1.075,
+        2.475,
+        2.925,
+        6.525
+      ],
+      "footprint": "HapticBracelet:WirePads_2_P2mm"
+    },
+    "J131": {
+      "pod": 7,
+      "x": 14.5,
+      "y": 4.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        13.575,
+        2.475,
+        15.425,
+        6.525
+      ],
+      "footprint": "HapticBracelet:WirePads_2_P2mm"
+    },
+    "F107": {
+      "pod": 7,
+      "x": 3,
+      "y": 8,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        1.295,
+        7.025,
+        4.705,
+        8.975
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric"
+    },
+    "SW1": {
+      "pod": 0,
+      "x": 10.5,
+      "y": 19.25,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        5.825,
+        16.725,
+        15.175,
+        21.775
+      ],
+      "footprint": "Button_Switch_SMD:SW_SPST_TL3305A"
+    },
+    "SW2": {
+      "pod": 0,
+      "x": 16.0,
+      "y": 26.5,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        13.475,
+        21.825,
+        18.525,
+        31.175
+      ],
+      "footprint": "Button_Switch_SMD:SW_SPST_TL3305A"
+    },
+    "J1": {
+      "pod": 0,
+      "x": 18.5,
+      "y": 14.75,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        17.575,
+        8.725,
+        19.425,
+        20.775
+      ],
+      "footprint": "HapticBracelet:WirePads_6_P2mm"
+    },
+    "U16": {
+      "pod": 0,
+      "x": 6.75,
+      "y": 52.0,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        4.675,
+        50.275,
+        8.825,
+        53.725
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6"
+    },
+    "U17": {
+      "pod": 0,
+      "x": 3.75,
+      "y": 40.5,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        2.025,
+        38.425,
+        5.475,
+        42.575
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6"
+    },
+    "U26": {
+      "pod": 0,
+      "x": 3.75,
+      "y": 18.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        1.6749999999999998,
+        16.775,
+        5.825,
+        20.225
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6"
+    },
+    "Q1": {
+      "pod": 0,
+      "x": 15.5,
+      "y": 41.25,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        13.545,
+        39.525,
+        17.455,
+        42.975
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23"
+    },
+    "Q2": {
+      "pod": 0,
+      "x": 3.5,
+      "y": 44.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        1.545,
+        42.775,
+        5.455,
+        46.225
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23"
+    },
+    "Q3": {
+      "pod": 0,
+      "x": 14.25,
+      "y": 48.5,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        12.525,
+        46.545,
+        15.975,
+        50.455
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23"
+    },
+    "Q4": {
+      "pod": 0,
+      "x": 2.5,
+      "y": 52.0,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        0.5449999999999999,
+        50.275,
+        4.455,
+        53.725
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23"
+    },
+    "Q5": {
+      "pod": 0,
+      "x": 18.0,
+      "y": 54.25,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        16.045,
+        52.525,
+        19.955,
+        55.975
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23"
+    },
+    "J3": {
+      "pod": 0,
+      "x": 13.0,
+      "y": 52.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        9.975,
+        51.275,
+        16.025,
+        52.725
+      ],
+      "footprint": "HapticBracelet:WirePads_4_P1.5mm"
+    },
+    "J102": {
+      "pod": 0,
+      "x": 5.0,
+      "y": 33.25,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        4.35,
+        30.035,
+        5.65,
+        36.465
+      ],
+      "footprint": "HapticBracelet:WirePads_5_P1.27mm"
+    },
+    "U13": {
+      "pod": 0,
+      "x": 2.75,
+      "y": 37.0,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        1.325,
+        35.575,
+        4.175,
+        38.425
+      ],
+      "footprint": "Package_DFN_QFN:Texas_X2QFN-12_1.6x1.6mm_P0.4mm"
+    },
+    "J103": {
+      "pod": 0,
+      "x": 18.5,
+      "y": 42.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        17.575,
+        40.475,
+        19.425,
+        44.525
+      ],
+      "footprint": "HapticBracelet:WirePads_2_P2mm"
+    },
+    "J200": {
+      "pod": 0,
+      "x": 15.5,
+      "y": 32.5,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        13.475,
+        31.575,
+        17.525,
+        33.425
+      ],
+      "footprint": "HapticBracelet:WirePads_2_P2mm"
+    },
+    "C101": {
+      "pod": 0,
+      "x": 4.5,
+      "y": 28.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        3.495,
+        26.525,
+        5.505,
+        29.975
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    "C103": {
+      "pod": 0,
+      "x": 14.5,
+      "y": 44.75,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        13.495000000000001,
+        43.025,
+        15.504999999999999,
+        46.475
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    "C3": {
+      "pod": 0,
+      "x": 4.0,
+      "y": 21.25,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        2.275,
+        20.245,
+        5.725,
+        22.255
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    "C35": {
+      "pod": 0,
+      "x": 1.5,
+      "y": 48.5,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        0.4950000000000001,
+        46.775,
+        2.505,
+        50.225
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    "C37": {
+      "pod": 0,
+      "x": 3.25,
+      "y": 54.75,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        1.525,
+        53.745,
+        4.975,
+        55.755
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    "C38": {
+      "pod": 0,
+      "x": 16.25,
+      "y": 20.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        15.245000000000001,
+        18.275,
+        17.255,
+        21.725
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    "C39": {
+      "pod": 0,
+      "x": 2.5,
+      "y": 15.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        1.495,
+        13.275,
+        3.505,
+        16.725
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    "C40": {
+      "pod": 0,
+      "x": 2.5,
+      "y": 11.5,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        1.495,
+        9.775,
+        3.505,
+        13.225
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric"
+    },
+    "F100": {
+      "pod": 0,
+      "x": 19.75,
+      "y": 34.75,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        18.775,
+        33.045,
+        20.725,
+        36.455
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric"
+    },
+    "C32": {
+      "pod": 0,
+      "x": 10.25,
+      "y": 47.75,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        8.745000000000001,
+        46.995,
+        11.754999999999999,
+        48.505
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    "C34": {
+      "pod": 0,
+      "x": 3.5,
+      "y": 56.75,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        1.995,
+        55.995,
+        5.005,
+        57.505
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    "C36": {
+      "pod": 0,
+      "x": 3.5,
+      "y": 33.5,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        2.745,
+        31.995,
+        4.255,
+        35.005
+      ],
+      "footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    "U14": {
+      "pod": 0,
+      "x": 4.25,
+      "y": 58.75,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        3.425,
+        58.025,
+        5.075,
+        59.475
+      ],
+      "footprint": "Package_TO_SOT_SMD:Texas_DRT-3"
+    },
+    "U15": {
+      "pod": 0,
+      "x": 1.25,
+      "y": 41.75,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        0.525,
+        40.925,
+        1.975,
+        42.575
+      ],
+      "footprint": "Package_TO_SOT_SMD:Texas_DRT-3"
+    },
+    "R1": {
+      "pod": 0,
+      "x": 3.75,
+      "y": 31.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        3.255,
+        30.045,
+        4.245,
+        31.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R10": {
+      "pod": 1,
+      "x": 11.75,
+      "y": 18.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        11.255,
+        17.045,
+        12.245,
+        18.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R100": {
+      "pod": 0,
+      "x": 6.5,
+      "y": 38.75,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        5.545,
+        38.255,
+        7.455,
+        39.245
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R101": {
+      "pod": 0,
+      "x": 11.25,
+      "y": 38.75,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        10.295,
+        38.255,
+        12.205,
+        39.245
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R102": {
+      "pod": 0,
+      "x": 8.5,
+      "y": 38.75,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        7.545,
+        38.255,
+        9.455,
+        39.245
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R103": {
+      "pod": 0,
+      "x": 1.5,
+      "y": 39.5,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        1.005,
+        38.545,
+        1.995,
+        40.455
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R104": {
+      "pod": 0,
+      "x": 3.0,
+      "y": 29.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        2.505,
+        28.045,
+        3.495,
+        29.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R105": {
+      "pod": 0,
+      "x": 16.5,
+      "y": 43.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        15.545,
+        43.005,
+        17.455,
+        43.995
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R11": {
+      "pod": 1,
+      "x": 11.75,
+      "y": 16.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        11.255,
+        15.045,
+        12.245,
+        16.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R110": {
+      "pod": 1,
+      "x": 3.25,
+      "y": 16.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        2.755,
+        15.045,
+        3.745,
+        16.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R111": {
+      "pod": 1,
+      "x": 11.75,
+      "y": 14.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        11.255,
+        13.045,
+        12.245,
+        14.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R112": {
+      "pod": 1,
+      "x": 3.25,
+      "y": 14.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        2.755,
+        13.045,
+        3.745,
+        14.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R113": {
+      "pod": 1,
+      "x": 12.75,
+      "y": 15.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        12.255,
+        14.295,
+        13.245,
+        16.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R114": {
+      "pod": 1,
+      "x": 12.25,
+      "y": 19.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        11.295,
+        19.005,
+        13.205,
+        19.995
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R115": {
+      "pod": 1,
+      "x": 12.75,
+      "y": 17.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        12.255,
+        16.295,
+        13.245,
+        18.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R12": {
+      "pod": 2,
+      "x": 11.75,
+      "y": 18.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        11.255,
+        17.045,
+        12.245,
+        18.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R120": {
+      "pod": 2,
+      "x": 3.25,
+      "y": 16.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        2.755,
+        15.045,
+        3.745,
+        16.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R121": {
+      "pod": 2,
+      "x": 11.75,
+      "y": 15.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        11.255,
+        14.295,
+        12.245,
+        16.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R122": {
+      "pod": 2,
+      "x": 3.25,
+      "y": 14.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        2.755,
+        13.045,
+        3.745,
+        14.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R123": {
+      "pod": 2,
+      "x": 11.75,
+      "y": 13.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        11.255,
+        12.295,
+        12.245,
+        14.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R124": {
+      "pod": 2,
+      "x": 12.25,
+      "y": 19.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        11.295,
+        19.005,
+        13.205,
+        19.995
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R125": {
+      "pod": 2,
+      "x": 12.75,
+      "y": 17.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        12.255,
+        16.295,
+        13.245,
+        18.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R13": {
+      "pod": 2,
+      "x": 3.25,
+      "y": 18.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        2.755,
+        17.045,
+        3.745,
+        18.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R130": {
+      "pod": 3,
+      "x": 3.25,
+      "y": 16.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        2.755,
+        15.045,
+        3.745,
+        16.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R131": {
+      "pod": 3,
+      "x": 11.75,
+      "y": 15.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        11.255,
+        14.295,
+        12.245,
+        16.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R132": {
+      "pod": 3,
+      "x": 3.25,
+      "y": 14.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        2.755,
+        13.045,
+        3.745,
+        14.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R133": {
+      "pod": 3,
+      "x": 11.75,
+      "y": 17.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        11.255,
+        16.295,
+        12.245,
+        18.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R134": {
+      "pod": 3,
+      "x": 11.75,
+      "y": 19.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        11.255,
+        18.295,
+        12.245,
+        20.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R135": {
+      "pod": 3,
+      "x": 12.75,
+      "y": 17.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        12.255,
+        16.295,
+        13.245,
+        18.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R14": {
+      "pod": 3,
+      "x": 3.25,
+      "y": 18.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        2.755,
+        17.045,
+        3.745,
+        18.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R140": {
+      "pod": 4,
+      "x": 3.25,
+      "y": 16.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        2.755,
+        15.045,
+        3.745,
+        16.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R141": {
+      "pod": 4,
+      "x": 11.75,
+      "y": 15.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        11.255,
+        14.295,
+        12.245,
+        16.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R142": {
+      "pod": 4,
+      "x": 3.25,
+      "y": 14.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        2.755,
+        13.045,
+        3.745,
+        14.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R143": {
+      "pod": 4,
+      "x": 11.75,
+      "y": 17.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        11.255,
+        16.295,
+        12.245,
+        18.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R144": {
+      "pod": 4,
+      "x": 11.75,
+      "y": 19.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        11.255,
+        18.295,
+        12.245,
+        20.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R145": {
+      "pod": 4,
+      "x": 12.75,
+      "y": 17.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        12.255,
+        16.295,
+        13.245,
+        18.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R15": {
+      "pod": 3,
+      "x": 12.75,
+      "y": 19.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        12.255,
+        18.295,
+        13.245,
+        20.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R150": {
+      "pod": 5,
+      "x": 3.25,
+      "y": 16.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        2.755,
+        15.045,
+        3.745,
+        16.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R151": {
+      "pod": 5,
+      "x": 11.75,
+      "y": 15.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        11.255,
+        14.295,
+        12.245,
+        16.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R152": {
+      "pod": 5,
+      "x": 3.25,
+      "y": 14.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        2.755,
+        13.045,
+        3.745,
+        14.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R153": {
+      "pod": 5,
+      "x": 11.75,
+      "y": 17.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        11.255,
+        16.295,
+        12.245,
+        18.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R154": {
+      "pod": 5,
+      "x": 11.75,
+      "y": 19.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        11.255,
+        18.295,
+        12.245,
+        20.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R155": {
+      "pod": 5,
+      "x": 12.75,
+      "y": 17.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        12.255,
+        16.295,
+        13.245,
+        18.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R16": {
+      "pod": 4,
+      "x": 3.25,
+      "y": 18.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        2.755,
+        17.045,
+        3.745,
+        18.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R160": {
+      "pod": 6,
+      "x": 3.25,
+      "y": 16.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        2.755,
+        15.045,
+        3.745,
+        16.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R161": {
+      "pod": 6,
+      "x": 11.75,
+      "y": 15.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        11.255,
+        14.295,
+        12.245,
+        16.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R162": {
+      "pod": 6,
+      "x": 3.25,
+      "y": 14.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        2.755,
+        13.045,
+        3.745,
+        14.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R163": {
+      "pod": 6,
+      "x": 11.75,
+      "y": 17.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        11.255,
+        16.295,
+        12.245,
+        18.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R164": {
+      "pod": 6,
+      "x": 11.75,
+      "y": 19.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        11.255,
+        18.295,
+        12.245,
+        20.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R165": {
+      "pod": 6,
+      "x": 12.75,
+      "y": 17.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        12.255,
+        16.295,
+        13.245,
+        18.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R17": {
+      "pod": 4,
+      "x": 12.75,
+      "y": 19.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        12.255,
+        18.295,
+        13.245,
+        20.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R170": {
+      "pod": 7,
+      "x": 3.25,
+      "y": 16.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        2.755,
+        15.045,
+        3.745,
+        16.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R171": {
+      "pod": 7,
+      "x": 11.75,
+      "y": 15.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        11.255,
+        14.295,
+        12.245,
+        16.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R172": {
+      "pod": 7,
+      "x": 3.25,
+      "y": 14.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        2.755,
+        13.045,
+        3.745,
+        14.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R173": {
+      "pod": 7,
+      "x": 11.75,
+      "y": 17.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        11.255,
+        16.295,
+        12.245,
+        18.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R174": {
+      "pod": 7,
+      "x": 11.75,
+      "y": 19.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        11.255,
+        18.295,
+        12.245,
+        20.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R175": {
+      "pod": 7,
+      "x": 12.75,
+      "y": 17.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        12.255,
+        16.295,
+        13.245,
+        18.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R18": {
+      "pod": 5,
+      "x": 3.25,
+      "y": 18.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        2.755,
+        17.045,
+        3.745,
+        18.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R19": {
+      "pod": 5,
+      "x": 12.75,
+      "y": 19.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        12.255,
+        18.295,
+        13.245,
+        20.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R2": {
+      "pod": 0,
+      "x": 4.75,
+      "y": 26.0,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        3.795,
+        25.505,
+        5.705,
+        26.495
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R20": {
+      "pod": 6,
+      "x": 3.25,
+      "y": 18.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        2.755,
+        17.045,
+        3.745,
+        18.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R21": {
+      "pod": 6,
+      "x": 12.75,
+      "y": 19.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        12.255,
+        18.295,
+        13.245,
+        20.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R22": {
+      "pod": 7,
+      "x": 3.25,
+      "y": 18.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        2.755,
+        17.045,
+        3.745,
+        18.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R23": {
+      "pod": 7,
+      "x": 12.75,
+      "y": 19.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        12.255,
+        18.295,
+        13.245,
+        20.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R24": {
+      "pod": 0,
+      "x": 1.0,
+      "y": 43.75,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        0.505,
+        42.795,
+        1.495,
+        44.705
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R25": {
+      "pod": 0,
+      "x": 1.0,
+      "y": 45.75,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        0.505,
+        44.795,
+        1.495,
+        46.705
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R26": {
+      "pod": 0,
+      "x": 10.0,
+      "y": 53.25,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        9.045,
+        52.755,
+        10.955,
+        53.745
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R27": {
+      "pod": 0,
+      "x": 4.75,
+      "y": 24.75,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        3.795,
+        24.255,
+        5.705,
+        25.245
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R28": {
+      "pod": 0,
+      "x": 0.75,
+      "y": 37.5,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        0.255,
+        36.545,
+        1.245,
+        38.455
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R29": {
+      "pod": 0,
+      "x": 12.0,
+      "y": 53.25,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        11.045,
+        52.755,
+        12.955,
+        53.745
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R3": {
+      "pod": 0,
+      "x": 16.25,
+      "y": 17.25,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        15.295,
+        16.755,
+        17.205,
+        17.745
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R30": {
+      "pod": 0,
+      "x": 3.0,
+      "y": 27.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        2.505,
+        26.045,
+        3.495,
+        27.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R31": {
+      "pod": 0,
+      "x": 2.0,
+      "y": 22.75,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        1.045,
+        22.255,
+        2.955,
+        23.245
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R32": {
+      "pod": 0,
+      "x": 14.0,
+      "y": 53.25,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        13.045,
+        52.755,
+        14.955,
+        53.745
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R33": {
+      "pod": 0,
+      "x": 1.25,
+      "y": 21.75,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        0.29500000000000004,
+        21.255,
+        2.205,
+        22.245
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R34": {
+      "pod": 0,
+      "x": 1.0,
+      "y": 54.75,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        0.505,
+        53.795,
+        1.495,
+        55.705
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R35": {
+      "pod": 0,
+      "x": 1.5,
+      "y": 56.75,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        1.005,
+        55.795,
+        1.995,
+        57.705
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R36": {
+      "pod": 0,
+      "x": 1.25,
+      "y": 20.75,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        0.29500000000000004,
+        20.255,
+        2.205,
+        21.245
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R37": {
+      "pod": 0,
+      "x": 19.25,
+      "y": 37.5,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        18.755,
+        36.545,
+        19.745,
+        38.455
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R38": {
+      "pod": 0,
+      "x": 2.25,
+      "y": 58.25,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        1.295,
+        57.755,
+        3.205,
+        58.745
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R39": {
+      "pod": 0,
+      "x": 20.0,
+      "y": 20.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        19.505,
+        19.045,
+        20.495,
+        20.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R4": {
+      "pod": 0,
+      "x": 3.0,
+      "y": 8.75,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        2.505,
+        7.795,
+        3.495,
+        9.705
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R40": {
+      "pod": 0,
+      "x": 0.75,
+      "y": 58.75,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        0.255,
+        57.795,
+        1.245,
+        59.705
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R41": {
+      "pod": 0,
+      "x": 2.25,
+      "y": 59.25,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        1.295,
+        58.755,
+        3.205,
+        59.745
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R42": {
+      "pod": 0,
+      "x": 1.0,
+      "y": 19.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        0.505,
+        18.295,
+        1.495,
+        20.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R43": {
+      "pod": 0,
+      "x": 1.0,
+      "y": 15.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        0.505,
+        14.045,
+        1.495,
+        15.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R44": {
+      "pod": 0,
+      "x": 20.25,
+      "y": 37.5,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        19.755,
+        36.545,
+        20.745,
+        38.455
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R45": {
+      "pod": 0,
+      "x": 1.0,
+      "y": 13.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        0.505,
+        12.045,
+        1.495,
+        13.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R46": {
+      "pod": 0,
+      "x": 1.0,
+      "y": 17.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        0.505,
+        16.295,
+        1.495,
+        18.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R47": {
+      "pod": 0,
+      "x": 19.25,
+      "y": 39.5,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        18.755,
+        38.545,
+        19.745,
+        40.455
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R48": {
+      "pod": 0,
+      "x": 20.0,
+      "y": 18.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        19.505,
+        17.045,
+        20.495,
+        18.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R49": {
+      "pod": 0,
+      "x": 20.25,
+      "y": 39.5,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        19.755,
+        38.545,
+        20.745,
+        40.455
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R5": {
+      "pod": 0,
+      "x": 20.0,
+      "y": 16.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        19.505,
+        15.045,
+        20.495,
+        16.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R50": {
+      "pod": 0,
+      "x": 20.0,
+      "y": 14.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        19.505,
+        13.045,
+        20.495,
+        14.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R51": {
+      "pod": 0,
+      "x": 20.0,
+      "y": 41.5,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        19.505,
+        40.545,
+        20.495,
+        42.455
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R52": {
+      "pod": 0,
+      "x": 20.0,
+      "y": 12.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        19.505,
+        11.045,
+        20.495,
+        12.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R53": {
+      "pod": 7,
+      "x": 11.75,
+      "y": 13.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        11.255,
+        12.295,
+        12.245,
+        14.205
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R6": {
+      "pod": 0,
+      "x": 20.0,
+      "y": 43.5,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        19.505,
+        42.545,
+        20.495,
+        44.455
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R7": {
+      "pod": 0,
+      "x": 20.0,
+      "y": 10.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        19.505,
+        9.045,
+        20.495,
+        10.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R8": {
+      "pod": 0,
+      "x": 1.0,
+      "y": 11.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        0.505,
+        10.045,
+        1.495,
+        11.955
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "R9": {
+      "pod": 0,
+      "x": 1.5,
+      "y": 9.25,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        0.545,
+        8.755,
+        2.455,
+        9.745
+      ],
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    "C1": {
+      "pod": 0,
+      "x": 18.0,
+      "y": 7.75,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        17.515,
+        6.8149999999999995,
+        18.485,
+        8.685
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C100": {
+      "pod": 0,
+      "x": 17.0,
+      "y": 56.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        16.065,
+        56.015,
+        17.935,
+        56.985
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C102": {
+      "pod": 0,
+      "x": 19.0,
+      "y": 56.5,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        18.065,
+        56.015,
+        19.935,
+        56.985
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C112": {
+      "pod": 1,
+      "x": 13.75,
+      "y": 17.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        13.265,
+        16.315,
+        14.235,
+        18.185
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C122": {
+      "pod": 2,
+      "x": 13.75,
+      "y": 17.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        13.265,
+        16.315,
+        14.235,
+        18.185
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C132": {
+      "pod": 3,
+      "x": 13.75,
+      "y": 17.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        13.265,
+        16.315,
+        14.235,
+        18.185
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C142": {
+      "pod": 4,
+      "x": 13.75,
+      "y": 17.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        13.265,
+        16.315,
+        14.235,
+        18.185
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C152": {
+      "pod": 5,
+      "x": 13.75,
+      "y": 17.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        13.265,
+        16.315,
+        14.235,
+        18.185
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C162": {
+      "pod": 6,
+      "x": 13.75,
+      "y": 17.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        13.265,
+        16.315,
+        14.235,
+        18.185
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C172": {
+      "pod": 7,
+      "x": 13.75,
+      "y": 17.25,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        13.265,
+        16.315,
+        14.235,
+        18.185
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C2": {
+      "pod": 0,
+      "x": 16.5,
+      "y": 58.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        16.015,
+        57.065,
+        16.985,
+        58.935
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C29": {
+      "pod": 0,
+      "x": 1.5,
+      "y": 8.25,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        0.565,
+        7.765,
+        2.435,
+        8.735
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C30": {
+      "pod": 0,
+      "x": 2.5,
+      "y": 7.25,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        1.565,
+        6.765,
+        3.435,
+        7.735
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C31": {
+      "pod": 0,
+      "x": 20.25,
+      "y": 58.0,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        19.765,
+        57.065,
+        20.735,
+        58.935
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C33": {
+      "pod": 0,
+      "x": 4.0,
+      "y": 60.25,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        3.065,
+        59.765,
+        4.9350000000000005,
+        60.735
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C41": {
+      "pod": 0,
+      "x": 19.5,
+      "y": 8.0,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        18.565,
+        7.515,
+        20.435,
+        8.485
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C42": {
+      "pod": 0,
+      "x": 1.0,
+      "y": 6.75,
+      "rotation": 90,
+      "side": "F",
+      "courtyard": [
+        0.515,
+        5.8149999999999995,
+        1.4849999999999999,
+        7.6850000000000005
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C43": {
+      "pod": 0,
+      "x": 2.0,
+      "y": 60.25,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        1.065,
+        59.765,
+        2.935,
+        60.735
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C5": {
+      "pod": 0,
+      "x": 19.5,
+      "y": 7.0,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        18.565,
+        6.515,
+        20.435,
+        7.485
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C6": {
+      "pod": 0,
+      "x": 2.5,
+      "y": 6.25,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        1.565,
+        5.765,
+        3.435,
+        6.735
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    },
+    "C7": {
+      "pod": 0,
+      "x": 18.5,
+      "y": 6.0,
+      "rotation": 0,
+      "side": "F",
+      "courtyard": [
+        17.565,
+        5.515,
+        19.435,
+        6.485
+      ],
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    }
+  },
+  "limits": [
+    "Courtyard packing, not routing closure",
+    "LRA flex bending and height need sample fit",
+    "Inductor land pattern and fuse MPN not released",
+    "No fabrication panel tabs or rails"
+  ]
+}

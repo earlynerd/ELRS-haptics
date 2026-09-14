@@ -1,0 +1,36 @@
+ERC report (2026-09-12T19:35:31, Encoding UTF8)
+Report includes: Errors, Warnings
+
+***** Sheet /
+
+***** Sheet /Eight ring pods/
+
+***** Sheet /Eight ring pods/Pod 0 / U18/
+
+***** Sheet /Eight ring pods/Pod 1 / U19/
+
+***** Sheet /Eight ring pods/Pod 2 / U20/
+
+***** Sheet /Eight ring pods/Pod 3 / U21/
+
+***** Sheet /Eight ring pods/Pod 4 / U22/
+
+***** Sheet /Eight ring pods/Pod 5 / U23/
+
+***** Sheet /Eight ring pods/Pod 6 / U24/
+
+***** Sheet /Eight ring pods/Pod 7 / U25/
+
+***** Sheet /Charger and regulated supply/
+
+***** Sheet /USB-C data and power/
+
+***** Sheet /ESP reset, boot and decoupling/
+
+ ** ERC messages: 0  Errors 0  Warnings 0
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters

@@ -1,0 +1,143 @@
+(session bridge
+  (base_design bridge)
+  (placement
+    (resolution um 10)
+    (component "Capacitor_SMD:C_0402_1005Metric"
+      (place C27 1394000 -1005000 front 0)
+      (place C170 1436000 -1233000 front 0)
+      (place C28 1414000 -1020000 front 0)
+      (place C26 1374000 -1020000 front 0)
+      (place C172 1447500 -1132500 front 90)
+    )
+    (component "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+      (place U25 1385000 -1260000 front 0)
+    )
+    (component "Resistor_SMD:R_0402_1005Metric"
+      (place R171 1427500 -1100000 front 90)
+      (place R173 1437500 -1112500 front 90)
+      (place R175 1437500 -1132500 front 90)
+      (place R23 1426000 -1042000 front 0)
+      (place R172 1383000 -1218000 front 0)
+      (place R22 1402000 -1042000 front 0)
+      (place R53 1435000 -1152500 front 0)
+      (place R170 1363000 -1218000 front 0)
+    )
+    (component "Capacitor_SMD:C_0805_2012Metric"
+      (place C173 1453000 -1283000 front 0)
+      (place C171 1453000 -1251000 front 0)
+    )
+    (component "HapticBracelet:DRV2625_YFF_9_0.4mm"
+      (place U10 1394000 -1020000 front 0)
+    )
+    (component "HapticBracelet:WirePads_6_P2mm"
+      (place J129 1465500 -1100000 front 0)
+      (place J128 1324500 -1125000 front 0)
+    )
+    (component "HapticBracelet:WirePads_5_P1.27mm"
+      (place J130 1395000 -977000 front 90)
+    )
+    (component "HapticBracelet:WirePads_2_P2mm"
+      (place J131 1455000 -1005000 front 0)
+      (place J207 1330000 -1005000 front 0)
+    )
+    (component "HapticBracelet:Vybronics_VLV041235L_FPC_Contact_Draft"
+      (place M8 1462800 -1195000 front 90)
+    )
+    (component "HapticBracelet:Fuse_Littelfuse_467_0603"
+      (place F107 1340000 -1040000 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "10.0.1")
+    )
+    (library_out 
+      (padstack "Via[0-3]_450:200_um"
+        (shape
+          (circle F.Cu 4500 0 0)
+        )
+        (shape
+          (circle In1.Cu 4500 0 0)
+        )
+        (shape
+          (circle In2.Cu 4500 0 0)
+        )
+        (shape
+          (circle B.Cu 4500 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net GND
+        (wire
+          (path F.Cu 1500
+            1356380 -1269750
+            1356375 -1269750
+          )
+        )
+      )
+      (net "POD_3V3"
+        (wire
+          (path F.Cu 1500
+            1356380 -1282750
+            1356375 -1282750
+          )
+        )
+      )
+      (net "/Eight ring pods/Pod 7 {slash} U25/CELL_TEMP"
+        (wire
+          (path F.Cu 1500
+            1356380 -1237250
+            1356375 -1237250
+          )
+        )
+      )
+      (net "/Eight ring pods/Pod 7 {slash} U25/LOCAL_SCL"
+        (wire
+          (path F.Cu 1500
+            1356380 -1263250
+            1356375 -1263250
+          )
+        )
+      )
+      (net "/Eight ring pods/Pod 7 {slash} U25/UART_TX_LOCAL"
+        (wire
+          (path F.Cu 1500
+            1356380 -1276250
+            1356375 -1276250
+          )
+        )
+      )
+      (net "/Eight ring pods/Pod 7 {slash} U25/UART_RX_LOCAL"
+        (wire
+          (path F.Cu 1500
+            1413620 -1243750
+            1413625 -1243750
+          )
+        )
+      )
+      (net "RING_RETURN"
+        (wire
+          (path B.Cu 1500
+            1440100 -1159538
+            1457562 -1177000
+            1461830 -1177000
+          )
+        )
+        (wire
+          (path F.Cu 1500
+            1440100 -1159538
+            1440100 -1152500
+          )
+        )
+        (via "Via[0-3]_450:200_um" 1440100 -1159538
+        )
+      )
+    )
+  )
+)

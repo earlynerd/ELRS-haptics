@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "project": "main",
+  "components": 93,
+  "preserved_components": 93,
+  "preserved_component_values_and_footprints": true,
+  "circuit_matches_baseline_except_return_selector_and_reset_removal": true,
+  "reset_is_local_to_ice": true,
+  "harness_wires": 5,
+  "placement_preserved": true,
+  "electrical_pads_checked": 353,
+  "copper_layers": 4,
+  "thickness_mm": 0.8,
+  "board_outlines": 1,
+  "actuator_cutouts": 1,
+  "erc_violations": 0,
+  "schematic_parity": 0,
+  "drc_violations": 6,
+  "open_connections": 260,
+  "segments": 1,
+  "vias": 0,
+  "pcb_sha256": "d80344945490dd5f3b4b76049ba1d3e8a3707122784c8c19b8790113960e222f",
+  "harness_pads": 5,
+  "preservation_exceptions": [
+    "Five-pad harness footprint and centre shifted 1 mm; pins 1-3 stay fixed, VBAT/return move 2 mm",
+    "Main J100 and shared reset circuit removed; return selector added"
+  ]
+}

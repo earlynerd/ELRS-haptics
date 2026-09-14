@@ -1,0 +1,79 @@
+PAGE 2
+Table of Contents
+1 Features............................................................................1
+2 Applications.....................................................................1
+3 Description.......................................................................1
+4 Revision History.............................................................. 2
+5 Description (continued).................................................. 3
+6 Device Comparison Table...............................................3
+7 Pin Configuration and Functions...................................4
+8 Specifications.................................................................. 5
+8.1 Absolute Maximum Ratings........................................ 5
+8.2 ESD Ratings............................................................... 5
+8.3 Recommended Operating Conditions.........................5
+8.4 Thermal Information....................................................5
+8.5 Electrical Characteristics.............................................6
+8.6 Typical Characteristics................................................8
+9 Detailed Description........................................................9
+9.1 Overview.....................................................................9
+9.2 Functional Block Diagram...........................................9
+9.3 Feature Description...................................................10
+9.4 Device Functional Modes..........................................13
+10 Application and Implementation................................17
+10.1 Application Information........................................... 17
+10.2 Typical Application..................................................17
+11 Power Supply Recommendations..............................27
+12 Layout...........................................................................28
+12.1 Layout Guidelines................................................... 28
+12.2 Layout Example...................................................... 28
+13 Device and Documentation Support..........................29
+13.1 Device Support....................................................... 29
+13.2 Documentation Support.......................................... 29
+13.3 Receiving Notification of Documentation Updates..29
+13.4 Support Resources................................................. 30
+13.5 Trademarks.............................................................30
+13.6 Electrostatic Discharge Caution..............................30
+13.7 Glossary..................................................................30
+14 Mechanical, Packaging, and Orderable
+Information.................................................................... 30
+4 Revision History
+Changes from Revision C (June 2020) to Revision D (January 2021) Page
+• Updated the numbering format for tables, figures and cross-references throughout the document. ................. 1
+Changes from Revision B (September 2019) to Revision C (June 2020) Page
+• Added device comparison ................................................................................................................................. 3
+• Changed 1x 22 µF to 2x 22 µF......................................................................................................................... 19
+• Changed Part Number from TPS63802RMW to TPS63802DLA ..................................................................... 20
+• Change MODE from High to Low in Application Curves ................................................................................. 20
+• Deleted layout guideline to separate AGND and PGND .................................................................................. 28
+• Changed Use a common-power GND, but connect AGND and PGND through via at a different layer. to Use a
+common ground node for power ground and a different one for control ground to minimize the effects of
+ground noise. Connect these ground nodes at any place close to one of the ground pins of the IC. ..............28
+Changes from Revision A (January 2019) to Revision B (September 2019) Page
+• Changed the device status from Advanced Information to Production Data ..................................................... 1
+• Changed package group name ......................................................................................................................... 1
+• Added related documentation .......................................................................................................................... 29
+TPS63802
+SLVSEU9D – NOVEMBER 2018 – REVISED JANUARY 2021 www.ti.com
+2 Submit Document Feedback Copyright © 2021 Texas Instruments Incorporated
+Product Folder Links: TPS63802
+PAGE 28
+12 Layout
+12.1 Layout Guidelines
+The PCB layout is an important step to maintain the high performance of the TPS63802 device.
+1. Place input and output capacitors as close as possible to the IC. Traces need to be kept short. Route wide
+and direct traces to the input and output capacitor results in low trace resistance and low parasitic
+inductance.
+2. Use a common ground node for power ground and a different one for control ground to minimize the effects
+of ground noise. Connect these ground nodes at any place close to one of the ground pins of the IC.
+3. Use separate traces for the supply voltage of the power stage and the supply voltage of the analog stage.
+4. The sense trace connected to FB is signal trace. Keep these traces away from L1 and L2 nodes.
+12.2 Layout Example
+C1
+L1
+C2
+R1R2
+Figure 12-1. TPS63802 Layout
+TPS63802
+SLVSEU9D – NOVEMBER 2018 – REVISED JANUARY 2021 www.ti.com
+28 Submit Document Feedback Copyright © 2021 Texas Instruments Incorporated
+Product Folder Links: TPS63802
