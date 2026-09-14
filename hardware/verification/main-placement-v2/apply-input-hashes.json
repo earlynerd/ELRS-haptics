@@ -1,0 +1,14 @@
+{
+  "controller-support.kicad_sch": "26d279e27fb4bb88332ae4c611c9152dc7bbe6d955f21fa6376c710bf08bae8a",
+  "fp-lib-table": "9fc907c6569a3c492c4913614219be1fa3e899ae537aa574c67818cea141af0b",
+  "local-pod.kicad_sch": "f5161221132c946c9fde6114d51ebe58155d72c84476d90c0be583ef53abaaaa",
+  "main.kicad_pcb": "bfb199e8bf4f2d447d4cbe73a7ed1b33369918023a3644fa85a149b301ed5273",
+  "main.kicad_prl": "41042bc668ed75929b27b2eb3f49f53947abb22ff260e3313223e1c69186004f",
+  "main.kicad_pro": "5321569e669c3a18cdea31b369f3fa0691ad73a2fb4971e1509ba412c4506a3a",
+  "main.kicad_sch": "cd2674f6127fc1559474ff7d2fe05e6d8c8c7bf6eb6fc93f5b609e4d814b8eb4",
+  "power.kicad_sch": "2464de5ae3e2336b926a82cff9a9ace62c3a21ea01dd36b4920cc19173f79883",
+  "sym-lib-table": "567ce1508745f187f70ffa27adde6a0c02b7f56237ae1ae6f78631e7ccd7a0e3",
+  "usb.kicad_sch": "7a4395c1e5fe94c8a6ff01e6cc2b8c3110eed84cf6bdc9ddc3a2c6751aa60e6c",
+  "~main.kicad_pro.lck": "77294b1b1d337da35316edcbc1fd00e4163fbe17a2e93dcaa30914562097aef0",
+  "~main.kicad_sch.lck": "77294b1b1d337da35316edcbc1fd00e4163fbe17a2e93dcaa30914562097aef0"
+}

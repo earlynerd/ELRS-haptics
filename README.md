@@ -25,7 +25,7 @@ The redraw audit found no deleted components, changed values or changed footprin
 
 The universal satellite preserves the user's pod-6 placement, aligned wire pads, 17 × 35 mm outline and actuator cutout. It has 201 trace segments and 42 through vias, with zero native DRC violations and zero opens. Signals use F.Cu/B.Cu, all tracks are at least 6 mil, and no vias overlap solder pads. In1 is GND; In2 carries switched power and a VBAT perimeter strip. Both boards remain four-layer, 0.8 mm nominal.
 
-Main placement is preserved in its 21 × 61 mm envelope. Its existing short driver reset/supply tie was widened to 6 mil. **Main routing is unfinished: 200 open connections and five silk/library warnings.** Both projects have zero ERC violations and zero schematic/PCB parity issues. [Routing status](docs/pcb-routing.md) records the evidence.
+The [main placement checkpoint](docs/main-board-placement.md) is applied with fixed edge pads and compact functional groups. Main has 70 components, 196 open connections, three silk/library warnings and zero schematic/PCB parity issues. One ERC reset-input item remains because the M2003 internal pull-up is not represented in the symbol; satellite ERC, DRC and opens remain zero. [Routing status](docs/pcb-routing.md) records the evidence.
 
 ## System decisions
 
@@ -45,7 +45,7 @@ The first build defaults are deliberately inert until a Backpack source MAC is c
 
 ## Next work and manufacturing
 
-Main placement and routing come next. The [main placement proposal](docs/main-board-placement.md) remains a proposal. JLCPCB is preferred; a later **derived panel** may combine one main and seven identical satellites. [hardware/panel](hardware/panel/README.md) is reserved for that output. No manufacturing panel or fabrication release has been created.
+Main routing comes next, starting from the applied [placement checkpoint](docs/main-board-placement.md). JLCPCB is preferred; a later **derived panel** may combine one main and seven identical satellites. [hardware/panel](hardware/panel/README.md) is reserved for that output. No manufacturing panel or fabrication release has been created.
 
 The exact production stack, USB geometry, enclosure supports/links, physical fit, battery sharing, power sequencing and haptic behavior remain to validate. Firmware is implemented as an initial buildable slice but has not been flashed. Loader compatibility is now build-verified against the inspected robot sources, not yet demonstrated on the bracelet ring.
 

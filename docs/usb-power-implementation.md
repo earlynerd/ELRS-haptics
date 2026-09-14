@@ -4,7 +4,7 @@ Current native sources: `hardware/main/usb.kicad_sch`, `power.kicad_sch` and `ma
 
 ## Data and CC connections
 
-J2 is the USB4105-GF-A receptacle. A6/B6 join D+; A7/B7 join D-. U14 TPD2EUSB30 protects the data lines. R24/R25 remain 22-ohm series resistors; C29/C30 remain DNP tuning provisions. GPIO12/module pin 17 is D-, GPIO13/module pin 18 is D+. Native Serial/JTAG provides flashing, debug and console access. Paired USB 2.0 contacts support either plug orientation. Main UART service bank J1 is removed with no replacement UART test points. U1 RXD0/TXD0 are NC; SW1 reset and SW2 boot remain for ROM-download recovery through USB.
+J2 is the USB4105-GF-A receptacle. A6/B6 join D+; A7/B7 join D-. U14 TPD2EUSB30 protects the data lines. R24/R25 remain 22-ohm series resistors; C29/C30 tuning provisions are removed. GPIO12/module pin 17 is D-, GPIO13/module pin 18 is D+. Native Serial/JTAG provides flashing, debug and console access. Paired USB 2.0 contacts support either plug orientation. The former main UART service bank is removed with no replacement UART test points. J1 is now reused for the local M2003 Tag-Connect ICE interface. U1 RXD0/TXD0 are NC; SW1 reset and SW2 boot remain for ROM-download recovery through USB.
 
 R60 connects CC1 to GND through 5.1k 1%; R61 independently connects CC2 to GND through 5.1k 1%. Both are 0402. U15 remains the CC ESD array; CC1 and CC2 are separate nets. There is no CC current-advertisement detection or USB PD negotiation.
 
@@ -44,9 +44,9 @@ Initial bracelet firmware now keeps charging disabled and exposes its console ov
 
 ## Verification
 
-The main now contains 72 components, after removing J1 and Q4/R34/R35/R36 as well as the earlier pod-interface cleanup (J3 and R48/R50/R52 removed, R62 added). ERC and schematic/PCB parity report zero issues. Checks confirm the VBUS merge, independent CC pull-downs, USB data polarity, MCU thermistor interface, fixed charger TS/MR termination, and every PCB pad/symbol association. All retained component placements are preserved.
+The main now contains 70 components, after removing J1 and Q4/R34/R35/R36 as well as the earlier pod-interface cleanup (J3 and R48/R50/R52 removed, R62 added). Schematic/PCB parity is clean; one documented M2003 reset-input ERC item remains. Checks confirm the VBUS merge, independent CC pull-downs, USB data polarity, MCU thermistor interface, fixed charger TS/MR termination, and every PCB pad/symbol association. The main placement checkpoint is applied with fixed edge anchors.
 
-Main routing remains unfinished: 200 opens and five silk/library warnings. Satellite source files are unchanged. Current reports are in `hardware/verification/project-split/`; the earlier USB-only snapshot is in `hardware/verification/simple-usb/`; the full updated PDF is `hardware/verification/project-split/main.pdf`.
+Main routing remains unfinished: 196 opens and three silk/library warnings. Satellite source files are unchanged. Current reports are in `hardware/verification/project-split/`; the earlier USB-only snapshot is in `hardware/verification/simple-usb/`; the full updated PDF is `hardware/verification/project-split/main.pdf`.
 
 ## References
 

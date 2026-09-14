@@ -51,7 +51,7 @@ Source reference: `C:/Users/mmsyl/Documents/bl4818-servo-M23_2/ldrom/platform.c`
 
 Retain the existing enumeration/update protocol, 32-byte write chunks, CRC verification and manifest commit. Preserve application space below 0x7A00, manifest at 0x7A00, persistence from 0x7C00, 4 KiB LDROM at 0x00100000 and the 16-byte boot mailbox at 0x20000FF0. A valid application has a 1000 ms loader interception window after reset. Pin compatibility supports reuse; an unchanged loader binary and a bracelet application still need build and bench verification. Never flash the robot motor application as a bracelet application.
 
-For initial flashing or ICE debug, remove **both** the RX 0-ohm link and TX 33-ohm link on the target pod. Its five-pin debug interface exposes VTref, ground, ICE_DAT, ICE_CLK and local reset on the MCU side of those links. Restore both links for ring operation. Debug reset affects only the target MCU. VTref is a sense connection: supply the pod normally, and do not power an unpowered ring through a probe or UART adapter.
+For initial flashing or ICE debug, remove **both** the RX 0-ohm link and TX 33-ohm link on the target pod. Satellite J3 exposes VTref, ground, ICE_DAT, ICE_CLK and local reset on the MCU side of those links. Main J1 is TC2030: pin 1 VTref, 2 ICE_DAT, 3 local reset, 4 ICE_CLK, 5 GND and 6 unused/SWO NC. Restore both links for ring operation. Debug reset affects only the target MCU. VTref is a sense connection: supply the pod normally, and do not power an unpowered ring through a probe or UART adapter.
 
 ## Main-board power and reset
 
@@ -76,7 +76,7 @@ Charging that relies on pod temperature reports requires the pod rail and ring a
 
 ## Verification
 
-The main project exports five sheets and the satellite one. Both have zero ERC violations and zero schematic/PCB parity issues. Pin-set comparison preserves the prior verified power, USB, MCU and haptic circuits, with the intentional return selector, main service-bank removal and reset changes. Satellite routing has zero DRC violations and opens; main routing remains pending. Current reports are under `hardware/verification/project-split/`. Electrical connectivity checks do not qualify the physical harness.
+The main project exports five sheets and the satellite one. Both have zero schematic/PCB parity issues. Main has one documented reset-input ERC item; satellite ERC is clean. Pin-set comparison preserves the prior verified power, USB, MCU and haptic circuits, with the intentional return selector, main service-bank removal and reset changes. Satellite routing has zero DRC violations and opens; main routing remains pending. Current reports are under `hardware/verification/project-split/`. Electrical connectivity checks do not qualify the physical harness.
 
 ## Unused driver trigger pins
 

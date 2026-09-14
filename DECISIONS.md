@@ -224,3 +224,10 @@ When a decision is reversed or superseded, append a new entry rather than rewrit
 - **Safety:** Require exactly eight pods and valid MSPv2-wrapped CRSF attitude from one configured ESP-NOW source. Send at 50 Hz, stop locally after 100 ms without haptic commands, and reject controller attitude older than 250 ms. Keep charging disabled. Use a provisional, documented absolute-attitude matrix.
 - **Driver:** Auto-calibrate each DRV2625 for the proposed 240 Hz LRA, limit the first-pass clamp to its stated 1.85 Vrms operating ceiling, and require successful status before RTP.
 - **Affects:** `firmware/`, README status, ring behavior, telemetry provisioning, and bench qualification. Builds do not establish flashing, timing, thermal, perceptual, or loader-ring evidence.
+
+
+## 2026-09-13 - Main Tag-Connect and compact placement checkpoint
+
+- **Decision:** Apply the requested placement pass to the main master, preserving U1/J2/J101/J200/J103/M1 positions. Use the user's TC2030 J1 in place of J102 and remove C29/C30 as requested. All 70 footprints remain on F.Cu; functional groups fit around the actuator opening. D1 is beside the ESP32 and SW3 is on the left edge.
+- **Schematic:** Preserve the user's latest redraw, ground and C1 junction repairs. Retain the new VBUS/VSYS power names; restore three external-supply PWR_FLAG directives. The Tag-Connect reset output is open drain; keep the selected M2003 internal pull-up and document its one ERC input-driver item rather than adding components.
+- **Evidence:** Both PCBA preservation checks pass. Main: zero parity errors, three silk/library warnings, 196 opens. Satellite: zero ERC/DRC/opens, unchanged source. Accepted positions and before-apply backups are documented in docs/main-board-placement.md. Routing and enclosure access remain to be completed.

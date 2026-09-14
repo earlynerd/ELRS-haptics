@@ -4,9 +4,9 @@ One wrist uses one main board and seven copies of one universal satellite. Each 
 
 ## Main
 
-`hardware/main/main.kicad_pro` contains 72 components across five sheets. The top sheet preserves the user's redraw. Child sheets contain wired functional circuits. Retained main references are unchanged, including U18/U3/M1 for the local MCU/driver/LRA, J101 for CHAIN OUT, and J200/F100 for its protected battery branch.
+`hardware/main/main.kicad_pro` contains 70 components across five sheets. The top sheet preserves the user's redraw. Child sheets contain wired functional circuits. Retained main references are unchanged, including U18/U3/M1 for the local MCU/driver/LRA, J101 for CHAIN OUT, and J200/F100 for its protected battery branch.
 
-The existing 21 × 61 mm envelope, antenna recess and actuator cutout are preserved. Only the harness bank is shortened; other component positions and orientations are preserved. Main routing remains pending. The user will perform placement; the exploratory candidate under `verification/main-placement/` was not applied.
+The existing 21 × 61 mm envelope, antenna recess and actuator cutout are preserved. The applied main placement preserves the user edge anchors and groups supporting parts near their ICs; see [placement checkpoint](main-board-placement.md). J1 is now TC2030 ICE, replacing J102; C29/C30 are removed. Routing remains pending.
 
 ## Universal satellite
 
@@ -61,6 +61,6 @@ The saved redraw retained all 261 components, values and footprints from revisio
 
 `tools/check_split_projects.py` compares inventories, values, footprints and connected pin sets against revision 0.9, allowing the requested return split, removal of main J100 and Q5/R6/R7/R44/C40, and removal of the old reset pad and compaction to five pads (old VBAT/return pins 5/6 become 4/5), plus removal of the USB CC/current-switch circuit, two new CC pull-downs and direct VBUS-to-charger wiring. It checks both selector states, every PCB pad net, preserved component placement, board outline/cutout count and satellite routing constraints. The physical 1–2 bridge is a KiCad net tie, intentionally joining the two return nets in NORMAL mode.
 
-Both projects have zero ERC violations and zero schematic parity issues. Satellite has zero DRC violations/opens. Main has 200 opens and five silk/library warnings. Its existing 0.1000 mm driver reset/supply tie was widened to 0.1524 mm without moving components. This is migration evidence, not manufacturing or hardware qualification.
+Main has 70 components, 196 open connections, three silk/library warnings and zero schematic/PCB parity issues. One ERC reset-input item remains because the M2003 internal pull-up is not represented in the symbol; satellite ERC, DRC and opens remain zero. The driver reset/supply tie is 0.1524 mm. This is migration evidence, not manufacturing or hardware qualification.
 
 The combined project is archived intact. A later JLCPCB panel will be derived from the two masters after main routing is complete.

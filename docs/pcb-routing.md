@@ -4,7 +4,7 @@ Current editable sources are `hardware/main/main.kicad_pcb` and `hardware/satell
 
 ![Universal satellite layers](../hardware/verification/project-split/layers.png)
 
-All four images are viewed from the top, including B.Cu. [Main placement](../hardware/verification/project-split/main-front.png) is separate.
+All four images are viewed from the top, including B.Cu. [Main placement](../hardware/verification/main-placement-v2/placement.png) is separate.
 
 ## Satellite
 
@@ -25,18 +25,16 @@ JP1 has a factory copper net tie between 1-2. Satellites 1-6 retain it; the last
 
 ## Main
 
-The retained components keep their values and placement. R60/R61 replace the USB controller/current-limiter circuitry. J3 and LED pull-ups R48/R50/R52 are removed; R62 (10k) occupies part of the former J3 area and terminates charger TS/MR. J200/J103 preserve the satellite-style cell and MCU thermistor interfaces. J101 uses a compact five-pad footprint; its first three lands stay fixed and its VBAT/return lands move 2 mm upward. All other component positions, orientations and footprints are preserved. The existing short driver reset/VDD trace was widened from 0.1000 to 0.1524 mm. The 21 x 61 mm envelope, antenna recess and actuator cutout are unchanged.
+The [70-component placement checkpoint](main-board-placement.md) is applied. U1, J2, J101, J200, J103 and M1 preserve the user anchors. J1 is now the TC2030 ICE interface, replacing J102; C29/C30 are removed. The outline and actuator opening are unchanged, and the existing 6 mil driver reset/VDD tie follows the driver.
 
-Main J1 and Q4/R34/R35/R36 are removed without moving retained footprints. Main placement refinement and routing remain pending. Native DRC reports 200 opens and five silk/library warnings: two silk-edge issues, two silk-over-mask issues and the existing ESP32 footprint/library mismatch. There are zero schematic parity issues. External harness connections now join separate PCBA projects; there is no combined-board ratsnest.
-
-The [main placement proposal](main-board-placement.md) remains a proposal. No proposed component moves were applied. The user will perform placement; the separate exploratory candidate is superseded by the five-wire circuit and must not be copied over the main master.
+Main has 70 components, 196 open connections, three silk/library warnings and zero schematic/PCB parity issues. One ERC reset-input item remains because the M2003 internal pull-up is not represented in the symbol; satellite ERC, DRC and opens remain zero. Routing remains pending.
 
 ## Evidence
 
 Current evidence is under `hardware/verification/project-split/`:
 
 - `main.xml`, `satellite.xml`: fresh netlists.
-- `main-erc.json`, `satellite-erc.json`: zero violations.
+- `main-erc.json`: one documented reset-input item; `satellite-erc.json`: zero violations.
 - `main-drc.json`, `satellite-drc.json`: native DRC and parity.
 - `main-checks.json`, `satellite-checks.json`: preserved inventory, values, circuit and placement, plus routing checks.
 - Schematic PDFs/SVGs and PCB layer previews.

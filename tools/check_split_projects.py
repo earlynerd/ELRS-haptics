@@ -22,11 +22,17 @@ if not sat:
     for ref in USB_REMOVED:oldfps.pop(ref)
     for ref in SYMMETRY_REMOVED:oldfps.pop(ref)
     for ref in UART_VBUS_REMOVED:oldfps.pop(ref)
+    placement_file=HW/'main/placement-reference.json'
+    placement_reference=json.loads(placement_file.read_text()) if placement_file.exists() else None
+    if placement_reference:
+        for ref in ['J102','C29','C30']:oldfps.pop(ref)
+else:placement_reference=None
 reset_harness={('J124','4'),('J125','4')} if sat else {('J101','4')}
 harness_refs={'J1','J2'} if sat else {'J101'}
 old_harness_refs={'J124','J125'} if sat else {'J101'}
 comps={c.attrib['ref']:c for c in fresh.findall('components/comp')}
 expected={rename.get(r,r) for r in oldfps}|({'JP1'} if sat else set(USB_NEW)|set(SYMMETRY_NEW))
+if placement_reference:expected.add('J1')
 assert set(comps)==expected,(set(comps)-expected,expected-set(comps))
 basecomps={c.attrib['ref']:c for c in base.findall('components/comp')}
 for oldref in oldfps:
@@ -58,13 +64,19 @@ assert original==current,('Circuit changed',original-current,current-original)
 netnodes={net.attrib['name']:{(n.attrib['ref'],n.attrib['pin']) for n in net.findall('node')} for net in fresh.findall('nets/net')}
 nodes={node:escaped(net) for net,parts in netnodes.items() for node in parts}
 localreset='/LOCAL_nRESET' if sat else '/Local haptic pod and harness/LOCAL_nRESET'
-assert netnodes[localreset]==({('U1','4'),('J3','5')} if sat else {('U18','4'),('J102','5')})
+assert netnodes[localreset]==({('U1','4'),('J3','5')} if sat else {('U18','4'),('J1','3') if placement_reference else ('J102','5')})
+if placement_reference:
+    assert comps['J1'].findtext('footprint')=='Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical'
+    for pin,ref,pin2 in [('1','U18','9'),('2','U18','8'),('3','U18','4'),('4','U18','18'),('5','U18','7')]:
+        assert nodes[('J1',pin)]==nodes[(ref,pin2)]
+    assert nodes[('J1','6')].startswith('unconnected-')
+    assert nodes[('U3','B3')]=='GND'
 for ref in harness_refs:
     assert nodes[(ref,'1')]=='+3V3_POD' and nodes[(ref,'2')]=='GND' and nodes[(ref,'4')]=='VBAT'
     assert (ref,'6') not in nodes and not nodes[(ref,'5')].startswith('unconnected-')
 assert not any('RING_nRESET' in net or 'RING_RESET_ASSERT' in net for net in netnodes)
 if not sat:
-    assert netnodes['USB_VBUS']=={('J2','A4'),('J2','A9'),('J2','B4'),('J2','B9'),('C32','1'),('C34','1'),('U11','10')}
+    assert netnodes['VBUS' if placement_reference else 'USB_VBUS']=={('J2','A4'),('J2','A9'),('J2','B4'),('J2','B9'),('C32','1'),('C34','1'),('U11','10')}
     for ref,pin,esdpin in [('R60','A5','1'),('R61','B5','2')]:
         assert comps[ref].findtext('value')=='5.1k 1%'
         assert comps[ref].findtext('footprint')=='Resistor_SMD:R_0402_1005Metric'
@@ -91,7 +103,14 @@ if sat:
     end=netnodes['/RETURN_UP']|netnodes['/TX_OUT']
     assert ('J2','5') in normal and ('R2','2') not in normal
     assert ('R2','2') in end and ('J2','5') not in end
-erc=json.loads((VERIFY/(name+'-erc.json')).read_text());assert not any(s['violations'] for s in erc['sheets'])
+erc=json.loads((VERIFY/(name+'-erc.json')).read_text())
+erc_items=[v for s in erc['sheets'] for v in s['violations']]
+if placement_reference:
+    # TC2030 models reset as open drain; the M2003's documented internal
+    # reset pull-up is not represented by the symbol's input pin type.
+    assert len(erc_items)<=1
+    assert all(v['type']=='pin_not_driven' and len(v['items'])==1 and 'U18 Pin 4' in v['items'][0]['description'] for v in erc_items),erc_items
+else:assert not erc_items
 drc=json.loads((VERIFY/(name+'-drc.json')).read_text());assert not drc['schematic_parity']
 b=p.LoadBoard(str(HW/name/(name+'.kicad_pcb')));fps={f.GetReference():f for f in b.GetFootprints()};assert set(fps)==expected
 assert b.GetCopperLayerCount()==4 and abs(p.ToMM(b.GetDesignSettings().GetBoardThickness())-.8)<1e-6
@@ -108,6 +127,11 @@ for ref,f in fps.items():
         for member in pad.GetNumber().split('/'):assert pad.GetNetname()==nodes.get((ref,member),''),(ref,member)
         padcount+=1
     if ref=='JP1':continue
+    if placement_reference:
+        x,y,angle=placement_reference['placements'][ref]
+        assert abs(p.ToMM(f.GetPosition().x)-x)<1e-6 and abs(p.ToMM(f.GetPosition().y)-y)<1e-6,(ref,'Moved since placement checkpoint')
+        assert abs(((f.GetOrientationDegrees()-angle+180)%360)-180)<1e-5
+        continue
     if not sat and ref in (USB_NEW|SYMMETRY_NEW):
         x,y=(USB_NEW|SYMMETRY_NEW)[ref]
         assert abs(p.ToMM(f.GetPosition().x)-x)<1e-6 and abs(p.ToMM(f.GetPosition().y)-y)<1e-6
@@ -141,4 +165,9 @@ if not sat:
     result['pod_temperature_interface_checked']=True
     result['preservation_exceptions'].append('Main UART service bank J1 and Q4/R34/R35/R36 VBUS detector removed; charger input status read via I2C')
     result['uart_vbus_removal_checked']=True
+if placement_reference:
+    result['erc_violations']=len(erc_items)
+    result['known_erc_note']='TC2030 open-drain reset and M2003 internal reset pull-up; no external pull-up fitted'
+    result['placement_reference']='hardware/main/placement-reference.json'
+    result['preservation_exceptions'].append('User removed C29/C30 and replaced main J102 with TC2030 J1; optimized placement with fixed edge anchors; restored U3 ground')
 (VERIFY/(name+'-checks.json')).write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
