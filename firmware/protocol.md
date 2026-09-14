@@ -10,6 +10,8 @@ A5 5A LEN PAYLOAD[LEN] CRC16_HI CRC16_LO
 
 CRC-16/CCITT uses polynomial `0x1021` and initial value `0xFFFF` over `LEN` and `PAYLOAD`. Enumeration also remains compatible: `ENTER_SF=0x01`, `ENTER_CT=0x02`, and `SET_ADDRESS=0x03`. In store-and-forward mode an unassigned pod accepts the incoming counter and forwards the incremented value. Exactly eight pods are required before haptic output is enabled.
 
+Diagnostic enumeration accepts a physically complete partial ring of one through eight pods so boards can be brought up incrementally. This does not weaken flight mode: broadcast attitude haptics and `hb flight` still require exactly eight. Addressed diagnostic transactions scan past the command frame returning through the cut-through ring and wait for the matching status or acknowledgement frame.
+
 Bracelet-only application commands do not reuse the robot's motor-duty opcode:
 
 | Command | Value | Payload after command |
@@ -38,3 +40,11 @@ The pod build reuses the robot project's startup, vendor support, application-to
 - 32-byte update write chunks and the existing manifest commit flow
 
 Only the bracelet application is new. Never program the music robot motor application onto a bracelet pod.
+
+## Native USB bring-up console
+
+The controller exposes one `hb` command family through ESP32-C6 native USB Serial/JTAG. `hb status` and `hb telemetry` are read-only. `hb manual`, `hb stop`, `hb ring ...`, and `hb pod ...` latch manual mode and suppress automatic attitude output until `hb flight` is explicitly accepted.
+
+Individual diagnostic pulses accept pod addresses 0 through 7, amplitudes 1 through 64, and durations 10 through 250 ms. The controller refreshes the addressed RTP command every 20 ms, sends addressed stop plus broadcast all-stop at completion, and retains the pod's independent 100 ms command watchdog as the final stop path.
+
+See [BRINGUP.md](BRINGUP.md) for the command list and staged bench procedure.

@@ -9,6 +9,8 @@ This directory contains the first firmware slice for one wrist:
 
 The checked-in defaults are intentionally safe. The charger enable remains low. Pod power starts off. Haptics are sent only after exactly eight applications enumerate and a configured Backpack sender supplies a fresh, valid attitude frame. Loss of telemetry or ring echo requests an all-stop.
 
+The ESP32-C6 also exposes a native USB Serial/JTAG bring-up console. It can enumerate a partial ring, inspect DRV2625 calibration/status, exercise one actuator with a bounded pulse, display the most recent attitude frame, stop output, and power-cycle the pod rail. Bus and actuator diagnostics latch manual mode; normal telemetry control resumes only after an explicit `hb flight` command and only with eight enumerated pods. See [BRINGUP.md](BRINGUP.md).
+
 This is build evidence, not flashed-hardware evidence. Rail timing, UART signal integrity, loader interception, DRV2625/LRA tuning, temperature conversion, charging policy, and the final wrist-direction map remain bench work.
 
 ## Build

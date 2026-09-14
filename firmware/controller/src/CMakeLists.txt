@@ -2,6 +2,7 @@ idf_component_register(
     SRCS
         "main.c"
         "backpack_rx.c"
+        "bringup_console.c"
         "ring_master.c"
         "../../common/src/hb_crc.c"
         "../../common/src/hb_ring.c"
@@ -11,6 +12,7 @@ idf_component_register(
         "."
         "../../common/include"
     REQUIRES
+        console
         esp_event
         esp_netif
         esp_timer

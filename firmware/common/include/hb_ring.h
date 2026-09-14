@@ -24,9 +24,19 @@
 #define HB_SUBCMD_QUERY_STATUS   0x03u
 #define HB_SUBCMD_ENTER_LOADER   0x1Bu
 
+typedef struct {
+    uint8_t phase;
+    uint8_t frame[HB_RING_MAX_FRAME];
+    size_t position;
+    size_t expected;
+} hb_ring_decoder_t;
+
 size_t hb_ring_encode(const uint8_t *payload, uint8_t payload_length,
                       uint8_t *frame, size_t frame_capacity);
 int hb_ring_decode_exact(const uint8_t *frame, size_t frame_length,
+                         uint8_t *payload, uint8_t *payload_length);
+void hb_ring_decoder_init(hb_ring_decoder_t *decoder);
+int hb_ring_decoder_push(hb_ring_decoder_t *decoder, uint8_t value,
                          uint8_t *payload, uint8_t *payload_length);
 
 #endif

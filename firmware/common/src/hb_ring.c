@@ -48,3 +48,57 @@ int hb_ring_decode_exact(const uint8_t *frame, size_t frame_length,
     *payload_length = length;
     return 1;
 }
+
+void hb_ring_decoder_init(hb_ring_decoder_t *decoder)
+{
+    if (decoder == NULL)
+        return;
+    decoder->phase = 0u;
+    decoder->position = 0u;
+    decoder->expected = 0u;
+}
+
+int hb_ring_decoder_push(hb_ring_decoder_t *decoder, uint8_t value,
+                         uint8_t *payload, uint8_t *payload_length)
+{
+    int valid;
+
+    if (decoder == NULL || payload_length == NULL)
+        return 0;
+    if (decoder->phase == 0u) {
+        if (value == HB_RING_PREAMBLE_0)
+            decoder->phase = 1u;
+        return 0;
+    }
+    if (decoder->phase == 1u) {
+        if (value == HB_RING_PREAMBLE_1) {
+            decoder->frame[0] = HB_RING_PREAMBLE_0;
+            decoder->frame[1] = HB_RING_PREAMBLE_1;
+            decoder->position = 2u;
+            decoder->phase = 2u;
+        } else if (value != HB_RING_PREAMBLE_0) {
+            hb_ring_decoder_init(decoder);
+        }
+        return 0;
+    }
+
+    if (decoder->position >= sizeof(decoder->frame)) {
+        hb_ring_decoder_init(decoder);
+        return 0;
+    }
+    decoder->frame[decoder->position++] = value;
+    if (decoder->position == 3u) {
+        if (value == 0u || value > HB_RING_MAX_PAYLOAD) {
+            hb_ring_decoder_init(decoder);
+            return 0;
+        }
+        decoder->expected = (size_t)value + 5u;
+    }
+    if (decoder->expected == 0u || decoder->position != decoder->expected)
+        return 0;
+
+    valid = hb_ring_decode_exact(decoder->frame, decoder->position,
+                                 payload, payload_length);
+    hb_ring_decoder_init(decoder);
+    return valid;
+}

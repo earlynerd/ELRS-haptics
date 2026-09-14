@@ -24,6 +24,49 @@ static void test_ring_round_trip(void)
     assert(!hb_ring_decode_exact(frame, length, decoded, &decoded_length));
 }
 
+static void test_ring_stream_decoder(void)
+{
+    const uint8_t echo_payload[] = { HB_CMD_ADDR_BASE, HB_SUBCMD_QUERY_STATUS };
+    const uint8_t status_payload[] = { HB_CMD_STATUS_BASE, 0x10u, 0u, 2u,
+                                       1u, 2u, 3u, 0xFFu, 0xFFu };
+    uint8_t echo_frame[HB_RING_MAX_FRAME];
+    uint8_t status_frame[HB_RING_MAX_FRAME];
+    uint8_t decoded[HB_RING_MAX_PAYLOAD];
+    uint8_t decoded_length = 0u;
+    hb_ring_decoder_t decoder;
+    size_t echo_length = hb_ring_encode(echo_payload, sizeof(echo_payload),
+                                        echo_frame, sizeof(echo_frame));
+    size_t status_length = hb_ring_encode(status_payload, sizeof(status_payload),
+                                          status_frame, sizeof(status_frame));
+    size_t i;
+    unsigned matches = 0u;
+
+    hb_ring_decoder_init(&decoder);
+    assert(!hb_ring_decoder_push(&decoder, 0x00u, decoded, &decoded_length));
+    for (i = 0u; i < echo_length; ++i) {
+        if (hb_ring_decoder_push(&decoder, echo_frame[i], decoded,
+                                 &decoded_length)) {
+            assert(decoded_length == sizeof(echo_payload));
+            assert(memcmp(decoded, echo_payload, sizeof(echo_payload)) == 0);
+            ++matches;
+        }
+    }
+    for (i = 0u; i < status_length; ++i) {
+        if (hb_ring_decoder_push(&decoder, status_frame[i], decoded,
+                                 &decoded_length)) {
+            assert(decoded_length == sizeof(status_payload));
+            assert(memcmp(decoded, status_payload, sizeof(status_payload)) == 0);
+            ++matches;
+        }
+    }
+    assert(matches == 2u);
+
+    status_frame[status_length - 1u] ^= 1u;
+    for (i = 0u; i < status_length; ++i)
+        assert(!hb_ring_decoder_push(&decoder, status_frame[i], decoded,
+                                     &decoded_length));
+}
+
 static void test_msp_crsf_attitude(void)
 {
     uint8_t crsf[] = { 0xEAu, 8u, HB_CRSF_FRAMETYPE_ATTITUDE,
@@ -63,6 +106,7 @@ static void test_attitude_map(void)
 int main(void)
 {
     test_ring_round_trip();
+    test_ring_stream_decoder();
     test_msp_crsf_attitude();
     test_attitude_map();
     puts("haptic bracelet core tests passed");

@@ -10,6 +10,7 @@
 
 #include "backpack_rx.h"
 #include "board.h"
+#include "bringup_console.h"
 #include "hb_attitude_map.h"
 #include "ring_master.h"
 
@@ -45,17 +46,19 @@ static void safe_main_io_init(void)
 
 void app_main(void)
 {
-    bool ring_ready;
+    bool ring_online;
     bool output_active = false;
     uint8_t sequence = 0u;
 
     safe_main_io_init();
     set_led(false, false, true);
-    ring_ready = hb_ring_master_start();
+    ring_online = hb_ring_master_start();
     if (hb_backpack_rx_init() != ESP_OK)
         ESP_LOGE(TAG, "Backpack initialization failed");
+    if (hb_bringup_console_start() != ESP_OK)
+        ESP_LOGE(TAG, "USB bring-up console initialization failed");
 
-    if (!ring_ready) {
+    if (!ring_online) {
         set_led(true, false, false);
         ESP_LOGE(TAG, "safe fault: pod rail disabled");
     } else {
@@ -65,8 +68,21 @@ void app_main(void)
     for (;;) {
         hb_attitude_t attitude;
         uint32_t age_ms = UINT32_MAX;
-        bool fresh = ring_ready && hb_backpack_latest(&attitude, &age_ms) &&
-                     age_ms <= ATTITUDE_STALE_MS;
+        bool fresh;
+
+        if (hb_bringup_console_manual_active()) {
+            if (output_active) {
+                (void)hb_ring_master_all_stop();
+                output_active = false;
+            }
+            set_led(false, false, true);
+            vTaskDelay(pdMS_TO_TICKS(CONTROL_PERIOD_MS));
+            continue;
+        }
+
+        fresh = hb_ring_master_flight_ready() &&
+                      hb_backpack_latest(&attitude, &age_ms) &&
+                      age_ms <= ATTITUDE_STALE_MS;
 
         if (fresh) {
             uint8_t amplitudes[HB_RING_POD_COUNT];
@@ -75,7 +91,6 @@ void app_main(void)
             if (!hb_ring_master_send_haptics(sequence++, amplitudes)) {
                 ESP_LOGE(TAG, "ring echo lost; powering pods down");
                 hb_ring_master_shutdown();
-                ring_ready = false;
                 output_active = false;
                 set_led(true, false, false);
             } else {
