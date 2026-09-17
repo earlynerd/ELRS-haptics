@@ -1,0 +1,83 @@
+{
+  "architecture": "stacked-controller",
+  "controller_pcba_quantity": 1,
+  "universal_pod_pcba_quantity": 8,
+  "battery_count": 7,
+  "battery_pods": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "no_battery_pods": [
+    0
+  ],
+  "required_cell_ntc_pods": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "normal_jumper_pods": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "end_jumper_pod": 7,
+  "stack_pin_nets": {
+    "1": "+3V3_POD",
+    "2": "GND",
+    "3": "RING_D0",
+    "4": "VBAT",
+    "5": "RING_RETURN"
+  },
+  "removed_main_references": [
+    "C100",
+    "C101",
+    "C102",
+    "C103",
+    "C5",
+    "C6",
+    "C7",
+    "F100",
+    "J1",
+    "J103",
+    "J200",
+    "M1",
+    "R100",
+    "R101",
+    "R102",
+    "R103",
+    "R105",
+    "R8",
+    "R9",
+    "U18",
+    "U3"
+  ],
+  "main_outline_and_placement": "pending mechanical stack design",
+  "baseline": "hardware/backups/pre-stacked-controller-20260914",
+  "satellite_pcb_sha256": "b7b74e705018ec567bd8be6922a09b1491cc65b76d0963ab61bac013cfd51c25",
+  "battery_candidates": [
+    {
+      "example": "YDL301230 protected assembly",
+      "capacity_mah": 90,
+      "seven_cell_capacity_mah": 630
+    },
+    {
+      "size_code": "301730",
+      "capacity_mah": 160,
+      "seven_cell_capacity_mah": 1120,
+      "status": "user-suggested candidate; exact model, protected dimensions and ratings unverified"
+    }
+  ]
+}

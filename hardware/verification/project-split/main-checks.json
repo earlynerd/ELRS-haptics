@@ -1,37 +1,182 @@
 {
-  "status": "PASS",
+  "status": "PRESERVATION PASS; USER PLACEMENT IN PROGRESS",
   "project": "main",
-  "components": 70,
-  "preserved_components": 66,
-  "preserved_component_values_and_footprints": true,
-  "circuit_matches_baseline_except_return_selector_and_reset_removal": true,
-  "reset_is_local_to_ice": true,
-  "harness_wires": 5,
-  "placement_preserved": true,
-  "electrical_pads_checked": 281,
-  "copper_layers": 4,
-  "thickness_mm": 0.8,
-  "board_outlines": 1,
-  "actuator_cutouts": 1,
-  "erc_violations": 1,
+  "geometry": {
+    "outline_mm": [
+      20,
+      46
+    ],
+    "corner_radius_mm": 2.5,
+    "mounts": {
+      "H1": [
+        2.75,
+        2.75
+      ],
+      "H2": [
+        17.25,
+        2.75
+      ],
+      "H3": [
+        2.75,
+        43.25
+      ],
+      "H4": [
+        17.25,
+        43.25
+      ]
+    },
+    "electrical_components_preserved": 48,
+    "existing_electrical_placements_pads_and_routes_preserved": true,
+    "actuator_cutouts": 0,
+    "tpu_contact_band_mm": 1.2,
+    "placement_inset_mm": 1.5
+  },
+  "electrical_circuit_preserved": true,
+  "erc_violations": 0,
   "schematic_parity": 0,
-  "drc_violations": 3,
-  "open_connections": 196,
-  "segments": 1,
-  "vias": 0,
-  "pcb_sha256": "416af72cc3bb5f94de9c443d3e08546acae2b6a51b712ce0553d21c5307193cc",
-  "harness_pads": 5,
-  "preservation_exceptions": [
-    "Five-pad harness footprint and centre shifted 1 mm; pins 1-3 stay fixed, VBAT/return move 2 mm",
-    "Main J100 and shared reset circuit removed; return selector added",
-    "USB CC controller and external input limiter removed; two 5.1k pull-downs added; VBUS directly feeds charger IN",
-    "Main J3 and R48/R50/R52 removed; R62 terminates TS/MR, retaining SW3 and MCU thermistor input",
-    "Main UART service bank J1 and Q4/R34/R35/R36 VBUS detector removed; charger input status read via I2C",
-    "User removed C29/C30 and replaced main J102 with TC2030 J1; optimized placement with fixed edge anchors; restored U3 ground"
+  "drc_violations": 20,
+  "open_connections": 146,
+  "remaining_drc": [
+    {
+      "type": "shorting_items",
+      "items": [
+        "Pad 2 [Net-(U12-L2)] of L1 on F.Cu",
+        "Pad 1 [POD_POWER_ON] of R45 on F.Cu"
+      ]
+    },
+    {
+      "type": "clearance",
+      "items": [
+        "Pad 2 [Net-(U12-L2)] of L1 on F.Cu",
+        "Pad 1 [/POD_SLEW] of C42 on F.Cu"
+      ]
+    },
+    {
+      "type": "shorting_items",
+      "items": [
+        "Pad 3 [RING_D0] of J101 on F.Cu",
+        "Pad 2 [BOOT_IO9] of R5 on F.Cu"
+      ]
+    },
+    {
+      "type": "shorting_items",
+      "items": [
+        "Pad 4 [VBAT] of J101 on F.Cu",
+        "Pad 1 [+3V3] of R5 on F.Cu"
+      ]
+    },
+    {
+      "type": "courtyards_overlap",
+      "items": [
+        "Footprint L1",
+        "Footprint R45"
+      ]
+    },
+    {
+      "type": "courtyards_overlap",
+      "items": [
+        "Footprint L1",
+        "Footprint C42"
+      ]
+    },
+    {
+      "type": "courtyards_overlap",
+      "items": [
+        "Footprint R5",
+        "Footprint J101"
+      ]
+    },
+    {
+      "type": "courtyards_overlap",
+      "items": [
+        "Footprint J2",
+        "Footprint C41"
+      ]
+    },
+    {
+      "type": "courtyards_overlap",
+      "items": [
+        "Footprint H1",
+        "Footprint U1"
+      ]
+    },
+    {
+      "type": "npth_inside_courtyard",
+      "items": [
+        "NPTH pad of H1",
+        "Footprint U1"
+      ]
+    },
+    {
+      "type": "courtyards_overlap",
+      "items": [
+        "Footprint R46",
+        "Footprint U26"
+      ]
+    },
+    {
+      "type": "courtyards_overlap",
+      "items": [
+        "Footprint H2",
+        "Footprint U1"
+      ]
+    },
+    {
+      "type": "npth_inside_courtyard",
+      "items": [
+        "NPTH pad of H2",
+        "Footprint U1"
+      ]
+    },
+    {
+      "type": "solder_mask_bridge",
+      "items": [
+        "Pad 2 [Net-(U12-L2)] of L1 on F.Cu",
+        "Pad 1 [POD_POWER_ON] of R45 on F.Cu"
+      ]
+    },
+    {
+      "type": "solder_mask_bridge",
+      "items": [
+        "Pad 1 [+3V3] of R5 on F.Cu",
+        "Pad 4 [VBAT] of J101 on F.Cu"
+      ]
+    },
+    {
+      "type": "solder_mask_bridge",
+      "items": [
+        "Pad 2 [BOOT_IO9] of R5 on F.Cu",
+        "Pad 3 [RING_D0] of J101 on F.Cu"
+      ]
+    },
+    {
+      "type": "lib_footprint_mismatch",
+      "items": [
+        "Footprint U1"
+      ]
+    },
+    {
+      "type": "silk_over_copper",
+      "items": [
+        "Segment of U26 on F.Silkscreen",
+        "Pad 1 [+3V3_POD] of R46 on F.Cu"
+      ]
+    },
+    {
+      "type": "silk_over_copper",
+      "items": [
+        "Segment of R5 on F.Silkscreen",
+        "Pad 4 [VBAT] of J101 on F.Cu"
+      ]
+    },
+    {
+      "type": "silk_over_copper",
+      "items": [
+        "Segment of U26 on F.Silkscreen",
+        "Pad 1 [+3V3_POD] of R46 on F.Cu"
+      ]
+    }
   ],
-  "passive_cc_checked": true,
-  "pod_temperature_interface_checked": true,
-  "uart_vbus_removal_checked": true,
-  "known_erc_note": "TC2030 open-drain reset and M2003 internal reset pull-up; no external pull-up fitted",
-  "placement_reference": "hardware/main/placement-reference.json"
+  "standoff_height": "TBD; family land pattern only",
+  "pcb_sha256": "b80af9ab20ea6ac7206b68518542d3617fd41d787a9eacf9c5a30b23b3e8bd89"
 }

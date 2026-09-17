@@ -1,5 +1,7 @@
 # VLV041235L prototype selection and flex contacts
 
+> **2026-09-15: retain VLV041235L and its factory peel-and-stick tape.** The universal board is now an unbroken skin-facing plate; the actuator bonds to its inward face. The older cutout/housing-seat concept below is superseded. Existing electrical flex-contact lands are retained for rearrangement. See [PCB sandwich construction](pcb-sandwich.md).
+
 > Project update (2026-09-13): active sources are `hardware/main/` and `hardware/satellite/`. Main references are unchanged; historical satellite references map to the one universal design in [PCBA projects](pcba-projects.md). Any combined-board placement/count or verification statements below describe the earlier checkpoint; [current routing status](pcb-routing.md) supersedes them.
 
 Revision 0.6 assigns VLV041235L and the draft contact footprint to the eight actuators (currently main M1 and seven satellite M1 instances). Native cutouts are 7 x 15 mm and offset 1 mm left, with the contact lands near the lower-right corner. [Current placement](pcb-placement.md) supersedes the earlier pending-selection and no-PCB statements below; the following records the source drawing and initial concept. Physical tail folding and solder attachment remain untested.

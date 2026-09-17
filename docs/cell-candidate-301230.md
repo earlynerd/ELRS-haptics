@@ -1,4 +1,9 @@
-> **Adopted packaging baseline, revision 0.5:** eight protected 90 mAh batteries, one per pod, using the YDL301230 3 x 12 x 32 mm assembly as the example. Keep factory PCMs intact; remove the central protector. Study D allocates a battery in every lid. The earlier study-C fit and alternative sourcing discussion below are historical comparisons, not the current count/protection decision.
+> **Current baseline, 2026-09-14:** seven protected battery assemblies in pods 1-7; no cell in pod 0 beneath the controller daughterboard. Seven 90 mAh cells give 630 mAh. The eight-cell examples below describe the superseded integrated-main packaging.
+
+## Alternative candidate: 301730 / 160 mAh
+
+The user identified 301730 batteries advertised at 160 mAh. Seven would provide 1,120 mAh nominal, 55.6% above the former eight-by-90 mAh arrangement. This is a candidate, not a selected manufacturer part. The nominal size designation suggests a wider cell; an actual drawing must establish the complete protected assembly, tolerances and lead exit before revising the lid allocation. Charge/discharge limits and protection specifications cannot be inferred from capacity or the size code. Keep factory protection as required by the current architecture.
+
 
 # 301230 cell packaging candidate
 

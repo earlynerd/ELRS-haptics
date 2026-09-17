@@ -5,8 +5,8 @@
 	(uuid "281e434a-bf9f-4327-92ec-86d5315beda6")
 	(paper "A3")
 	(title_block
-		(title "Controller and switched pod power")
-		(date "2026-09-12")
+		(title "Haptic bracelet - stacked controller")
+		(date "2026-09-14")
 		(rev "0.5")
 		(comment 1 "One wrist / ring pod schematic draft")
 	)
@@ -2430,7 +2430,7 @@
 		)
 		(uuid "1d1fc861-64da-4040-94c7-619a6baf3268")
 	)
-	(text "250 kbaud logical ring: ESP TX -> pod 0 -> ... -> pod 7 -> RETURN -> ESP RX.\nPhysical five-wire chain; RETURN runs back through the same links. No electrical connection across clasp."
+	(text "250 kbaud ring: ESP TX -> J101 -> universal pod 0 -> ... -> pod 7 -> RETURN -> ESP RX.\n8 identical pod PCBAs + 1 controller daughterboard; protected batteries/NTCs on pods 1-7 only."
 		(exclude_from_sim no)
 		(at 15.24 22.86 0)
 		(effects
@@ -2474,7 +2474,7 @@
 		)
 		(uuid "925ddca1-279e-49bf-85e9-737f01a2c26d")
 	)
-	(text "HAPTIC BRACELET / MAIN PCBA"
+	(text "HAPTIC BRACELET / CONTROLLER DAUGHTERBOARD"
 		(exclude_from_sim no)
 		(at 15.24 12.7 0)
 		(effects
@@ -2490,6 +2490,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "16cecb1d-57b8-4fe6-997b-9289c3e9f003")
+	)
+	(junction
+		(at 34.29 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3d1be245-32c3-419f-8a3d-453e99f437bf")
 	)
 	(junction
 		(at 107.95 193.04)
@@ -2671,6 +2677,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 88.9) (xy 34.29 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ad876b5-9f9e-4d37-978b-a5eeb8dcca2f")
+	)
+	(wire
+		(pts
 			(xy 123.19 196.85) (xy 123.19 193.04)
 		)
 		(stroke
@@ -2721,13 +2737,13 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 88.9) (xy 53.34 88.9)
+			(xy 34.29 76.2) (xy 34.29 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "76d2aceb-7826-478f-ae26-f51d2da74bbe")
+		(uuid "758b89d3-cc6b-4ae0-b754-7d9216ef2d82")
 	)
 	(wire
 		(pts
@@ -2821,6 +2837,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 88.9) (xy 58.42 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b406a6fa-f87c-4f72-8295-52cf7f9891ce")
+	)
+	(wire
+		(pts
 			(xy 58.42 91.44) (xy 53.34 91.44)
 		)
 		(stroke
@@ -2868,6 +2894,16 @@
 			(type default)
 		)
 		(uuid "c5b50c44-10cc-439a-825d-4a489418d099")
+	)
+	(wire
+		(pts
+			(xy 33.02 88.9) (xy 34.29 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9748e80-2439-49ee-a4d3-baefa7a533a8")
 	)
 	(wire
 		(pts
@@ -3065,6 +3101,29 @@
 			)
 		)
 	)
+	(global_label "BOOT_IO8"
+		(shape bidirectional)
+		(at 33.02 88.9 180)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "207d3ca7-ebb2-41e6-8937-dae591102bf3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 33.02 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "LED_G_N"
 		(shape bidirectional)
 		(at 53.34 81.28 180)
@@ -3165,28 +3224,6 @@
 		(uuid "64482021-b205-462e-84c6-31652897aab6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 93.98 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "BOOT_IO8"
-		(shape bidirectional)
-		(at 53.34 88.9 180)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify right bottom)
-		)
-		(uuid "68965132-e596-4dc5-a7b4-85e85985e633")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.34 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3993,6 +4030,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 34.29 80.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "789fe91e-8677-403a-8991-37b58f6df214")
+		(property "Reference" "R4"
+			(at 37.29 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 37.29 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at -63.5 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at -63.5 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" ""
+			(at -67.31 90.17 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0fb25c92-9f1f-4a66-b9cf-d2b65c718451")
+		)
+		(pin "2"
+			(uuid "0a73c6e9-b8ea-4491-b7c0-25f145bf76d1")
+		)
+		(instances
+			(project "main"
+				(path "/281e434a-bf9f-4327-92ec-86d5315beda6"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 114.3 104.14 0)
 		(unit 1)
@@ -4065,6 +4182,80 @@
 			(project "main"
 				(path "/281e434a-bf9f-4327-92ec-86d5315beda6"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 34.29 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8a4b9fd1-590f-4764-8d8a-0484875ba3a5")
+		(property "Reference" "#PWR030017"
+			(at 34.29 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 34.29 67.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 34.29 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f65b3154-7db3-49a4-b90c-8ad84a73d7bc")
+		)
+		(instances
+			(project "main"
+				(path "/281e434a-bf9f-4327-92ec-86d5315beda6"
+					(reference "#PWR030017")
 					(unit 1)
 				)
 			)
@@ -5210,7 +5401,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "cc6a0e97-9c58-4182-898e-46e3e3bcce7f")
-		(property "Sheetname" "Local haptic pod and harness"
+		(property "Sheetname" "Stacked universal pod interface"
 			(at 294.64 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5221,7 +5412,7 @@
 				(justify left)
 			)
 		)
-		(property "Sheetfile" "local-pod.kicad_sch"
+		(property "Sheetfile" "pod-interface.kicad_sch"
 			(at 294.64 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)

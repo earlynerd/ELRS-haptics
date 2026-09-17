@@ -1,0 +1,332 @@
+{
+  "checks": "Mesh and supplied bounds only; no physical fit or operating qualification.",
+  "build_volume_mm": [
+    300.0,
+    320.0,
+    325.0
+  ],
+  "tolerance_mm": 0.05,
+  "parts": [
+    {
+      "path": "C:\\Users\\mmsyl\\Documents\\haptic-bracelet\\mechanical\\myo-flat-v0.11\\print\\closure-coupon-rigid.stl",
+      "passed": true,
+      "failures": [],
+      "sha256": "0dedb78894a27a1f9d2f9d9fdb139b04c8515d9e0d9aaa135fd5293822612293",
+      "triangles": 6840,
+      "bounds_mm": [
+        [
+          188.8000030517578,
+          -36.0,
+          0.0
+        ],
+        [
+          239.1999969482422,
+          36.0,
+          11.5
+        ]
+      ],
+      "size_mm": [
+        50.399993896484375,
+        72.0,
+        11.5
+      ],
+      "watertight": true,
+      "winding_consistent": true,
+      "signed_volume_mm3": 7732.636590538449,
+      "vertex_connected_components": 2,
+      "degenerate_faces": 0,
+      "duplicate_faces": 0,
+      "fits_build_volume": true,
+      "input_unchanged": true
+    },
+    {
+      "path": "C:\\Users\\mmsyl\\Documents\\haptic-bracelet\\mechanical\\myo-flat-v0.11\\print\\closure-coupon-tpu.stl",
+      "passed": true,
+      "failures": [],
+      "sha256": "2b5a3d16460f1417cbb919c453e1688752b21a03f8666dbf3231e0a4b4ca8247",
+      "triangles": 2904,
+      "bounds_mm": [
+        [
+          188.8000030517578,
+          -36.000118255615234,
+          0.0
+        ],
+        [
+          233.1999969482422,
+          36.000118255615234,
+          9.5
+        ]
+      ],
+      "size_mm": [
+        44.399993896484375,
+        72.00023651123047,
+        9.5
+      ],
+      "watertight": true,
+      "winding_consistent": true,
+      "signed_volume_mm3": 2070.3060759749496,
+      "vertex_connected_components": 2,
+      "degenerate_faces": 0,
+      "duplicate_faces": 0,
+      "fits_build_volume": true,
+      "input_unchanged": true
+    },
+    {
+      "path": "C:\\Users\\mmsyl\\Documents\\haptic-bracelet\\mechanical\\myo-flat-v0.11\\print\\coupon-rigid.stl",
+      "passed": true,
+      "failures": [],
+      "sha256": "7131a59b8f992fe0e215db0f66f78d34158808d422bf5aa512161c68657fc8d2",
+      "triangles": 3592,
+      "bounds_mm": [
+        [
+          30.399999618530273,
+          -23.0,
+          0.0
+        ],
+        [
+          76.80000305175781,
+          23.0,
+          9.5
+        ]
+      ],
+      "size_mm": [
+        46.40000343322754,
+        46.0,
+        9.5
+      ],
+      "watertight": true,
+      "winding_consistent": true,
+      "signed_volume_mm3": 6401.223733119773,
+      "vertex_connected_components": 2,
+      "degenerate_faces": 0,
+      "duplicate_faces": 0,
+      "fits_build_volume": true,
+      "input_unchanged": true
+    },
+    {
+      "path": "C:\\Users\\mmsyl\\Documents\\haptic-bracelet\\mechanical\\myo-flat-v0.11\\print\\coupon-tpu.stl",
+      "passed": true,
+      "failures": [],
+      "sha256": "44a49d24e4b6c54cbd83ac3f1ab4fbd6e079c92cc62eaf8b6d252fac5d10f2d5",
+      "triangles": 2856,
+      "bounds_mm": [
+        [
+          30.399999618530273,
+          -23.0,
+          0.0
+        ],
+        [
+          76.80000305175781,
+          23.0,
+          9.5
+        ]
+      ],
+      "size_mm": [
+        46.40000343322754,
+        46.0,
+        9.5
+      ],
+      "watertight": true,
+      "winding_consistent": true,
+      "signed_volume_mm3": 2328.830517594975,
+      "vertex_connected_components": 2,
+      "degenerate_faces": 0,
+      "duplicate_faces": 0,
+      "fits_build_volume": true,
+      "input_unchanged": true
+    },
+    {
+      "path": "C:\\Users\\mmsyl\\Documents\\haptic-bracelet\\mechanical\\myo-flat-v0.11\\print\\main-clamshell-fit-parts.stl",
+      "passed": true,
+      "failures": [],
+      "sha256": "05ff92fc67f728740eae5f9f14a7650912f495a4d729d09fcf903925e5b55bc4",
+      "triangles": 7960,
+      "bounds_mm": [
+        [
+          7.460698725481052e-14,
+          -36.0,
+          0.0
+        ],
+        [
+          53.0,
+          36.0,
+          11.5
+        ]
+      ],
+      "size_mm": [
+        52.99999999999993,
+        72.0,
+        11.5
+      ],
+      "watertight": true,
+      "winding_consistent": true,
+      "signed_volume_mm3": 7923.067198842585,
+      "vertex_connected_components": 2,
+      "degenerate_faces": 0,
+      "duplicate_faces": 0,
+      "fits_build_volume": true,
+      "input_unchanged": true
+    },
+    {
+      "path": "C:\\Users\\mmsyl\\Documents\\haptic-bracelet\\mechanical\\myo-flat-v0.11\\print\\main-transition-rigid.stl",
+      "passed": true,
+      "failures": [],
+      "sha256": "e47c20dda595de1f51562a5d5039afd6fe79ac8b068273ab03a7a38422c74256",
+      "triangles": 4712,
+      "bounds_mm": [
+        [
+          7.460698725481052e-14,
+          -36.0,
+          0.0
+        ],
+        [
+          50.400001525878906,
+          36.0,
+          9.5
+        ]
+      ],
+      "size_mm": [
+        50.400001525878835,
+        72.0,
+        9.5
+      ],
+      "watertight": true,
+      "winding_consistent": true,
+      "signed_volume_mm3": 6591.649526550486,
+      "vertex_connected_components": 2,
+      "degenerate_faces": 0,
+      "duplicate_faces": 0,
+      "fits_build_volume": true,
+      "input_unchanged": true
+    },
+    {
+      "path": "C:\\Users\\mmsyl\\Documents\\haptic-bracelet\\mechanical\\myo-flat-v0.11\\print\\main-transition-tpu.stl",
+      "passed": true,
+      "failures": [],
+      "sha256": "b038b428c0f33fd4ad887fc0e0d9f36af593efe29d811d2187c2620b79640feb",
+      "triangles": 2888,
+      "bounds_mm": [
+        [
+          18.0,
+          -36.000118255615234,
+          0.0
+        ],
+        [
+          50.400001525878906,
+          36.000118255615234,
+          9.5
+        ]
+      ],
+      "size_mm": [
+        32.400001525878906,
+        72.00023651123047,
+        9.5
+      ],
+      "watertight": true,
+      "winding_consistent": true,
+      "signed_volume_mm3": 1876.1939570621691,
+      "vertex_connected_components": 2,
+      "degenerate_faces": 0,
+      "duplicate_faces": 0,
+      "fits_build_volume": true,
+      "input_unchanged": true
+    },
+    {
+      "path": "C:\\Users\\mmsyl\\Documents\\haptic-bracelet\\mechanical\\myo-flat-v0.11\\print\\rigid-strip.stl",
+      "passed": true,
+      "failures": [],
+      "sha256": "9bbef186bd5b39f88b290cc89d41556350dbaee302266bc9c69155d2aeaa1a33",
+      "triangles": 20532,
+      "bounds_mm": [
+        [
+          7.460698725481052e-14,
+          -36.0,
+          0.0
+        ],
+        [
+          239.1999969482422,
+          36.0,
+          11.5
+        ]
+      ],
+      "size_mm": [
+        239.1999969482421,
+        72.0,
+        11.5
+      ],
+      "watertight": true,
+      "winding_consistent": true,
+      "signed_volume_mm3": 30327.347098885668,
+      "vertex_connected_components": 9,
+      "degenerate_faces": 0,
+      "duplicate_faces": 0,
+      "fits_build_volume": true,
+      "input_unchanged": true
+    },
+    {
+      "path": "C:\\Users\\mmsyl\\Documents\\haptic-bracelet\\mechanical\\myo-flat-v0.11\\print\\satellite-lid.stl",
+      "passed": true,
+      "failures": [],
+      "sha256": "3f9faa4dadf0ec1471abed6e5e74e4757e1bba903ed50e8235a49e6f3144ac74",
+      "triangles": 2348,
+      "bounds_mm": [
+        [
+          0.0,
+          -23.0,
+          0.0
+        ],
+        [
+          20.0,
+          23.0,
+          1.600000023841858
+        ]
+      ],
+      "size_mm": [
+        20.0,
+        46.0,
+        1.600000023841858
+      ],
+      "watertight": true,
+      "winding_consistent": true,
+      "signed_volume_mm3": 1442.7530869357133,
+      "vertex_connected_components": 1,
+      "degenerate_faces": 0,
+      "duplicate_faces": 0,
+      "fits_build_volume": true,
+      "input_unchanged": true
+    },
+    {
+      "path": "C:\\Users\\mmsyl\\Documents\\haptic-bracelet\\mechanical\\myo-flat-v0.11\\print\\tpu-end-flexures.stl",
+      "passed": true,
+      "failures": [],
+      "sha256": "c257710b0b06b750584292979cb03b1efa6d90c8d4cb78788f0030192cbcd369",
+      "triangles": 17496,
+      "bounds_mm": [
+        [
+          18.0,
+          -36.000118255615234,
+          0.0
+        ],
+        [
+          233.1999969482422,
+          36.000118255615234,
+          9.5
+        ]
+      ],
+      "size_mm": [
+        215.1999969482422,
+        72.00023651123047,
+        9.5
+      ],
+      "watertight": true,
+      "winding_consistent": true,
+      "signed_volume_mm3": 11589.766909847634,
+      "vertex_connected_components": 2,
+      "degenerate_faces": 0,
+      "duplicate_faces": 0,
+      "fits_build_volume": true,
+      "input_unchanged": true
+    }
+  ],
+  "passed": true
+}

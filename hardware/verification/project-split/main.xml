@@ -2,15 +2,15 @@
 <export version="E">
   <design>
     <source>C:\Users\mmsyl\Documents\haptic-bracelet\hardware\main\main.kicad_sch</source>
-    <date>2026-09-13T22:04:32</date>
+    <date>2026-09-15T01:42:01</date>
     <tool>Eeschema 10.0.1</tool>
     <textvar name="DESIGN_STATUS">RING POD SCHEMATIC - FIRMWARE, PACK AND LAYOUT PENDING</textvar>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title>Controller and switched pod power</title>
+        <title>Haptic bracelet - stacked controller</title>
         <company/>
         <rev>0.5</rev>
-        <date>2026-09-12</date>
+        <date>2026-09-14</date>
         <source>main.kicad_sch</source>
         <comment number="1" value="One wrist / ring pod schematic draft"/>
         <comment number="2" value=""/>
@@ -23,13 +23,13 @@
         <comment number="9" value=""/>
       </title_block>
     </sheet>
-    <sheet number="2" name="/Local haptic pod and harness/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/">
+    <sheet number="2" name="/Stacked universal pod interface/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/">
       <title_block>
-        <title>Local haptic pod / main PCBA</title>
+        <title>Controller to universal pod stack</title>
         <company/>
         <rev>1.0</rev>
-        <date>2026-09-13</date>
-        <source>local-pod.kicad_sch</source>
+        <date>2026-09-14</date>
+        <source>pod-interface.kicad_sch</source>
         <comment number="1" value="One wrist / ring pod schematic draft"/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
@@ -162,6 +162,30 @@
       <property name="ki_fp_filters" value="C_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>b9a99956-7d69-44d2-b6c9-c14700f36a0d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="main.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>789fe91e-8677-403a-8991-37b58f6df214</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -376,256 +400,122 @@
         </unit>
       </units>
     </comp>
-    <comp ref="C5">
-      <value>100n</value>
-      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+    <comp ref="H1">
+      <value>M1.6 CLEARANCE</value>
+      <footprint>HapticBracelet:Screw_Clearance_M1p6_1p8mm_Stack</footprint>
       <fields>
-        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="BOM Comments">M1.6 screw clearance; align to lower-board standoff.</field>
+        <field name="Footprint">HapticBracelet:Screw_Clearance_M1p6_1p8mm_Stack</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="Local haptic pod and harness"/>
-      <property name="Sheetfile" value="local-pod.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Local haptic pod and harness/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
-      <tstamps>008a6470-1a20-4333-b963-0b561394717b</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="C6">
-      <value>100n</value>
-      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="Local haptic pod and harness"/>
-      <property name="Sheetfile" value="local-pod.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Local haptic pod and harness/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
-      <tstamps>8cbad434-e8ac-4507-a1b8-d7cc3353879b</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="C7">
-      <value>1u</value>
-      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="Local haptic pod and harness"/>
-      <property name="Sheetfile" value="local-pod.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Local haptic pod and harness/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
-      <tstamps>7a57b532-c525-462d-a462-067e04330a0d</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="C100">
-      <value>100n</value>
-      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="Local haptic pod and harness"/>
-      <property name="Sheetfile" value="local-pod.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Local haptic pod and harness/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
-      <tstamps>ae26bd4a-4acb-41b2-8014-e63069c62d71</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="C101">
-      <value>10u</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
-      <fields>
-        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="Local haptic pod and harness"/>
-      <property name="Sheetfile" value="local-pod.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Local haptic pod and harness/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
-      <tstamps>2bfd4893-e612-489c-a47d-90585ee8ad73</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="C102">
-      <value>10n</value>
-      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value="Local haptic pod and harness"/>
-      <property name="Sheetfile" value="local-pod.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Local haptic pod and harness/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
-      <tstamps>4fb08e3d-cae5-4727-8d63-32b18e4bc083</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="C103">
-      <value>22u 10V X5R</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
-      <fields>
-        <field name="BOM Comments">Additional local bulk on switched rail, near driver supply and pod power entry. 22 uF nominal; effective capacitance at 3.3 V depends on selected MPN/DC bias. Retain existing bypass caps.</field>
-        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="BOM Comments" value="Additional local bulk on switched rail, near driver supply and pod power entry. 22 uF nominal; effective capacitance at 3.3 V depends on selected MPN/DC bias. Retain existing bypass caps."/>
-      <property name="Sheetname" value="Local haptic pod and harness"/>
-      <property name="Sheetfile" value="local-pod.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Local haptic pod and harness/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
-      <tstamps>240dc528-d0af-47c9-9ae5-6ee1a510eaab</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="F100">
-      <value>250mA FAST</value>
-      <footprint>HapticBracelet:Fuse_Littelfuse_467_0603</footprint>
-      <datasheet>https://www.littelfuse.com/assetdocs/fuse-467-datasheet?assetguid=4a59f034-1cca-460e-a5ba-e1e66247c76d</datasheet>
-      <fields>
-        <field name="BOM Comments">250 mA secondary branch fuse, 0.565 ohm nominal cold resistance; factory PCM remains primary cell protection. Verify fault/pulse coordination on bench.</field>
-        <field name="MPN">0467.250NR</field>
-        <field name="Manufacturer">Littelfuse</field>
-        <field name="DigiKey">F1389CT-ND</field>
-        <field name="Footprint">HapticBracelet:Fuse_Littelfuse_467_0603</field>
-        <field name="Datasheet">https://www.littelfuse.com/assetdocs/fuse-467-datasheet?assetguid=4a59f034-1cca-460e-a5ba-e1e66247c76d</field>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Device" part="Fuse" description="Fuse"/>
-      <property name="BOM Comments" value="250 mA secondary branch fuse, 0.565 ohm nominal cold resistance; factory PCM remains primary cell protection. Verify fault/pulse coordination on bench."/>
-      <property name="MPN" value="0467.250NR"/>
-      <property name="Manufacturer" value="Littelfuse"/>
-      <property name="DigiKey" value="F1389CT-ND"/>
-      <property name="Sheetname" value="Local haptic pod and harness"/>
-      <property name="Sheetfile" value="local-pod.kicad_sch"/>
-      <property name="ki_keywords" value="fuse"/>
-      <property name="ki_fp_filters" value="*Fuse*"/>
-      <sheetpath names="/Local haptic pod and harness/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
-      <tstamps>ae762d67-ce2d-4cc6-b9a7-606806a21bb6</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="J1">
-      <value>Conn_ARM_SWD_TagConnect_TC2030-NL</value>
-      <footprint>Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical</footprint>
-      <datasheet>https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2030-CTX_1.pdf</datasheet>
-      <description>Tag-Connect ARM Cortex SWD JTAG connector, 6 pin, no legs</description>
-      <fields>
-        <field name="Footprint">Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical</field>
-        <field name="Datasheet">https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2030-CTX_1.pdf</field>
-        <field name="Description">Tag-Connect ARM Cortex SWD JTAG connector, 6 pin, no legs</field>
-      </fields>
-      <libsource lib="Connector" part="Conn_ARM_SWD_TagConnect_TC2030-NL" description="Tag-Connect ARM Cortex SWD JTAG connector, 6 pin, no legs"/>
-      <property name="Sheetname" value="Local haptic pod and harness"/>
-      <property name="Sheetfile" value="local-pod.kicad_sch"/>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="BOM Comments" value="M1.6 screw clearance; align to lower-board standoff."/>
+      <property name="Sheetname" value="Stacked universal pod interface"/>
+      <property name="Sheetfile" value="pod-interface.kicad_sch"/>
       <property name="exclude_from_bom"/>
-      <property name="ki_keywords" value="Cortex Debug Connector ARM SWD JTAG"/>
-      <property name="ki_fp_filters" value="*TC2030*"/>
-      <sheetpath names="/Local haptic pod and harness/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
-      <tstamps>99cf9208-d8d1-4714-b990-c407e0275093</tstamps>
+      <property name="exclude_from_pos_files"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
+      <sheetpath names="/Stacked universal pod interface/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
+      <tstamps>5a6c3eff-2e16-4f8c-a9ec-4b7e5bfe89a8</tstamps>
       <units>
         <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="5"/>
-            <pin num="3"/>
-            <pin num="4"/>
-            <pin num="2"/>
-            <pin num="6"/>
-          </pins>
+          <pins/>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="H2">
+      <value>M1.6 CLEARANCE</value>
+      <footprint>HapticBracelet:Screw_Clearance_M1p6_1p8mm_Stack</footprint>
+      <fields>
+        <field name="BOM Comments">M1.6 screw clearance; align to lower-board standoff.</field>
+        <field name="Footprint">HapticBracelet:Screw_Clearance_M1p6_1p8mm_Stack</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="BOM Comments" value="M1.6 screw clearance; align to lower-board standoff."/>
+      <property name="Sheetname" value="Stacked universal pod interface"/>
+      <property name="Sheetfile" value="pod-interface.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_pos_files"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
+      <sheetpath names="/Stacked universal pod interface/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
+      <tstamps>010e7514-0ee3-4964-8f09-00bac11c9076</tstamps>
+      <units>
+        <unit name="A">
+          <pins/>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="H3">
+      <value>M1.6 CLEARANCE</value>
+      <footprint>HapticBracelet:Screw_Clearance_M1p6_1p8mm_Stack</footprint>
+      <fields>
+        <field name="BOM Comments">M1.6 screw clearance; align to lower-board standoff.</field>
+        <field name="Footprint">HapticBracelet:Screw_Clearance_M1p6_1p8mm_Stack</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="BOM Comments" value="M1.6 screw clearance; align to lower-board standoff."/>
+      <property name="Sheetname" value="Stacked universal pod interface"/>
+      <property name="Sheetfile" value="pod-interface.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_pos_files"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
+      <sheetpath names="/Stacked universal pod interface/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
+      <tstamps>3fd22506-1892-4531-852f-cb108c625965</tstamps>
+      <units>
+        <unit name="A">
+          <pins/>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="H4">
+      <value>M1.6 CLEARANCE</value>
+      <footprint>HapticBracelet:Screw_Clearance_M1p6_1p8mm_Stack</footprint>
+      <fields>
+        <field name="BOM Comments">M1.6 screw clearance; align to lower-board standoff.</field>
+        <field name="Footprint">HapticBracelet:Screw_Clearance_M1p6_1p8mm_Stack</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="BOM Comments" value="M1.6 screw clearance; align to lower-board standoff."/>
+      <property name="Sheetname" value="Stacked universal pod interface"/>
+      <property name="Sheetfile" value="pod-interface.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_pos_files"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
+      <sheetpath names="/Stacked universal pod interface/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
+      <tstamps>bca6f61b-9760-4c9a-8845-f7a1af0c8c15</tstamps>
+      <units>
+        <unit name="A">
+          <pins/>
         </unit>
       </units>
     </comp>
     <comp ref="J101">
-      <value>CHAIN OUT</value>
+      <value>STACK TO POD 0</value>
       <footprint>HapticBracelet:WirePads_5_P2mm</footprint>
       <fields>
-        <field name="BOM Comments">Five wire pads: 1 switched 3V3, 2 GND, 3 forward data, 4 VBAT, 5 return. No wire across clasp.</field>
+        <field name="BOM Comments">Five electrical contacts to universal pod 0 J1, pin-for-pin. Existing wire pads retained; stacking connector mechanics pending.</field>
         <field name="Footprint">HapticBracelet:WirePads_5_P2mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x05" description="Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="BOM Comments" value="Five wire pads: 1 switched 3V3, 2 GND, 3 forward data, 4 VBAT, 5 return. No wire across clasp."/>
-      <property name="Sheetname" value="Local haptic pod and harness"/>
-      <property name="Sheetfile" value="local-pod.kicad_sch"/>
+      <property name="BOM Comments" value="Five electrical contacts to universal pod 0 J1, pin-for-pin. Existing wire pads retained; stacking connector mechanics pending."/>
+      <property name="Sheetname" value="Stacked universal pod interface"/>
+      <property name="Sheetfile" value="pod-interface.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>
       <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
-      <sheetpath names="/Local haptic pod and harness/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
+      <sheetpath names="/Stacked universal pod interface/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
       <tstamps>5650583e-a46b-482a-bc98-1a27a639238b</tstamps>
       <units>
         <unit name="A">
@@ -635,340 +525,6 @@
             <pin num="3"/>
             <pin num="4"/>
             <pin num="5"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="J103">
-      <value>NTC (optional)</value>
-      <footprint>HapticBracelet:WirePads_2_P2mm</footprint>
-      <fields>
-        <field name="BOM Comments">External 10k NTC candidate; fit only at cell locations. Curve/thresholds pending. Separate from charger PACK_TS thermistor.</field>
-        <field name="Footprint">HapticBracelet:WirePads_2_P2mm</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="BOM Comments" value="External 10k NTC candidate; fit only at cell locations. Curve/thresholds pending. Separate from charger PACK_TS thermistor."/>
-      <property name="Sheetname" value="Local haptic pod and harness"/>
-      <property name="Sheetfile" value="local-pod.kicad_sch"/>
-      <property name="ki_keywords" value="connector"/>
-      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
-      <sheetpath names="/Local haptic pod and harness/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
-      <tstamps>51392d47-d4a5-4582-825b-5169eb28ef41</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="J200">
-      <value>PROTECTED CELL 90mAh</value>
-      <footprint>HapticBracelet:WirePads_2_P2mm</footprint>
-      <datasheet>https://ydlbattery.com/cdn/shop/files/YDL-301230-90mAh-specification.pdf?v=17344537468879431347</datasheet>
-      <fields>
-        <field name="BOM Comments">One YDL301230-class protected 3 x 12 x 32 mm battery per pod. Pin 1 PACK+, pin 2 PACK-. Keep factory PCM intact; never bypass to raw cell terminals. Battery assembly is off-board; connector/pad footprint TBD.</field>
-        <field name="Battery_Model">YDL301230 (protected assembly example)</field>
-        <field name="Battery_Capacity">90 mAh nominal</field>
-        <field name="Battery_Envelope">3 x 12 x 32 mm; leads outside body</field>
-        <field name="Footprint">HapticBracelet:WirePads_2_P2mm</field>
-        <field name="Datasheet">https://ydlbattery.com/cdn/shop/files/YDL-301230-90mAh-specification.pdf?v=17344537468879431347</field>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
-      <property name="BOM Comments" value="One YDL301230-class protected 3 x 12 x 32 mm battery per pod. Pin 1 PACK+, pin 2 PACK-. Keep factory PCM intact; never bypass to raw cell terminals. Battery assembly is off-board; connector/pad footprint TBD."/>
-      <property name="Battery_Model" value="YDL301230 (protected assembly example)"/>
-      <property name="Battery_Capacity" value="90 mAh nominal"/>
-      <property name="Battery_Envelope" value="3 x 12 x 32 mm; leads outside body"/>
-      <property name="Sheetname" value="Local haptic pod and harness"/>
-      <property name="Sheetfile" value="local-pod.kicad_sch"/>
-      <property name="ki_keywords" value="connector"/>
-      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
-      <sheetpath names="/Local haptic pod and harness/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
-      <tstamps>d73285e0-e09e-43bc-bfab-90f7df2cdd54</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="M1">
-      <value>VLV041235L</value>
-      <footprint>HapticBracelet:Vybronics_VLV041235L_FPC_Contact_Draft</footprint>
-      <fields>
-        <field name="MPN">VLV041235L</field>
-        <field name="Manufacturer">Vybronics</field>
-        <field name="Footprint">HapticBracelet:Vybronics_VLV041235L_FPC_Contact_Draft</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="HapticBracelet" part="Actuator_TBD" description=""/>
-      <property name="MPN" value="VLV041235L"/>
-      <property name="Manufacturer" value="Vybronics"/>
-      <property name="Sheetname" value="Local haptic pod and harness"/>
-      <property name="Sheetfile" value="local-pod.kicad_sch"/>
-      <sheetpath names="/Local haptic pod and harness/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
-      <tstamps>9525adbb-63e0-41a4-8e2b-515a94e0c1d6</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R8">
-      <value>4.7k</value>
-      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Sheetname" value="Local haptic pod and harness"/>
-      <property name="Sheetfile" value="local-pod.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Local haptic pod and harness/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
-      <tstamps>69c31289-6c2e-4a18-8f3a-b924643c6fa3</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R9">
-      <value>4.7k</value>
-      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Sheetname" value="Local haptic pod and harness"/>
-      <property name="Sheetfile" value="local-pod.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Local haptic pod and harness/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
-      <tstamps>4be0a843-2ceb-4454-ac40-d7087474c7f5</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R100">
-      <value>0</value>
-      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Sheetname" value="Local haptic pod and harness"/>
-      <property name="Sheetfile" value="local-pod.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Local haptic pod and harness/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
-      <tstamps>07cc1d06-682f-4e7a-9a7a-94ee4b0718b0</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R101">
-      <value>33</value>
-      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Sheetname" value="Local haptic pod and harness"/>
-      <property name="Sheetfile" value="local-pod.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Local haptic pod and harness/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
-      <tstamps>5637f6ef-293e-427d-a8b8-83e360835ab3</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R102">
-      <value>100k</value>
-      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Sheetname" value="Local haptic pod and harness"/>
-      <property name="Sheetfile" value="local-pod.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Local haptic pod and harness/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
-      <tstamps>e405533b-2b0d-4234-8d29-30b9850a6c5b</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R103">
-      <value>100k</value>
-      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Sheetname" value="Local haptic pod and harness"/>
-      <property name="Sheetfile" value="local-pod.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Local haptic pod and harness/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
-      <tstamps>e22a8cd7-5d53-4334-988c-623672c569be</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="R105">
-      <value>10k 1%</value>
-      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Sheetname" value="Local haptic pod and harness"/>
-      <property name="Sheetfile" value="local-pod.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Local haptic pod and harness/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
-      <tstamps>71770f86-f024-44b2-a97d-4e69b214659a</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="U3">
-      <value>DRV2625</value>
-      <footprint>HapticBracelet:DRV2625_YFF_9_0.4mm</footprint>
-      <datasheet>https://www.ti.com/lit/ds/symlink/drv2625.pdf</datasheet>
-      <fields>
-        <field name="MPN">DRV2625YFFR</field>
-        <field name="Manufacturer">Texas Instruments</field>
-        <field name="Footprint">HapticBracelet:DRV2625_YFF_9_0.4mm</field>
-        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/drv2625.pdf</field>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="HapticBracelet" part="DRV2625_YFF" description=""/>
-      <property name="MPN" value="DRV2625YFFR"/>
-      <property name="Manufacturer" value="Texas Instruments"/>
-      <property name="Sheetname" value="Local haptic pod and harness"/>
-      <property name="Sheetfile" value="local-pod.kicad_sch"/>
-      <sheetpath names="/Local haptic pod and harness/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
-      <tstamps>80ddac2d-8e3d-458a-bfc1-6cf5fa39038d</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="B1"/>
-            <pin num="C1"/>
-            <pin num="B2"/>
-            <pin num="A1"/>
-            <pin num="C2"/>
-            <pin num="B3"/>
-            <pin num="A3"/>
-            <pin num="C3"/>
-            <pin num="A2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="U18">
-      <value>M2003FC1AE</value>
-      <footprint>Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm</footprint>
-      <datasheet>https://www.nuvoton.com/export/resource-files/en-us--DS_M2003_Series_EN_Rev1.00.pdf</datasheet>
-      <fields>
-        <field name="MPN">M2003FC1AE</field>
-        <field name="Manufacturer">Nuvoton</field>
-        <field name="BOM Comments">Existing M2003 stock and robot loader pinout. PB13 is intentionally no-connect; driver NRST is tied to local VDD. Hard recovery power-cycles the switched pod rail.</field>
-        <field name="Footprint">Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm</field>
-        <field name="Datasheet">https://www.nuvoton.com/export/resource-files/en-us--DS_M2003_Series_EN_Rev1.00.pdf</field>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="HapticBracelet" part="M2003FC1AE" description=""/>
-      <property name="MPN" value="M2003FC1AE"/>
-      <property name="Manufacturer" value="Nuvoton"/>
-      <property name="BOM Comments" value="Existing M2003 stock and robot loader pinout. PB13 is intentionally no-connect; driver NRST is tied to local VDD. Hard recovery power-cycles the switched pod rail."/>
-      <property name="Sheetname" value="Local haptic pod and harness"/>
-      <property name="Sheetfile" value="local-pod.kicad_sch"/>
-      <sheetpath names="/Local haptic pod and harness/" tstamps="/cc6a0e97-9c58-4182-898e-46e3e3bcce7f/"/>
-      <tstamps>deadc990-55d6-4df9-9603-b5abc286f9b9</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="4"/>
-            <pin num="18"/>
-            <pin num="8"/>
-            <pin num="2"/>
-            <pin num="1"/>
-            <pin num="3"/>
-            <pin num="20"/>
-            <pin num="10"/>
-            <pin num="9"/>
-            <pin num="7"/>
-            <pin num="5"/>
-            <pin num="6"/>
-            <pin num="13"/>
-            <pin num="11"/>
-            <pin num="12"/>
-            <pin num="14"/>
-            <pin num="15"/>
-            <pin num="16"/>
-            <pin num="17"/>
-            <pin num="19"/>
           </pins>
         </unit>
       </units>
@@ -1762,6 +1318,35 @@
         </unit>
       </units>
     </comp>
+    <comp ref="J3">
+      <value>ESP RECOVERY</value>
+      <footprint>HapticBracelet:ESP_Recovery_3Pads_P1.5mm</footprint>
+      <fields>
+        <field name="BOM Comments">Bare underside pads: 1 EN, 2 GND, 3 BOOT/GPIO9. Ground BOOT, pulse EN low, release EN then BOOT to enter ROM download. No connector fitted.</field>
+        <field name="Footprint">HapticBracelet:ESP_Recovery_3Pads_P1.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="BOM Comments" value="Bare underside pads: 1 EN, 2 GND, 3 BOOT/GPIO9. Ground BOOT, pulse EN low, release EN then BOOT to enter ROM download. No connector fitted."/>
+      <property name="Sheetname" value="ESP reset, boot and decoupling"/>
+      <property name="Sheetfile" value="controller-support.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_pos_files"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/ESP reset, boot and decoupling/" tstamps="/7f06a5e6-3924-4502-95d4-c23d8ec0544e/"/>
+      <tstamps>45257767-0f20-48ea-8e45-6eec7e4a21de</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
     <comp ref="R1">
       <value>4.7k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
@@ -1834,30 +1419,6 @@
         </unit>
       </units>
     </comp>
-    <comp ref="R4">
-      <value>10k</value>
-      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
-      <fields>
-        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Sheetname" value="ESP reset, boot and decoupling"/>
-      <property name="Sheetfile" value="controller-support.kicad_sch"/>
-      <property name="ki_keywords" value="R res resistor"/>
-      <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/ESP reset, boot and decoupling/" tstamps="/7f06a5e6-3924-4502-95d4-c23d8ec0544e/"/>
-      <tstamps>e8b4fd8c-3ff2-45e3-83cf-99b89a0d3143</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
     <comp ref="R5">
       <value>10k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
@@ -1872,7 +1433,7 @@
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/ESP reset, boot and decoupling/" tstamps="/7f06a5e6-3924-4502-95d4-c23d8ec0544e/"/>
-      <tstamps>5cdc83e6-e028-46eb-8916-b10696d1ccd3</tstamps>
+      <tstamps>ebb08fdb-95a7-4d90-b3cc-56716ae8f8c2</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -1960,84 +1521,8 @@
         </unit>
       </units>
     </comp>
-    <comp ref="SW1">
-      <value>ESP RESET</value>
-      <footprint>Button_Switch_SMD:SW_SPST_TL3305A</footprint>
-      <fields>
-        <field name="MPN">TL3305AF160QG</field>
-        <field name="Manufacturer">E-Switch</field>
-        <field name="Footprint">Button_Switch_SMD:SW_SPST_TL3305A</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
-      <property name="MPN" value="TL3305AF160QG"/>
-      <property name="Manufacturer" value="E-Switch"/>
-      <property name="Sheetname" value="ESP reset, boot and decoupling"/>
-      <property name="Sheetfile" value="controller-support.kicad_sch"/>
-      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
-      <sheetpath names="/ESP reset, boot and decoupling/" tstamps="/7f06a5e6-3924-4502-95d4-c23d8ec0544e/"/>
-      <tstamps>d00ebf76-057e-45f2-8776-40d02ce3530d</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="SW2">
-      <value>ESP BOOT</value>
-      <footprint>Button_Switch_SMD:SW_SPST_TL3305A</footprint>
-      <fields>
-        <field name="MPN">TL3305AF160QG</field>
-        <field name="Manufacturer">E-Switch</field>
-        <field name="Footprint">Button_Switch_SMD:SW_SPST_TL3305A</field>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
-      <property name="MPN" value="TL3305AF160QG"/>
-      <property name="Manufacturer" value="E-Switch"/>
-      <property name="Sheetname" value="ESP reset, boot and decoupling"/>
-      <property name="Sheetfile" value="controller-support.kicad_sch"/>
-      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
-      <sheetpath names="/ESP reset, boot and decoupling/" tstamps="/7f06a5e6-3924-4502-95d4-c23d8ec0544e/"/>
-      <tstamps>f0b46ae3-19b0-46c7-b280-782253fd3432</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
   </components>
   <libparts>
-    <libpart lib="Connector" part="Conn_ARM_SWD_TagConnect_TC2030-NL">
-      <description>Tag-Connect ARM Cortex SWD JTAG connector, 6 pin, no legs</description>
-      <docs>https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2030-CTX_1.pdf</docs>
-      <footprints>
-        <fp>*TC2030*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">Conn_ARM_SWD_TagConnect_TC2030-NL</field>
-        <field name="Footprint">Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical</field>
-        <field name="Datasheet">https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2030-CTX_1.pdf</field>
-        <field name="Description">Tag-Connect ARM Cortex SWD JTAG connector, 6 pin, no legs</field>
-      </fields>
-      <pins>
-        <pin num="1" name="VCC" type="power_in"/>
-        <pin num="2" name="SWDIO" type="bidirectional"/>
-        <pin num="3" name="~{RESET}" type="open_collector"/>
-        <pin num="4" name="SWCLK" type="output"/>
-        <pin num="5" name="GND" type="power_in"/>
-        <pin num="6" name="SWO" type="input"/>
-      </pins>
-    </libpart>
     <libpart lib="Connector" part="USB_C_Receptacle_USB2.0_16P">
       <description>USB 2.0-only 16P Type-C Receptacle connector</description>
       <docs>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</docs>
@@ -2071,21 +1556,22 @@
         <pin num="SH" name="SHIELD" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Connector_Generic" part="Conn_01x02">
-      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+    <libpart lib="Connector_Generic" part="Conn_01x03">
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <footprints>
         <fp>Connector*:*_1x??_*</fp>
       </footprints>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">Conn_01x02</field>
+        <field name="Value">Conn_01x03</field>
         <field name="Footprint"/>
         <field name="Datasheet"/>
-        <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+        <field name="Description">Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
       </fields>
       <pins>
         <pin num="1" name="Pin_1" type="passive"/>
         <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Connector_Generic" part="Conn_01x05">
@@ -2119,23 +1605,6 @@
         <field name="Footprint"/>
         <field name="Datasheet"/>
         <field name="Description">Unpolarized capacitor</field>
-      </fields>
-      <pins>
-        <pin num="1" name="" type="passive"/>
-        <pin num="2" name="" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="Device" part="Fuse">
-      <description>Fuse</description>
-      <footprints>
-        <fp>*Fuse*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">F</field>
-        <field name="Value">Fuse</field>
-        <field name="Footprint"/>
-        <field name="Datasheet"/>
-        <field name="Description">Fuse</field>
       </fields>
       <pins>
         <pin num="1" name="" type="passive"/>
@@ -2200,19 +1669,6 @@
         <pin num="2" name="" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="HapticBracelet" part="Actuator_TBD">
-      <fields>
-        <field name="Reference">M</field>
-        <field name="Value">Actuator_TBD</field>
-        <field name="Footprint"/>
-        <field name="Datasheet"/>
-        <field name="Description"/>
-      </fields>
-      <pins>
-        <pin num="1" name="+" type="passive"/>
-        <pin num="2" name="-" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="HapticBracelet" part="BQ25186DLH">
       <docs>https://www.ti.com/lit/ds/symlink/bq25186.pdf</docs>
       <fields>
@@ -2234,59 +1690,6 @@
         <pin num="9" name="~{INT}" type="open_collector"/>
         <pin num="10" name="IN" type="power_in"/>
         <pin num="11" name="EP" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="HapticBracelet" part="DRV2625_YFF">
-      <docs>https://www.ti.com/lit/ds/symlink/drv2625.pdf</docs>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">DRV2625_YFF</field>
-        <field name="Footprint"/>
-        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/drv2625.pdf</field>
-        <field name="Description"/>
-      </fields>
-      <pins>
-        <pin num="A1" name="TRIG/INTZ" type="bidirectional"/>
-        <pin num="A2" name="REG" type="passive"/>
-        <pin num="A3" name="OUT+" type="output"/>
-        <pin num="B1" name="SDA" type="bidirectional"/>
-        <pin num="B2" name="NRST" type="input"/>
-        <pin num="B3" name="GND" type="power_in"/>
-        <pin num="C1" name="SCL" type="input"/>
-        <pin num="C2" name="VDD" type="power_in"/>
-        <pin num="C3" name="OUT-" type="output"/>
-      </pins>
-    </libpart>
-    <libpart lib="HapticBracelet" part="M2003FC1AE">
-      <docs>https://www.nuvoton.com/export/resource-files/en-us--DS_M2003_Series_EN_Rev1.00.pdf</docs>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">M2003FC1AE</field>
-        <field name="Footprint"/>
-        <field name="Datasheet">https://www.nuvoton.com/export/resource-files/en-us--DS_M2003_Series_EN_Rev1.00.pdf</field>
-        <field name="Description"/>
-      </fields>
-      <pins>
-        <pin num="1" name="PB1" type="bidirectional"/>
-        <pin num="2" name="PB2_/_ADC0_CH2" type="bidirectional"/>
-        <pin num="3" name="PB3" type="bidirectional"/>
-        <pin num="4" name="PE15_/_nRESET" type="input"/>
-        <pin num="5" name="PB4_/_I2C0_SDA" type="bidirectional"/>
-        <pin num="6" name="PB5_/_I2C0_SCL" type="bidirectional"/>
-        <pin num="7" name="VSS" type="power_in"/>
-        <pin num="8" name="PF0_/_TXD1_/_ICE_DAT" type="bidirectional"/>
-        <pin num="9" name="VDD" type="power_in"/>
-        <pin num="10" name="PC14" type="bidirectional"/>
-        <pin num="11" name="PB15" type="bidirectional"/>
-        <pin num="12" name="PB14" type="bidirectional"/>
-        <pin num="13" name="PB13" type="bidirectional"/>
-        <pin num="14" name="PB12" type="bidirectional"/>
-        <pin num="15" name="PB7" type="bidirectional"/>
-        <pin num="16" name="PB8" type="bidirectional"/>
-        <pin num="17" name="PB9" type="bidirectional"/>
-        <pin num="18" name="PF1_/_RXD1_/_ICE_CLK" type="bidirectional"/>
-        <pin num="19" name="PB11" type="bidirectional"/>
-        <pin num="20" name="PB0" type="bidirectional"/>
       </pins>
     </libpart>
     <libpart lib="HapticBracelet" part="TPS22918DBV">
@@ -2328,6 +1731,19 @@
         <pin num="9" name="L1" type="passive"/>
         <pin num="10" name="VIN" type="power_in"/>
       </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Mounting Hole without connection</field>
+      </fields>
     </libpart>
     <libpart lib="Power_Protection" part="TPD2EUSB30">
       <description>2-Channel ESD Protection for Super-Speed USB 3.0 Interface, DRT-3</description>
@@ -2464,6 +1880,9 @@
     <library logical="HapticBracelet">
       <uri>${KIPRJMOD}/../HapticBracelet.kicad_sym</uri>
     </library>
+    <library logical="Mechanical">
+      <uri>${KICAD10_SYMBOL_DIR}/Mechanical.kicad_sym</uri>
+    </library>
     <library logical="Power_Protection">
       <uri>${KICAD10_SYMBOL_DIR}/Power_Protection.kicad_sym</uri>
     </library>
@@ -2497,80 +1916,46 @@
       <node ref="U26" pin="1" pinfunction="VIN_1" pintype="power_in"/>
     </net>
     <net code="2" name="+3V3_POD" class="Default">
-      <node ref="C100" pin="1" pintype="passive"/>
-      <node ref="C101" pin="1" pintype="passive"/>
-      <node ref="C103" pin="1" pintype="passive"/>
       <node ref="C43" pin="1" pintype="passive"/>
-      <node ref="C5" pin="1" pintype="passive"/>
-      <node ref="C7" pin="1" pintype="passive"/>
-      <node ref="J1" pin="1" pinfunction="VCC_1" pintype="power_in"/>
       <node ref="J101" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
-      <node ref="R102" pin="1" pintype="passive"/>
-      <node ref="R103" pin="1" pintype="passive"/>
-      <node ref="R105" pin="1" pintype="passive"/>
       <node ref="R46" pin="1" pintype="passive"/>
-      <node ref="R8" pin="1" pintype="passive"/>
-      <node ref="R9" pin="1" pintype="passive"/>
-      <node ref="U18" pin="9" pinfunction="VDD_9" pintype="power_in"/>
       <node ref="U26" pin="6" pinfunction="VOUT_6" pintype="power_out"/>
-      <node ref="U3" pin="B2" pinfunction="NRST_B2" pintype="input"/>
-      <node ref="U3" pin="C2" pinfunction="VDD_C2" pintype="power_in"/>
     </net>
     <net code="3" name="/Charger and regulated supply/TS_MR" class="Default">
       <node ref="R62" pin="1" pintype="passive"/>
       <node ref="SW3" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U11" pin="6" pinfunction="TS/MR_6" pintype="bidirectional"/>
     </net>
-    <net code="4" name="/Local haptic pod and harness/LOCAL_nRESET" class="Default">
-      <node ref="J1" pin="3" pinfunction="~{RESET}_3" pintype="open_collector"/>
-      <node ref="U18" pin="4" pinfunction="PE15_/_nRESET_4" pintype="input"/>
-    </net>
-    <net code="5" name="/Local haptic pod and harness/UART_RX_LOCAL" class="Default">
-      <node ref="J1" pin="4" pinfunction="SWCLK_4" pintype="output"/>
-      <node ref="R100" pin="2" pintype="passive"/>
-      <node ref="R102" pin="2" pintype="passive"/>
-      <node ref="U18" pin="18" pinfunction="PF1_/_RXD1_/_ICE_CLK_18" pintype="bidirectional"/>
-    </net>
-    <net code="6" name="/Local haptic pod and harness/UART_TX_LOCAL" class="Default">
-      <node ref="J1" pin="2" pinfunction="SWDIO_2" pintype="bidirectional"/>
-      <node ref="R101" pin="1" pintype="passive"/>
-      <node ref="R103" pin="2" pintype="passive"/>
-      <node ref="U18" pin="8" pinfunction="PF0_/_TXD1_/_ICE_DAT_8" pintype="bidirectional"/>
-    </net>
-    <net code="7" name="/POD_SLEW" class="Default">
+    <net code="4" name="/POD_SLEW" class="Default">
       <node ref="C42" pin="1" pintype="passive"/>
       <node ref="U26" pin="4" pinfunction="CT_4" pintype="passive"/>
     </net>
-    <net code="8" name="/RING_TX_MCU" class="Default">
+    <net code="5" name="/RING_TX_MCU" class="Default">
       <node ref="R42" pin="1" pintype="passive"/>
       <node ref="R43" pin="1" pintype="passive"/>
       <node ref="U1" pin="25" pinfunction="IO19_25" pintype="bidirectional"/>
     </net>
-    <net code="9" name="BOOT_IO8" class="Default">
+    <net code="6" name="BOOT_IO8" class="Default">
       <node ref="R4" pin="2" pintype="passive"/>
       <node ref="U1" pin="22" pinfunction="IO8_22" pintype="bidirectional"/>
     </net>
-    <net code="10" name="BOOT_IO9" class="Default">
+    <net code="7" name="BOOT_IO9" class="Default">
+      <node ref="J3" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
       <node ref="R5" pin="2" pintype="passive"/>
-      <node ref="SW2" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U1" pin="23" pinfunction="IO9_23" pintype="bidirectional"/>
     </net>
-    <net code="11" name="CHG_ALLOW" class="Default">
+    <net code="8" name="CHG_ALLOW" class="Default">
       <node ref="Q1" pin="1" pinfunction="G_1" pintype="input"/>
       <node ref="R39" pin="1" pintype="passive"/>
       <node ref="U1" pin="26" pinfunction="IO20_26" pintype="bidirectional"/>
     </net>
-    <net code="12" name="CHG_nINT" class="Default">
+    <net code="9" name="CHG_nINT" class="Default">
       <node ref="R37" pin="2" pintype="passive"/>
       <node ref="U1" pin="27" pinfunction="IO21_27" pintype="bidirectional"/>
       <node ref="U11" pin="9" pinfunction="~{INT}_9" pintype="open_collector"/>
     </net>
-    <net code="13" name="GND" class="Default">
+    <net code="10" name="GND" class="Default">
       <node ref="C1" pin="2" pintype="passive"/>
-      <node ref="C100" pin="2" pintype="passive"/>
-      <node ref="C101" pin="2" pintype="passive"/>
-      <node ref="C102" pin="2" pintype="passive"/>
-      <node ref="C103" pin="2" pintype="passive"/>
       <node ref="C2" pin="2" pintype="passive"/>
       <node ref="C3" pin="2" pintype="passive"/>
       <node ref="C32" pin="2" pintype="passive"/>
@@ -2583,18 +1968,13 @@
       <node ref="C41" pin="2" pintype="passive"/>
       <node ref="C42" pin="2" pintype="passive"/>
       <node ref="C43" pin="2" pintype="passive"/>
-      <node ref="C5" pin="2" pintype="passive"/>
-      <node ref="C6" pin="2" pintype="passive"/>
-      <node ref="C7" pin="2" pintype="passive"/>
-      <node ref="J1" pin="5" pinfunction="GND_5" pintype="power_in"/>
       <node ref="J101" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
-      <node ref="J103" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
       <node ref="J2" pin="A1" pinfunction="GND_A1" pintype="passive"/>
       <node ref="J2" pin="A12" pinfunction="GND_A12" pintype="passive"/>
       <node ref="J2" pin="B1" pinfunction="GND_B1" pintype="passive"/>
       <node ref="J2" pin="B12" pinfunction="GND_B12" pintype="passive"/>
       <node ref="J2" pin="SH" pinfunction="SHIELD_SH" pintype="passive"/>
-      <node ref="J200" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
       <node ref="Q1" pin="2" pinfunction="S_2" pintype="passive"/>
       <node ref="R39" pin="2" pintype="passive"/>
       <node ref="R41" pin="2" pintype="passive"/>
@@ -2603,8 +1983,6 @@
       <node ref="R60" pin="2" pintype="passive"/>
       <node ref="R61" pin="2" pintype="passive"/>
       <node ref="R62" pin="2" pintype="passive"/>
-      <node ref="SW1" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="SW2" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="SW3" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="U1" pin="1" pinfunction="GND_1" pintype="power_in"/>
       <node ref="U1" pin="11" pinfunction="GND_11" pintype="passive"/>
@@ -2635,158 +2013,119 @@
       <node ref="U12" pin="8" pinfunction="GND_8" pintype="power_in"/>
       <node ref="U14" pin="3" pinfunction="GND_3" pintype="passive"/>
       <node ref="U15" pin="3" pinfunction="GND_3" pintype="passive"/>
-      <node ref="U18" pin="7" pinfunction="VSS_7" pintype="power_in"/>
       <node ref="U26" pin="2" pinfunction="GND_2" pintype="power_in"/>
-      <node ref="U3" pin="B3" pinfunction="GND_B3" pintype="power_in"/>
     </net>
-    <net code="14" name="I2C_SCL" class="Default">
+    <net code="11" name="I2C_SCL" class="Default">
       <node ref="R2" pin="2" pintype="passive"/>
       <node ref="U1" pin="16" pinfunction="IO7_16" pintype="bidirectional"/>
       <node ref="U11" pin="8" pinfunction="SCL_8" pintype="input"/>
     </net>
-    <net code="15" name="I2C_SDA" class="Default">
+    <net code="12" name="I2C_SDA" class="Default">
       <node ref="R1" pin="2" pintype="passive"/>
       <node ref="U1" pin="15" pinfunction="IO6_15" pintype="bidirectional"/>
       <node ref="U11" pin="7" pinfunction="SDA_7" pintype="bidirectional"/>
     </net>
-    <net code="16" name="LED_B_N" class="Default">
+    <net code="13" name="LED_B_N" class="Default">
       <node ref="R51" pin="1" pintype="passive"/>
       <node ref="U1" pin="20" pinfunction="IO15_20" pintype="bidirectional"/>
     </net>
-    <net code="17" name="LED_G_N" class="Default">
+    <net code="14" name="LED_G_N" class="Default">
       <node ref="R49" pin="1" pintype="passive"/>
       <node ref="U1" pin="10" pinfunction="IO5_10" pintype="bidirectional"/>
     </net>
-    <net code="18" name="LED_R_N" class="Default">
+    <net code="15" name="LED_R_N" class="Default">
       <node ref="R47" pin="1" pintype="passive"/>
       <node ref="U1" pin="9" pinfunction="IO4_9" pintype="bidirectional"/>
     </net>
-    <net code="19" name="MCU_EN" class="Default">
+    <net code="16" name="MCU_EN" class="Default">
       <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
       <node ref="R3" pin="2" pintype="passive"/>
-      <node ref="SW1" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U1" pin="8" pinfunction="EN_8" pintype="input"/>
     </net>
-    <net code="20" name="Net-(D1-BK)" class="Default">
+    <net code="17" name="Net-(D1-BK)" class="Default">
       <node ref="D1" pin="3" pinfunction="BK_3" pintype="passive"/>
       <node ref="R51" pin="2" pintype="passive"/>
     </net>
-    <net code="21" name="Net-(D1-GK)" class="Default">
+    <net code="18" name="Net-(D1-GK)" class="Default">
       <node ref="D1" pin="2" pinfunction="GK_2" pintype="passive"/>
       <node ref="R49" pin="2" pintype="passive"/>
     </net>
-    <net code="22" name="Net-(D1-RK)" class="Default">
+    <net code="19" name="Net-(D1-RK)" class="Default">
       <node ref="D1" pin="1" pinfunction="RK_1" pintype="passive"/>
       <node ref="R47" pin="2" pintype="passive"/>
     </net>
-    <net code="23" name="Net-(J2-CC1)" class="Default">
+    <net code="20" name="Net-(J2-CC1)" class="Default">
       <node ref="J2" pin="A5" pinfunction="CC1_A5" pintype="bidirectional"/>
       <node ref="R60" pin="1" pintype="passive"/>
       <node ref="U15" pin="1" pinfunction="D+_1" pintype="passive"/>
     </net>
-    <net code="24" name="Net-(J2-CC2)" class="Default">
+    <net code="21" name="Net-(J2-CC2)" class="Default">
       <node ref="J2" pin="B5" pinfunction="CC2_B5" pintype="bidirectional"/>
       <node ref="R61" pin="1" pintype="passive"/>
       <node ref="U15" pin="2" pinfunction="D-_2" pintype="passive"/>
     </net>
-    <net code="25" name="Net-(J103-Pin_1)" class="Default">
-      <node ref="C102" pin="1" pintype="passive"/>
-      <node ref="J103" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
-      <node ref="R105" pin="2" pintype="passive"/>
-      <node ref="U18" pin="2" pinfunction="PB2_/_ADC0_CH2_2" pintype="bidirectional"/>
-    </net>
-    <net code="26" name="Net-(J200-Pin_1)" class="Default">
-      <node ref="F100" pin="1" pintype="passive"/>
-      <node ref="J200" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
-    </net>
-    <net code="27" name="Net-(M1-+)" class="Default">
-      <node ref="M1" pin="1" pinfunction="+_1" pintype="passive"/>
-      <node ref="U3" pin="A3" pinfunction="OUT+_A3" pintype="output"/>
-    </net>
-    <net code="28" name="Net-(M1--)" class="Default">
-      <node ref="M1" pin="2" pinfunction="-_2" pintype="passive"/>
-      <node ref="U3" pin="C3" pinfunction="OUT-_C3" pintype="output"/>
-    </net>
-    <net code="29" name="Net-(Q1-D)" class="Default">
+    <net code="22" name="Net-(Q1-D)" class="Default">
       <node ref="Q1" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="R38" pin="2" pintype="passive"/>
       <node ref="U11" pin="4" pinfunction="~{CE}_4" pintype="input"/>
     </net>
-    <net code="30" name="Net-(U3-REG)" class="Default">
-      <node ref="C6" pin="1" pintype="passive"/>
-      <node ref="U3" pin="A2" pinfunction="REG_A2" pintype="passive"/>
-    </net>
-    <net code="31" name="Net-(U12-FB)" class="Default">
+    <net code="23" name="Net-(U12-FB)" class="Default">
       <node ref="R40" pin="2" pintype="passive"/>
       <node ref="R41" pin="1" pintype="passive"/>
       <node ref="U12" pin="4" pinfunction="FB_4" pintype="input"/>
     </net>
-    <net code="32" name="Net-(U12-L1)" class="Default">
+    <net code="24" name="Net-(U12-L1)" class="Default">
       <node ref="L1" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U12" pin="9" pinfunction="L1_9" pintype="passive"/>
     </net>
-    <net code="33" name="Net-(U12-L2)" class="Default">
+    <net code="25" name="Net-(U12-L2)" class="Default">
       <node ref="L1" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="U12" pin="7" pinfunction="L2_7" pintype="passive"/>
     </net>
-    <net code="34" name="Net-(U14-D+)" class="Default">
+    <net code="26" name="Net-(U14-D+)" class="Default">
       <node ref="J2" pin="A6" pinfunction="D+_A6" pintype="bidirectional"/>
       <node ref="J2" pin="B6" pinfunction="D+_B6" pintype="bidirectional"/>
       <node ref="R25" pin="1" pintype="passive"/>
       <node ref="U14" pin="1" pinfunction="D+_1" pintype="passive"/>
     </net>
-    <net code="35" name="Net-(U14-D-)" class="Default">
+    <net code="27" name="Net-(U14-D-)" class="Default">
       <node ref="J2" pin="A7" pinfunction="D-_A7" pintype="bidirectional"/>
       <node ref="J2" pin="B7" pinfunction="D-_B7" pintype="bidirectional"/>
       <node ref="R24" pin="1" pintype="passive"/>
       <node ref="U14" pin="2" pinfunction="D-_2" pintype="passive"/>
     </net>
-    <net code="36" name="Net-(U18-PB4_{slash}_I2C0_SDA)" class="Default">
-      <node ref="R8" pin="2" pintype="passive"/>
-      <node ref="U18" pin="5" pinfunction="PB4_/_I2C0_SDA_5" pintype="bidirectional"/>
-      <node ref="U3" pin="B1" pinfunction="SDA_B1" pintype="bidirectional"/>
-    </net>
-    <net code="37" name="Net-(U18-PB5_{slash}_I2C0_SCL)" class="Default">
-      <node ref="R9" pin="2" pintype="passive"/>
-      <node ref="U18" pin="6" pinfunction="PB5_/_I2C0_SCL_6" pintype="bidirectional"/>
-      <node ref="U3" pin="C1" pinfunction="SCL_C1" pintype="input"/>
-    </net>
-    <net code="38" name="Net-(U26-QOD)" class="Default">
+    <net code="28" name="Net-(U26-QOD)" class="Default">
       <node ref="R46" pin="2" pintype="passive"/>
       <node ref="U26" pin="5" pinfunction="QOD_5" pintype="passive"/>
     </net>
-    <net code="39" name="POD_POWER_ON" class="Default">
+    <net code="29" name="POD_POWER_ON" class="Default">
       <node ref="R45" pin="1" pintype="passive"/>
       <node ref="U1" pin="6" pinfunction="IO3_6" pintype="bidirectional"/>
       <node ref="U26" pin="3" pinfunction="ON_3" pintype="input"/>
     </net>
-    <net code="40" name="RING_D0" class="Default">
-      <node ref="R100" pin="1" pintype="passive"/>
+    <net code="30" name="RING_D0" class="Default">
+      <node ref="J101" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
       <node ref="R42" pin="2" pintype="passive"/>
     </net>
-    <net code="41" name="RING_D1" class="Default">
-      <node ref="J101" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
-      <node ref="R101" pin="2" pintype="passive"/>
-    </net>
-    <net code="42" name="RING_RETURN" class="Default">
+    <net code="31" name="RING_RETURN" class="Default">
       <node ref="J101" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
       <node ref="U1" pin="5" pinfunction="IO2_5" pintype="bidirectional"/>
     </net>
-    <net code="43" name="USB_D_N" class="Default">
+    <net code="32" name="USB_D_N" class="Default">
       <node ref="R24" pin="2" pintype="passive"/>
       <node ref="U1" pin="17" pinfunction="IO12_17" pintype="bidirectional"/>
     </net>
-    <net code="44" name="USB_D_P" class="Default">
+    <net code="33" name="USB_D_P" class="Default">
       <node ref="R25" pin="2" pintype="passive"/>
       <node ref="U1" pin="18" pinfunction="IO13_18" pintype="bidirectional"/>
     </net>
-    <net code="45" name="VBAT" class="Default">
+    <net code="34" name="VBAT" class="Default">
       <node ref="C36" pin="1" pintype="passive"/>
-      <node ref="F100" pin="2" pintype="passive"/>
       <node ref="J101" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
       <node ref="U11" pin="2" pinfunction="BAT_2" pintype="passive"/>
     </net>
-    <net code="46" name="VBUS" class="Default">
+    <net code="35" name="VBUS" class="Default">
       <node ref="C32" pin="1" pintype="passive"/>
       <node ref="C34" pin="1" pintype="passive"/>
       <node ref="J2" pin="A4" pinfunction="VBUS_A4" pintype="passive"/>
@@ -2795,7 +2134,7 @@
       <node ref="J2" pin="B9" pinfunction="VBUS_B9" pintype="passive"/>
       <node ref="U11" pin="10" pinfunction="IN_10" pintype="power_in"/>
     </net>
-    <net code="47" name="VSYS" class="Default">
+    <net code="36" name="VSYS" class="Default">
       <node ref="C35" pin="1" pintype="passive"/>
       <node ref="C37" pin="1" pintype="passive"/>
       <node ref="R38" pin="1" pintype="passive"/>
@@ -2803,104 +2142,62 @@
       <node ref="U12" pin="1" pinfunction="EN_1" pintype="input"/>
       <node ref="U12" pin="10" pinfunction="VIN_10" pintype="power_in"/>
     </net>
-    <net code="48" name="unconnected-(J1-SWO-Pad6)" class="Default">
-      <node ref="J1" pin="6" pinfunction="SWO_6" pintype="input+no_connect"/>
-    </net>
-    <net code="49" name="unconnected-(J2-SBU1-PadA8)" class="Default">
+    <net code="37" name="unconnected-(J2-SBU1-PadA8)" class="Default">
       <node ref="J2" pin="A8" pinfunction="SBU1_A8" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="50" name="unconnected-(J2-SBU2-PadB8)" class="Default">
+    <net code="38" name="unconnected-(J2-SBU2-PadB8)" class="Default">
       <node ref="J2" pin="B8" pinfunction="SBU2_B8" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="51" name="unconnected-(U1-IO0-Pad12)" class="Default">
+    <net code="39" name="unconnected-(U1-IO0-Pad12)" class="Default">
       <node ref="U1" pin="12" pinfunction="IO0_12" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="52" name="unconnected-(U1-IO1-Pad13)" class="Default">
+    <net code="40" name="unconnected-(U1-IO1-Pad13)" class="Default">
       <node ref="U1" pin="13" pinfunction="IO1_13" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="53" name="unconnected-(U1-IO14-Pad19)" class="Default">
+    <net code="41" name="unconnected-(U1-IO14-Pad19)" class="Default">
       <node ref="U1" pin="19" pinfunction="IO14_19" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="54" name="unconnected-(U1-IO18-Pad24)" class="Default">
+    <net code="42" name="unconnected-(U1-IO18-Pad24)" class="Default">
       <node ref="U1" pin="24" pinfunction="IO18_24" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="55" name="unconnected-(U1-IO22-Pad28)" class="Default">
+    <net code="43" name="unconnected-(U1-IO22-Pad28)" class="Default">
       <node ref="U1" pin="28" pinfunction="IO22_28" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="56" name="unconnected-(U1-IO23-Pad29)" class="Default">
+    <net code="44" name="unconnected-(U1-IO23-Pad29)" class="Default">
       <node ref="U1" pin="29" pinfunction="IO23_29" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="57" name="unconnected-(U1-NC-Pad4)" class="Default">
+    <net code="45" name="unconnected-(U1-NC-Pad4)" class="Default">
       <node ref="U1" pin="4" pinfunction="NC_4" pintype="no_connect"/>
     </net>
-    <net code="58" name="unconnected-(U1-NC-Pad7)" class="Default">
+    <net code="46" name="unconnected-(U1-NC-Pad7)" class="Default">
       <node ref="U1" pin="7" pinfunction="NC_7" pintype="no_connect"/>
     </net>
-    <net code="59" name="unconnected-(U1-NC-Pad21)" class="Default">
+    <net code="47" name="unconnected-(U1-NC-Pad21)" class="Default">
       <node ref="U1" pin="21" pinfunction="NC_21" pintype="no_connect"/>
     </net>
-    <net code="60" name="unconnected-(U1-NC-Pad32)" class="Default">
+    <net code="48" name="unconnected-(U1-NC-Pad32)" class="Default">
       <node ref="U1" pin="32" pinfunction="NC_32" pintype="no_connect"/>
     </net>
-    <net code="61" name="unconnected-(U1-NC-Pad33)" class="Default">
+    <net code="49" name="unconnected-(U1-NC-Pad33)" class="Default">
       <node ref="U1" pin="33" pinfunction="NC_33" pintype="no_connect"/>
     </net>
-    <net code="62" name="unconnected-(U1-NC-Pad34)" class="Default">
+    <net code="50" name="unconnected-(U1-NC-Pad34)" class="Default">
       <node ref="U1" pin="34" pinfunction="NC_34" pintype="no_connect"/>
     </net>
-    <net code="63" name="unconnected-(U1-NC-Pad35)" class="Default">
+    <net code="51" name="unconnected-(U1-NC-Pad35)" class="Default">
       <node ref="U1" pin="35" pinfunction="NC_35" pintype="no_connect"/>
     </net>
-    <net code="64" name="unconnected-(U1-RXD0-Pad30)" class="Default">
+    <net code="52" name="unconnected-(U1-RXD0-Pad30)" class="Default">
       <node ref="U1" pin="30" pinfunction="RXD0_30" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="65" name="unconnected-(U1-TXD0-Pad31)" class="Default">
+    <net code="53" name="unconnected-(U1-TXD0-Pad31)" class="Default">
       <node ref="U1" pin="31" pinfunction="TXD0_31" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="66" name="unconnected-(U3-TRIG/INTZ-PadA1)" class="Default">
-      <node ref="U3" pin="A1" pinfunction="TRIG/INTZ_A1" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="67" name="unconnected-(U11-~{PG}/GPO-Pad3)" class="Default">
+    <net code="54" name="unconnected-(U11-~{PG}/GPO-Pad3)" class="Default">
       <node ref="U11" pin="3" pinfunction="~{PG}/GPO_3" pintype="open_collector+no_connect"/>
     </net>
-    <net code="68" name="unconnected-(U12-PG-Pad5)" class="Default">
+    <net code="55" name="unconnected-(U12-PG-Pad5)" class="Default">
       <node ref="U12" pin="5" pinfunction="PG_5" pintype="open_collector+no_connect"/>
-    </net>
-    <net code="69" name="unconnected-(U18-PB0-Pad20)" class="Default">
-      <node ref="U18" pin="20" pinfunction="PB0_20" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="70" name="unconnected-(U18-PB1-Pad1)" class="Default">
-      <node ref="U18" pin="1" pinfunction="PB1_1" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="71" name="unconnected-(U18-PB3-Pad3)" class="Default">
-      <node ref="U18" pin="3" pinfunction="PB3_3" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="72" name="unconnected-(U18-PB7-Pad15)" class="Default">
-      <node ref="U18" pin="15" pinfunction="PB7_15" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="73" name="unconnected-(U18-PB8-Pad16)" class="Default">
-      <node ref="U18" pin="16" pinfunction="PB8_16" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="74" name="unconnected-(U18-PB9-Pad17)" class="Default">
-      <node ref="U18" pin="17" pinfunction="PB9_17" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="75" name="unconnected-(U18-PB11-Pad19)" class="Default">
-      <node ref="U18" pin="19" pinfunction="PB11_19" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="76" name="unconnected-(U18-PB12-Pad14)" class="Default">
-      <node ref="U18" pin="14" pinfunction="PB12_14" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="77" name="unconnected-(U18-PB13-Pad13)" class="Default">
-      <node ref="U18" pin="13" pinfunction="PB13_13" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="78" name="unconnected-(U18-PB14-Pad12)" class="Default">
-      <node ref="U18" pin="12" pinfunction="PB14_12" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="79" name="unconnected-(U18-PB15-Pad11)" class="Default">
-      <node ref="U18" pin="11" pinfunction="PB15_11" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="80" name="unconnected-(U18-PC14-Pad10)" class="Default">
-      <node ref="U18" pin="10" pinfunction="PC14_10" pintype="bidirectional+no_connect"/>
     </net>
   </nets>
 </export>

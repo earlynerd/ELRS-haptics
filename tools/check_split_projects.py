@@ -4,6 +4,16 @@ Run with KiCad Python after refreshing project-split XML/ERC/DRC reports.
 Each process loads one PCB, avoiding cross-board SWIG lifetime issues.
 """
 import sys,json,math,hashlib
+from pathlib import Path
+mount_manifest=Path(__file__).resolve().parents[1]/'hardware/mounting-layout.json'
+if mount_manifest.exists() and json.loads(mount_manifest.read_text()).get('revision')=='pod-faces-v1':
+    from check_pod_faces import check
+    check(sys.argv[1])
+    sys.exit(0)
+if sys.argv[1]=='main' and (Path(__file__).resolve().parents[1]/'hardware/stacked-architecture.json').exists():
+    from check_stacked_controller import check
+    check()
+    sys.exit(0)
 import pcbnew as p
 from redraw_projects import HW,ARCH,VERIFY,SATREF,load,children,child,props,uq,E
 from split_pcb_projects import escaped
@@ -27,12 +37,18 @@ if not sat:
     if placement_reference:
         for ref in ['J102','C29','C30']:oldfps.pop(ref)
 else:placement_reference=None
+recovery_pads=bool(placement_reference and placement_reference.get('recovery_pads'))
+if recovery_pads:
+    for ref in ['SW1','SW2']:oldfps.pop(ref)
 reset_harness={('J124','4'),('J125','4')} if sat else {('J101','4')}
 harness_refs={'J1','J2'} if sat else {'J101'}
 old_harness_refs={'J124','J125'} if sat else {'J101'}
 comps={c.attrib['ref']:c for c in fresh.findall('components/comp')}
 expected={rename.get(r,r) for r in oldfps}|({'JP1'} if sat else set(USB_NEW)|set(SYMMETRY_NEW))
+mounting=(HW/'mounting-layout.json').exists()
+if mounting:expected|={'H1','H2'}
 if placement_reference:expected.add('J1')
+if recovery_pads:expected.add('J3')
 assert set(comps)==expected,(set(comps)-expected,expected-set(comps))
 basecomps={c.attrib['ref']:c for c in base.findall('components/comp')}
 for oldref in oldfps:
@@ -63,6 +79,11 @@ else:
 assert original==current,('Circuit changed',original-current,current-original)
 netnodes={net.attrib['name']:{(n.attrib['ref'],n.attrib['pin']) for n in net.findall('node')} for net in fresh.findall('nets/net')}
 nodes={node:escaped(net) for net,parts in netnodes.items() for node in parts}
+if recovery_pads:
+    assert comps['J3'].findtext('footprint')=='HapticBracelet:ESP_Recovery_3Pads_P1.5mm'
+    assert nodes[('J3','1')]==nodes[('U1','8')]==nodes[('C1','1')]==nodes[('R3','2')]=='MCU_EN'
+    assert nodes[('J3','2')]=='GND'
+    assert nodes[('J3','3')]==nodes[('U1','23')]==nodes[('R5','2')]=='BOOT_IO9'
 localreset='/LOCAL_nRESET' if sat else '/Local haptic pod and harness/LOCAL_nRESET'
 assert netnodes[localreset]==({('U1','4'),('J3','5')} if sat else {('U18','4'),('J1','3') if placement_reference else ('J102','5')})
 if placement_reference:
@@ -113,6 +134,23 @@ if placement_reference:
 else:assert not erc_items
 drc=json.loads((VERIFY/(name+'-drc.json')).read_text());assert not drc['schematic_parity']
 b=p.LoadBoard(str(HW/name/(name+'.kicad_pcb')));fps={f.GetReference():f for f in b.GetFootprints()};assert set(fps)==expected
+rules_file=HW/'verification/routing-rules'/(name+'-changes.json')
+if rules_file.exists():
+    project=json.loads((HW/name/(name+'.kicad_pro')).read_text());settings=project['board']['design_settings'];rules=settings['rules']
+    assert rules['min_clearance']==.1524 and rules['min_track_width']==.1524
+    assert rules['min_through_hole_diameter']==.25 and rules['min_copper_edge_clearance']==.2
+    assert settings['defaults']['zones']['min_clearance']==.1524
+    assert all(c['clearance']==.1524 and c['via_drill']>=.25 for c in project['net_settings']['classes'])
+    assert all(v['drill']==0 or v['drill']>=.25 for v in settings['via_dimensions'])
+    for zone in b.Zones():
+        if not zone.GetIsRuleArea():
+            assert zone.GetPadConnection()==p.ZONE_CONNECTION_FULL
+            assert abs(p.ToMM(zone.GetLocalClearance())-.1524)<1e-6
+    for f in fps.values():
+        assert f.GetLocalZoneConnection()==p.ZONE_CONNECTION_FULL
+        for pad in f.Pads():
+            if pad.GetAttribute()!=p.PAD_ATTRIB_NPTH:assert pad.GetLocalZoneConnection()==p.ZONE_CONNECTION_FULL
+    assert all(p.ToMM(v.GetDrillValue())>=.25 for v in b.GetTracks() if isinstance(v,p.PCB_VIA))
 assert b.GetCopperLayerCount()==4 and abs(p.ToMM(b.GetDesignSettings().GetBoardThickness())-.8)<1e-6
 padcount=0
 for ref,f in fps.items():
@@ -126,11 +164,15 @@ for ref,f in fps.items():
         if not pad.GetNumber():continue
         for member in pad.GetNumber().split('/'):assert pad.GetNetname()==nodes.get((ref,member),''),(ref,member)
         padcount+=1
-    if ref=='JP1':continue
+    if ref=='JP1' or (mounting and ref in ['H1','H2']):continue
     if placement_reference:
         x,y,angle=placement_reference['placements'][ref]
         assert abs(p.ToMM(f.GetPosition().x)-x)<1e-6 and abs(p.ToMM(f.GetPosition().y)-y)<1e-6,(ref,'Moved since placement checkpoint')
         assert abs(((f.GetOrientationDegrees()-angle+180)%360)-180)<1e-5
+        if 'layers' in placement_reference:assert b.GetLayerName(f.GetLayer())==placement_reference['layers'][ref]
+        if ref=='J3' and recovery_pads:
+            assert f.GetLayer()==p.B_Cu
+            assert all(not pad.IsOnLayer(p.B_Paste) and not pad.IsOnLayer(p.F_Paste) for pad in f.Pads())
         continue
     if not sat and ref in (USB_NEW|SYMMETRY_NEW):
         x,y=(USB_NEW|SYMMETRY_NEW)[ref]
@@ -142,13 +184,18 @@ for ref,f in fps.items():
 poly=p.SHAPE_POLY_SET();assert b.GetBoardPolygonOutlines(poly,False);assert poly.OutlineCount()==1 and poly.HoleCount(0)==1
 tracks=[t for t in b.GetTracks() if not isinstance(t,p.PCB_VIA)];vias=[t for t in b.GetTracks() if isinstance(t,p.PCB_VIA)]
 if sat:
-    assert not drc['violations'] and not drc['unconnected_items']
+    assert not drc['unconnected_items']
+    if mounting:
+        from check_mounting_layout import check as check_mounting
+        check_mounting(name)
+        assert all(v['type']=='courtyards_overlap' and any('H1' in i['description'] for i in v['items']) for v in drc['violations']),drc['violations']
+    else:assert not drc['violations']
     assert all(t.GetLayer() in [p.F_Cu,p.B_Cu] and p.ToMM(t.GetWidth())>=.1524 for t in tracks)
     for t in tracks:
         a,z=t.GetStart(),t.GetEnd();dx,dy=abs(a.x-z.x),abs(a.y-z.y);assert min(dx,dy)<2000 or abs(dx-dy)<2000
     from plane_fanout import xy,point_rect
     for v in vias:
-        assert p.ToMM(v.GetWidth(p.F_Cu))>=.5 and p.ToMM(v.GetDrillValue())>=.2
+        assert p.ToMM(v.GetWidth(p.F_Cu))>=.5 and p.ToMM(v.GetDrillValue())>=(.25 if rules_file.exists() else .2)
         for f in fps.values():
             for pad in f.Pads():
                 bb=pad.GetBoundingBox();box=tuple(p.ToMM(x) for x in [bb.GetX(),bb.GetY(),bb.GetRight(),bb.GetBottom()]);assert point_rect(xy(v.GetPosition()),box)>p.ToMM(v.GetDrillValue())/2,('Via in pad',f.GetReference(),pad.GetNumber())
@@ -170,4 +217,10 @@ if placement_reference:
     result['known_erc_note']='TC2030 open-drain reset and M2003 internal reset pull-up; no external pull-up fitted'
     result['placement_reference']='hardware/main/placement-reference.json'
     result['preservation_exceptions'].append('User removed C29/C30 and replaced main J102 with TC2030 J1; optimized placement with fixed edge anchors; restored U3 ground')
+if recovery_pads:
+    result['recovery_pads_checked']=True
+    result['preservation_exceptions'].append('SW1/SW2 replaced by underside J3 EN/GND/BOOT recovery pads; ESP support placement refined; reset RC and boot pull-ups retained')
+if rules_file.exists():result['routing_rules_checked']={'clearance_mm':.1524,'min_track_mm':.1524,'min_via_drill_mm':.25,'edge_clearance_mm':.2,'zone_clearance_mm':.1524,'plane_connections':'solid'}
+if mounting:
+    result.update({'status':'PRESERVATION PASS; MOUNTING CLEARANCE PENDING' if drc['violations'] else 'PASS','mounting_checked':check_mounting(name),'mounting_note':'H1 courtyard overlaps R3; user will rearrange as needed. No DRC exclusions added.'})
 (VERIFY/(name+'-checks.json')).write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))

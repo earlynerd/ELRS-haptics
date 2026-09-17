@@ -225,9 +225,122 @@ When a decision is reversed or superseded, append a new entry rather than rewrit
 - **Driver:** Auto-calibrate each DRV2625 for the proposed 240 Hz LRA, limit the first-pass clamp to its stated 1.85 Vrms operating ceiling, and require successful status before RTP.
 - **Affects:** `firmware/`, README status, ring behavior, telemetry provisioning, and bench qualification. Builds do not establish flashing, timing, thermal, perceptual, or loader-ring evidence.
 
+## 2026-09-13 - Latched manual USB bring-up console
+
+- **Decision:** Add a native USB `hb` console that accepts partial-ring enumeration and addressed status checks, but latches manual mode before bus or actuator diagnostics. Limit single-pod RTP tests to amplitude 64 and 10-250 ms, refresh every 20 ms, then issue addressed stop and broadcast all-stop. Only explicit `hb flight` releases manual mode, and it still requires exactly eight pods and fresh telemetry for output.
+- **Why:** First hardware should be testable one pod at a time without weakening normal-flight interlocks or requiring a complete bracelet to diagnose a single driver.
+- **Supersedes:** The first firmware contract's exact-eight restriction for diagnostic enumeration only; its flight-output requirement remains unchanged.
+- **Affects:** ESP32-C6 console selection, ring receive/locking, controller modes, `firmware/protocol.md`, and `firmware/BRINGUP.md`.
+
 
 ## 2026-09-13 - Main Tag-Connect and compact placement checkpoint
 
 - **Decision:** Apply the requested placement pass to the main master, preserving U1/J2/J101/J200/J103/M1 positions. Use the user's TC2030 J1 in place of J102 and remove C29/C30 as requested. All 70 footprints remain on F.Cu; functional groups fit around the actuator opening. D1 is beside the ESP32 and SW3 is on the left edge.
 - **Schematic:** Preserve the user's latest redraw, ground and C1 junction repairs. Retain the new VBUS/VSYS power names; restore three external-supply PWR_FLAG directives. The Tag-Connect reset output is open drain; keep the selected M2003 internal pull-up and document its one ERC input-driver item rather than adding components.
 - **Evidence:** Both PCBA preservation checks pass. Main: zero parity errors, three silk/library warnings, 196 opens. Satellite: zero ERC/DRC/opens, unchanged source. Accepted positions and before-apply backups are documented in docs/main-board-placement.md. Routing and enclosure access remain to be completed.
+
+
+## 2026-09-13 - One fitted switch and underside ESP recovery pads
+
+- **Decision:** Remove SW1/SW2 and use bare J3 EN/GND/BOOT pads on B.Cu, accessible through an underside service opening clear of the lid-mounted cell. Keep R3/C1 reset bias, R5 boot pull-up and SW3 as the sole side-actuated user button.
+- **Why:** Native USB handles normal flashing/JTAG; manual GPIO9-low/reset access remains for firmware recovery without two tall switches. Hold BOOT low, pulse EN low, release EN then BOOT.
+- **Placement:** Reorder USB, I2C and boot passives beneath their ESP pins, move R42 to TX, and move D1 into the freed lower-left space. Preserve other functional groups and edge anchors. Enclosure service opening and LED window still need corresponding mechanical updates.
+
+
+## 2026-09-13 - Routing clearances, drills and direct plane connections
+
+- **Decision:** Use 6 mil copper/zone clearance and minimum track width, via drills at least 0.25 mm, and 0.20 mm copper-edge clearance on both PCBA masters. Use direct plane connections, with solid footprint/pad overrides and solid existing zones.
+- **Implementation:** Remove undersized routing presets; increase seven satellite via drills from 0.20 to 0.25 mm. Preserve positions and copper diameters; refill the satellite planes. Default track width remains 0.20 mm, with 6 mil available for tighter routes.
+- **Evidence:** Satellite remains DRC-clean and fully connected; main has no new errors. These constraints supersede the earlier 0.20 mm drill and 0.15 mm driver-clearance settings.
+
+## 2026-09-13 - Claspless co-printed Myo-style band
+
+- **Decision:** Join all eight rigid pod shells with paired TPU U-flexures and co-print the aligned rigid and soft volumes as one permanently closed band. Use the same flexure at the unwired end-to-main gap; do not add a clasp, separate strap, pin, screw or modeled TPU interlock. Let the slicer resolve the shared material interface.
+- **Why:** The supplied Myo reference and user direction establish the intended mechanism directly: rigid modules connected by integral soft U-loops, with no opening hardware.
+- **Supersedes:** The mechanical clasp portion of “Six-wire chain with passive serial return.” The current five-wire electrical chain remains unchanged: seven wired gaps and one unwired TPU seam.
+- **Affects:** `mechanical/myo-band-v0.7/`, `tools/build_myo_band.py`, bracelet overview and ring-pod mechanical documentation. Fit, preload, TPU fatigue, slicing, printing and body testing remain open.
+
+## 2026-09-14 - Flat co-printed housing assembled into a ring
+
+- **Decision:** Print the eight shells as an open flat strip with paired bed-level TPU hinges, then close the unwired joint using flexible tabs over main-lid retaining buttons. Target the user's H2D and proposed PET-GF15/TPU combination. Leave material bonding to the slicer. Retain the 195 mm wrist reference and existing pod body footprints.
+- **Why:** The user requests flat printing followed by ring assembly. The TPU grade remains open; 1 mm hinges and tab fit are provisional parameters. The tab/button closure is the first implementation choice, not a user-qualified permanent joint.
+- **Also:** Add native-outline-referenced PCB support ledges, external lid screw bosses and 1.2 mm lids (10.7 mm closed body depth). Refresh main service openings from current native footprint positions. Preserve board and battery sources; check bare-board/battery allocations, USB opening and lid clearance in CAD.
+- **Supersedes:** The upright-print, permanently closed mechanical architecture in "Claspless co-printed Myo-style band" for the new v0.8 prototype. Keep v0.7 files intact. The five-wire, seven-gap electrical chain is unchanged.
+- **Affects:** `mechanical/flat-band-v0.8/`, `tools/build_flat_band.py`, `tools/render_flat_band.py`, project overview and ring-pod mechanical description. CAD/mesh checks do not establish slicing, printed fit, populated-board retention, wire strain relief, closure fatigue or operating qualification.
+
+
+## 2026-09-14 - Planar Myo end rails and a main-shell assembly seam
+
+- **Decision:** Follow the user's red/blue sketch: two continuous TPU rails along the axial pod ends, turning inward in the flat XY plane as paired U-folds at all eight inter-pod gaps. The upper and lower folds can change shape independently; the taller main pod has longer end transitions. Keep PET-GF15/TPU, H2D flat printing and slicer-managed material bonding.
+- **Assembly:** Split the main shell at local X=7 mm so its portions print at the two strip ends. Two floor keys locate them; one 2 mm main lid and four screws close the housing. This preserves eight compliant joints and removes inter-pod closure straps/buttons. Satellite bodies, lids and the electrical chain are retained.
+- **Why:** The user wants stretch and angular compliance to follow noncylindrical wrists/forearms. Their sketch explicitly establishes planar end folds; neither straight bed-level links nor radial upright U-loops satisfy that geometry.
+- **Supersedes:** The straight hinges and tab closure in "Flat co-printed housing assembled into a ring" for the new v0.9 prototype. Earlier revisions remain intact.
+- **Evidence:** Sixteen spring-to-neighbor contact checks, valid STEP reimports, bare-board/battery allocations, sampled main seam/lid assembly motion, USB aperture and exported mesh checks pass. The 195 mm circular reference and illustrated oval/taper pose are layout aids, not force/strain or physical fit qualification.
+- **Affects:** `mechanical/myo-flat-v0.9/`, `tools/build_myo_flat_v09.py`, `tools/render_myo_flat_v09.py`, README and ring-pod description. TPU selection, usable travel, stiffness, seam strength, populated-board retention and harness motion remain physical design work.
+
+## 2026-09-14 - Full-height ribbons and stepped main clamshell
+
+- **Decision:** Implement the user's tape-like TPU ribbons at the full 9.5 mm shell-wall height. Retain paired inward plan-view folds at every gap. Replace projecting screw ears with rounded full-width shoulders and recessed countersunk heads.
+- **Closure:** Place the whole wrist-facing main floor at one strip end and the whole outer face at the other. Complementary full-height wall portions form the stepped seam shown in the user's latest drawing. Ribbon ends stop at their wall edges and butt together when the clamshell closes. Neither free ribbons nor closure joints taper or change Z datum. The local X=18 mm wall handoff avoids the USB opening; a service relief in the embedded rail preserves USB access.
+- **Why:** The user explicitly requires constant ribbon height and joining ribbon ends through housing assembly. This supersedes v0.9's left/right division through the main floor and its 1.2 mm-tall TPU geometry. The stepped seam follows the latest drawing rather than a uniform horizontal half-height wall split.
+- **Printing:** The 239.2 x 72 x 11.5 mm strip includes the main roof; seven satellite lids remain separate. Local support is required beneath the terminal roof. Four recessed main screws retain the halves using lower-floor posts. Material bonding remains slicer-managed.
+- **Evidence:** Valid CAD/STEP, electronics/USB clearance, full-height ribbon-joint gauges and sampled clamshell closing checks pass. Exported mesh and package evidence are in `mechanical/myo-flat-v0.10/`. These checks do not establish printing, fatigue, comfort, seam strength or harness qualification.
+- **Affects:** `tools/build_myo_flat_v010.py`, `tools/render_myo_flat_v010.py`, v0.10 delivery files and project mechanical descriptions. Previous releases and native hardware sources remain unchanged.
+
+
+## 2026-09-14 - Supported main ribbons and subtractive main case
+
+- **Decision:** Bond the long main TPU runs to the outside walls down to the satellite end positions. Use identical free U-fold geometry at all eight gaps. Preserve satellite geometry.
+- **Main case:** Cut the cavity, ports and mating seats from one rounded rectangular envelope. Retain whole wrist/outer faces, stepped closure and constant-height ribbon butt joints. Replace isolated posts with integrated end walls, using recessed M2 x 8 mm main screws. Main end inlays narrow to 1.2 mm to retain material around the pilots.
+- **Why:** The user's slicer screenshot identified extra free main-leg length and requested a coherent rectangular housing with two hollow mating halves.
+- **Supersedes:** Main transition and standoff details in “Full-height ribbons and stepped main clamshell.”
+- **Affects:** v0.11 CAD, coupons and mechanical descriptions. The v0.10 screenshot is slice evidence; v0.11 physical fit and stiffness remain unverified.
+
+
+## 2026-09-14 - Universal haptic pods with a stacked controller
+
+- **Decision:** Build eight identical universal pod PCBAs and one controller daughterboard. Pod 0 sits beneath the controller without a battery or external NTC; pods 1-7 each carry both. Retain all universal-board components, local ICE and the existing JP1 selector.
+- **Interface:** Controller J101 connects pin-for-pin to pod 0 J1: switched 3V3, GND, ESP TX, protected VBAT and UART return. Pods 0-6 use NORMAL; pod 7 uses END. Eight-node loader topology and power-cycle reset remain unchanged.
+- **Why:** Additional main-pod height is preferable to the larger integrated board footprint. Seven 160 mAh 301730 cells are a candidate for 1,120 mAh; exact part, protected dimensions and ratings remain unverified.
+- **Supersedes:** The integrated main haptic/battery circuit and eight-cell packaging baseline. Previous routing and mechanical files remain historical references.
+- **Affects:** Main schematic/PCB inventory, assembly instructions, panel quantities and pending seven-sensor firmware policy. Daughterboard mechanics and placement remain open.
+
+## 2026-09-14 - Matching board outlines and diagonal locating holes
+
+- **Decision:** Match the controller to the universal pod's 17 × 35 mm, R1 outer contour, with no actuator cutout on the controller. Add matching 2 mm NPTH H1/H2 holes at local (15, 1.8) and (2.5, 32.5) mm on both PCBAs.
+- **Why:** The user prefers the smaller stacked footprint and explicitly requires mounting positions on opposite sides. Printed locating pins with lid/ledge retention are provisional; VHB remains an option.
+- **Placement:** Preserve all existing electrical parts and routes. The user will reshuffle them around the holes and smaller controller perimeter; clearance conflicts remain visible rather than excluded.
+- **Affects:** Both native schematics/PCBs, library tables and geometry checks. The pre-edit sources are in `hardware/backups/pre-matched-outlines-20260914/`. Enclosure and stack-height work remain open.
+
+## 2026-09-15 - PCB faces clamp a TPU spacer using four corner fasteners
+
+- **Decision:** Expand both active boards to the regular pod's 20 × 46 mm, R2.5 outside contour. Use the universal board as the skin-facing plate and the controller as pod 0's outer plate. Retain VLV041235L with its supplied adhesive; remove the lower-board actuator cutout.
+- **Mounting:** Four shared corners at local (3.5, 3.5), (16.5, 3.5), (3.5, 42.5), (16.5, 42.5) mm. Lower: M1.6 closed-base SMT standoff family, Ø3.3 body/Ø4 land. Upper: Ø1.8 screw clearance. Final standoff height and screw length remain open.
+- **TPU:** Draw a 1.2 mm contact band and a 1.5 mm placement inset, with Ø4.6 corner relief. Preserve user electrical placement/routing for rearrangement.
+- **Supersedes:** Two locating holes, 17 × 35 mm internal-board outlines and the separate rigid skin-contact shell. Blank upper-plate fabrication files, spacer CAD and thinner-board trials remain future work; active stackups stay 0.8 mm/four layers.
+
+## 2026-09-15 - Move corner mounts into the TPU contact band
+
+- **Decision:** Move all four mounting centres outward by 0.75 mm on both axes: local (2.75, 2.75), (17.25, 2.75), (2.75, 43.25), (17.25, 43.25) mm. Matching upper screw holes and lower standoff lands retain the same shared pattern.
+- **TPU:** Move the matching diameter 4.6 mm relief circles with the mounts. Intentional overlap with the contact band allows the standoffs to pass through the TPU frame; spacer CAD must account for the corner reliefs.
+- **Validation:** Electrical placements, pads, routes and project settings preserved. Satellite DRC/open count remains zero; controller has 20 DRC findings and 146 opens during placement. Sources before this move are in `hardware/backups/pre-outward-mounts-20260915/`.
+
+## 2026-09-17 - Outward top-push user switch
+
+- **Decision:** Replace SW3's EVQPUJ02K side switch with Panasonic EVPAWBD4A, 1.6 N and 0.6 mm high, on outward B.Cu at its saved centre. Preserve TS/MR/GND connectivity and other placement/routing.
+- **Why:** The controller PCB is also the outer shell, so the button must press through its outer face.
+- **Supersedes:** Side-actuated SW3 in the one-fitted-switch decision of 2026-09-13.
+- **Affects:** Main power schematic, PCB and project footprint. Attach a clearly labeled datasheet-derived nominal STEP body because a downloadable exact model was not found. Protective cover and physical feel remain pending; see `docs/pcb-sandwich.md`.
+
+## 2026-09-17 - Functional-group placement refinement
+
+- **Decision:** Place R4/R5, R24/R25, C2 and R42/R43 on B.Cu beside their U1 pins. Consolidate U26 control passives and LED resistor R51 on F.Cu, move U14 toward USB data pads, and clear C41 from the connector courtyard.
+- **Why:** Prefer short local same-layer terminations within functional groups, while preserving fixed mechanical anchors and the coherent charger/regulator groups.
+- **Preservation:** Circuit, connectors, module, switch, recovery pads, mounting pattern and project rules remain unchanged. Keep the U1 antenna courtyard and its mounting warnings; RF/fastener resolution is still open.
+- **Affects:** Main PCB placement; details and before/after evidence in `hardware/verification/main-group-refinement/README.md`. Routing remains pending.
+
+## 2026-09-17 - Restore user's main-board placement
+
+- **Decision:** Revert the entire assistant functional-group placement pass to the exact pre-pass PCB backup, retaining the accepted SW3 replacement.
+- **Why:** The PCB is the housing: internal components belong on F.Cu; B.Cu is for deliberately exposed parts. The assistant's support-passive layer changes violated this constraint.
+- **Supersedes:** Functional-group placement refinement above. Candidate reports remain historical only.

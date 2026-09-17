@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "expected_mesh_components": {
+    "rigid-strip.stl": 9,
+    "tpu-end-flexures.stl": 2,
+    "satellite-lid.stl": 1,
+    "coupon-rigid.stl": 2,
+    "coupon-tpu.stl": 2,
+    "main-clamshell-fit-parts.stl": 2,
+    "closure-coupon-rigid.stl": 2,
+    "closure-coupon-tpu.stl": 2,
+    "main-transition-rigid.stl": 2,
+    "main-transition-tpu.stl": 2
+  },
+  "three_mf_packages": [
+    "closure-transition-coupon.3mf",
+    "end-flexure-coupon.3mf",
+    "main-transition-coupon.3mf",
+    "myo-flat-band.3mf"
+  ],
+  "source_inputs_unchanged": true,
+  "previous_release_files_checked": 35,
+  "previous_zip_sha256": "9bf6f0d51b697ebaa88c0e21336e68914cadeec76027f34f978c57d35e272303",
+  "cad_generator_sha256": "582eb57c068a5ea31f91adf172ac47708b769f1f9908ab7a4b08c6eed91673cd",
+  "limits": "CAD, mesh and archive checks only. No slicing or physical qualification."
+}

@@ -662,7 +662,7 @@
         "uuid": "281e434a-bf9f-4327-92ec-86d5315beda6"
       }
     ],
-    "used_designators": "J1,#PWR1,#PWR3-4,#PWR12,#PWR15-16,#PWR13973,#PWR13975,#PWR19592,#PWR19594-19597",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
@@ -672,7 +672,7 @@
     ],
     [
       "cc6a0e97-9c58-4182-898e-46e3e3bcce7f",
-      "Local haptic pod and harness"
+      "Stacked universal pod interface"
     ],
     [
       "2aea65ce-3f94-40c4-86ee-85ece296249c",

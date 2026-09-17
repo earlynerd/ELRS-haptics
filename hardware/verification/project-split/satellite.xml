@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>C:\Users\mmsyl\Documents\haptic-bracelet\hardware\satellite\satellite.kicad_sch</source>
-    <date>2026-09-13T22:04:35</date>
+    <date>2026-09-15T01:42:02</date>
     <tool>Eeschema 10.0.1</tool>
     <textvar name="DESIGN_STATUS">RING POD SCHEMATIC - FIRMWARE, PACK AND LAYOUT PENDING</textvar>
     <sheet number="1" name="/" tstamps="/">
@@ -225,6 +225,102 @@
             <pin num="1"/>
             <pin num="2"/>
           </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="H1">
+      <value>M1.6 STANDOFF</value>
+      <footprint>HapticBracelet:SMT_Standoff_M1p6_D3p3_ClosedBase_HeightTBD</footprint>
+      <datasheet>https://www.we-online.com/components/products/datasheet/97730606330R.pdf</datasheet>
+      <fields>
+        <field name="BOM Comments">D3.3 closed-base solderable M1.6 family, D4 isolated land. Height/final MPN TBD; 6 mm family member is land-pattern reference only. TPU needs D4.6 local relief.</field>
+        <field name="Footprint">HapticBracelet:SMT_Standoff_M1p6_D3p3_ClosedBase_HeightTBD</field>
+        <field name="Datasheet">https://www.we-online.com/components/products/datasheet/97730606330R.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="BOM Comments" value="D3.3 closed-base solderable M1.6 family, D4 isolated land. Height/final MPN TBD; 6 mm family member is land-pattern reference only. TPU needs D4.6 local relief."/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="satellite.kicad_sch"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bd8916bc-75e0-401d-8345-d1715a64305b</tstamps>
+      <units>
+        <unit name="A">
+          <pins/>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="H2">
+      <value>M1.6 STANDOFF</value>
+      <footprint>HapticBracelet:SMT_Standoff_M1p6_D3p3_ClosedBase_HeightTBD</footprint>
+      <datasheet>https://www.we-online.com/components/products/datasheet/97730606330R.pdf</datasheet>
+      <fields>
+        <field name="BOM Comments">D3.3 closed-base solderable M1.6 family, D4 isolated land. Height/final MPN TBD; 6 mm family member is land-pattern reference only. TPU needs D4.6 local relief.</field>
+        <field name="Footprint">HapticBracelet:SMT_Standoff_M1p6_D3p3_ClosedBase_HeightTBD</field>
+        <field name="Datasheet">https://www.we-online.com/components/products/datasheet/97730606330R.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="BOM Comments" value="D3.3 closed-base solderable M1.6 family, D4 isolated land. Height/final MPN TBD; 6 mm family member is land-pattern reference only. TPU needs D4.6 local relief."/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="satellite.kicad_sch"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ebd96803-7f4d-4da0-950d-c012b94f8f9c</tstamps>
+      <units>
+        <unit name="A">
+          <pins/>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="H3">
+      <value>M1.6 STANDOFF</value>
+      <footprint>HapticBracelet:SMT_Standoff_M1p6_D3p3_ClosedBase_HeightTBD</footprint>
+      <datasheet>https://www.we-online.com/components/products/datasheet/97730606330R.pdf</datasheet>
+      <fields>
+        <field name="BOM Comments">D3.3 closed-base solderable M1.6 family, D4 isolated land. Height/final MPN TBD; 6 mm family member is land-pattern reference only. TPU needs D4.6 local relief.</field>
+        <field name="Footprint">HapticBracelet:SMT_Standoff_M1p6_D3p3_ClosedBase_HeightTBD</field>
+        <field name="Datasheet">https://www.we-online.com/components/products/datasheet/97730606330R.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="BOM Comments" value="D3.3 closed-base solderable M1.6 family, D4 isolated land. Height/final MPN TBD; 6 mm family member is land-pattern reference only. TPU needs D4.6 local relief."/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="satellite.kicad_sch"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>16dfd9f5-8119-417c-ab2a-c2e12482e10f</tstamps>
+      <units>
+        <unit name="A">
+          <pins/>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="H4">
+      <value>M1.6 STANDOFF</value>
+      <footprint>HapticBracelet:SMT_Standoff_M1p6_D3p3_ClosedBase_HeightTBD</footprint>
+      <datasheet>https://www.we-online.com/components/products/datasheet/97730606330R.pdf</datasheet>
+      <fields>
+        <field name="BOM Comments">D3.3 closed-base solderable M1.6 family, D4 isolated land. Height/final MPN TBD; 6 mm family member is land-pattern reference only. TPU needs D4.6 local relief.</field>
+        <field name="Footprint">HapticBracelet:SMT_Standoff_M1p6_D3p3_ClosedBase_HeightTBD</field>
+        <field name="Datasheet">https://www.we-online.com/components/products/datasheet/97730606330R.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="BOM Comments" value="D3.3 closed-base solderable M1.6 family, D4 isolated land. Height/final MPN TBD; 6 mm family member is land-pattern reference only. TPU needs D4.6 local relief."/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="satellite.kicad_sch"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>95c2421f-a671-4bad-9737-8ec1143af4d0</tstamps>
+      <units>
+        <unit name="A">
+          <pins/>
         </unit>
       </units>
     </comp>
@@ -849,6 +945,19 @@
         <pin num="3" name="B" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Mounting Hole without connection</field>
+      </fields>
+    </libpart>
   </libparts>
   <libraries>
     <library logical="Connector_Generic">
@@ -862,6 +971,9 @@
     </library>
     <library logical="Jumper">
       <uri>${KICAD10_SYMBOL_DIR}/Jumper.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>${KICAD10_SYMBOL_DIR}/Mechanical.kicad_sym</uri>
     </library>
   </libraries>
   <nets>

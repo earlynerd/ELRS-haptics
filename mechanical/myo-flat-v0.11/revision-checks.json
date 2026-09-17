@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "satellite_shells": [
+    {
+      "satellite": 1,
+      "symmetric_difference_mm3": 0
+    },
+    {
+      "satellite": 2,
+      "symmetric_difference_mm3": 0
+    },
+    {
+      "satellite": 3,
+      "symmetric_difference_mm3": 0
+    },
+    {
+      "satellite": 4,
+      "symmetric_difference_mm3": 0
+    },
+    {
+      "satellite": 5,
+      "symmetric_difference_mm3": 0
+    },
+    {
+      "satellite": 6,
+      "symmetric_difference_mm3": 0
+    },
+    {
+      "satellite": 7,
+      "symmetric_difference_mm3": 0
+    }
+  ],
+  "satellite_rail_region_difference_mm3": 0,
+  "satellite_lid_bytes_unchanged": true,
+  "all_free_fold_lengths_equal": true
+}

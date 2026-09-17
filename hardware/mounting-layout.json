@@ -1,0 +1,54 @@
+{
+  "revision": "pod-faces-v1",
+  "outline_mm": [
+    20,
+    46
+  ],
+  "outer_corner_radius_mm": 2.5,
+  "outline_reference": "tools/build_myo_flat_v011.py: regular pod shell/lid 20 x 46 mm, R2.5",
+  "origins_mm": {
+    "main": [
+      33.5,
+      34.6
+    ],
+    "satellite": [
+      101.5,
+      90.5
+    ]
+  },
+  "mount_centres_local_mm": {
+    "H1": [
+      2.75,
+      2.75
+    ],
+    "H2": [
+      17.25,
+      2.75
+    ],
+    "H3": [
+      2.75,
+      43.25
+    ],
+    "H4": [
+      17.25,
+      43.25
+    ]
+  },
+  "tpu_contact_band_mm": 1.2,
+  "placement_inset_mm": 1.5,
+  "tpu_corner_relief_diameter_mm": 4.6,
+  "lower_standoff_thread": "M1.6",
+  "lower_standoff_body_diameter_mm": 3.3,
+  "lower_standoff_land_diameter_mm": 4,
+  "lower_standoff_footprint": "HapticBracelet:SMT_Standoff_M1p6_D3p3_ClosedBase_HeightTBD",
+  "upper_clearance_hole_diameter_mm": 1.8,
+  "upper_clearance_footprint": "HapticBracelet:Screw_Clearance_M1p6_1p8mm_Stack",
+  "standoff_height_mm": null,
+  "standoff_reference_mpn": "97730606330R (land pattern only; final height/MPN open)",
+  "main_actuator_cutout": false,
+  "satellite_actuator_cutout": false,
+  "component_positions": "Preserved from user saved sources on 2026-09-15; all existing electrical pads and routes unchanged",
+  "actuator": "Retain VLV041235L with supplied peel-and-stick tape; schematic M1 electrical contacts unchanged",
+  "backup": "hardware\\backups\\pre-pod-faces-20260915",
+  "outward_mount_revision_backup": "hardware\\backups\\pre-outward-mounts-20260915"
+}

@@ -1,13 +1,52 @@
+# Local scratch space and imported working copies
+.codex-remote-attachments/
 .kicad-runtime/
+.scratch/
+.scratchpad/
+_scratch/
+_scratchpad/
+scratch/
+scratchpad/
+tmp/
+temp/
+
+# Backups, autosaves, and editor recovery files
 .history/
+backup/
+backups/
+*-backup/
+*-backups/
+*~
+.#*
+\#*#
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+*.swp
+*.swo
+*.temp
+*.tmp
+*.zip
+
+# Generated PCB analysis and verification intermediates
+hardware/verification/
+
+# Superseded mechanical iterations and render-only helper geometry
+mechanical/flat-band-v0.8/
+mechanical/myo-band-v0.7/
+mechanical/myo-flat-v0.9/
+mechanical/myo-flat-v0.10/
+mechanical/**/reference-only/
+
+# Generated language and tool output
 __pycache__/
 *.pyc
 *.obj
 *.kicad_prl
 *.lck
 ~*.lck
-*.bak
-*-backups/
 fp-info-cache
 tools/vendor/
 

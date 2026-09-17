@@ -1,0 +1,4 @@
+interface:
+  display_name: "PCB Placement"
+  short_description: "Evaluate placement, airwires, and layout constraints"
+  default_prompt: "Use $pcb-placement to evaluate this board and identify the most useful placement improvements."
